@@ -1,129 +1,362 @@
 [
   {
-    "slug": "bayes-theorem",
-    "name": "Bayes'sches Theorem",
-    "symbol": "P(A|B) = P(B|A)·P(A)/P(B)",
-    "latex": "P(A|B) = \\frac{P(B|A) \\cdot P(A)}{P(B)}",
+    "slug": "pythagorean-theorem",
+    "name": "Satz des Pythagoras",
+    "latex": "a^2 + b^2 = c^2",
+    "symbol": "a² + b² = c²",
     "kategorie": "mathematik",
-    "unterkategorie": "Stochastik",
-    "beschreibung": "Das Bayes-Theorem berechnet bedingte Wahrscheinlichkeiten. Es beschreibt, wie die Wahrscheinlichkeit eines Ereignisses A aktualisiert wird, wenn neue Information B bekannt wird.",
-    "einheiten": "Alle Werte dimensionslos (Wahrscheinlichkeiten zwischen 0 und 1)",
+    "unterkategorie": "Geometrie",
+    "beschreibung": "Der Satz des Pythagoras gilt für rechtwinklige Dreiecke: Das Quadrat der Hypotenuse gleich der Summe der Kathetenquadrate.",
+    "einheiten": "Alle Längen in gleicher Einheit (dimensionslos in Relation)",
     "variablen": [
-      { "symbol": "P(A|B)", "bedeutung": "Bedingte Wahrscheinlichkeit von A gegeben B (Posterior)", "einheit": "[0,1]" },
-      { "symbol": "P(B|A)", "bedeutung": "Bedingte Wahrscheinlichkeit von B gegeben A (Likelihood)", "einheit": "[0,1]" },
-      { "symbol": "P(A)", "bedeutung": "Vorab-Wahrscheinlichkeit von A (Prior)", "einheit": "[0,1]" },
-      { "symbol": "P(B)", "bedeutung": "Gesamt-Wahrscheinlichkeit von B (Evidenz)", "einheit": "[0,1]" }
+      {
+        "symbol": "a, b",
+        "bedeutung": "Katheten (Seiten am rechten Winkel)",
+        "einheit": "m, cm, etc."
+      },
+      {
+        "symbol": "c",
+        "bedeutung": "Hypotenuse (längste Seite, gegenüber dem 90°-Winkel)",
+        "einheit": "gleiche Einheit"
+      }
     ],
-    "hintergrund": "Thomas Bayes formulierte das Theorem posthum 1763. Es ist die Grundlage der Bayesschen Statistik und moderner KI/Machine Learning. Es ermöglicht, Wahrscheinlichkeiten mit neuer Information zu aktualisieren.",
-    "beispiel": "Medizinischer Test: Krankheits-Prävalenz P(K)=0,01, Test-Sensitivität P(+|K)=0,99, Spezifität P(–|K')=0,95 → P(+)=0,99×0,01+0,05×0,99=0,0594 → P(K|+) = (0,99×0,01)/0,0594 ≈ 0,167 (nur 16,7% wirklich krank!).",
-    "anwendung": "Medizinische Diagnostik, Spam-Filter, ML/KI (Naive Bayes, neuronale Netze), Finanzmarktanalyse, Forensik",
-    "quellen": ["Bayes, T. (1763). An Essay towards solving a Problem in the Doctrine of Chances. Phil. Trans. Roy. Soc.", "Jaynes, E.T. (2003). Probability Theory: The Logic of Science."],
-    "verwandte": ["normalverteilung"],
-    "schwierigkeit": "fortgeschritten"
+    "hintergrund": "Bekannt seit dem 8. Jahrhundert v. Chr. (Babylon, Indien). Pythagoras von Samos (~570–495 v. Chr.) gilt als Namensgeber. Es gibt über 370 Beweise (Euklid, Präsident Garfield, Einstein). Verallgemeinerung: Kosinussatz c² = a² + b² − 2ab·cos γ.",
+    "beispiel": "Zimmermann benötigt Diagonale eines 3m × 4m Raums: c = √(3² + 4²) = √25 = 5 m. \"3-4-5 Tripel\" — klassisches pythagoräisches Tripel.",
+    "anwendung": "Architektur, Navigation (GPS-Triangulation), Computergrafik, Vektorberechnung",
+    "quellen": [
+      "Euklid (ca. 300 v. Chr.). Elemente, Buch I, Satz 47."
+    ],
+    "verwandte": [
+      "kosinussatz",
+      "eulersche-formel",
+      "vektorrechnung"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend"
   },
   {
-    "slug": "fourier-transformation",
-    "name": "Fourier-Transformation",
-    "symbol": "f̂(ξ) = ∫f(x)e^(−2πixξ)dx",
-    "latex": "\\hat{f}(\\xi) = \\int_{-\\infty}^{\\infty} f(x)\\, e^{-2\\pi i x \\xi}\\, dx",
+    "slug": "quadratische-formel",
+    "name": "Quadratische Formel (ABC-Formel)",
+    "latex": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+    "symbol": "x = (−b ± √D) / 2a",
     "kategorie": "mathematik",
-    "unterkategorie": "Analysis",
-    "beschreibung": "Die Fourier-Transformation zerlegt eine Funktion f(x) in ihre Frequenzanteile. Das Ergebnis f̂(ξ) gibt an, wie stark jede Frequenz ξ in f(x) vorhanden ist.",
-    "einheiten": "x in [s] (Zeit), ξ in [1/s] (Frequenz), f̂(ξ) komplex",
+    "unterkategorie": "Algebra",
+    "beschreibung": "Die quadratische Formel liefert alle Lösungen jeder quadratischen Gleichung ax² + bx + c = 0.",
+    "einheiten": "Dimensionslos (Algebra)",
     "variablen": [
-      { "symbol": "f̂(ξ)", "bedeutung": "Fourier-Transformierte (Frequenzspektrum)", "einheit": "komplex" },
-      { "symbol": "f(x)", "bedeutung": "Originalfunktion (Zeitdomäne)", "einheit": "beliebig" },
-      { "symbol": "ξ", "bedeutung": "Frequenz", "einheit": "Hz" },
-      { "symbol": "e^(−2πixξ)", "bedeutung": "Komplexe Exponentialfunktion (Euler)", "einheit": "dimensionslos" }
+      {
+        "symbol": "a",
+        "bedeutung": "Koeffizient von x² (a ≠ 0)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "b",
+        "bedeutung": "Koeffizient von x",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "c",
+        "bedeutung": "Konstante",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "D",
+        "bedeutung": "Diskriminante D = b² − 4ac",
+        "einheit": "dimensionslos"
+      }
     ],
-    "hintergrund": "Jean-Baptiste Joseph Fourier zeigte 1822, dass (fast) jede periodische Funktion als Summe von Sinus- und Kosinus-Schwingungen dargestellt werden kann. Die diskrete Variante FFT ist ein Schlüsselalgorithmus der modernen Signalverarbeitung.",
-    "beispiel": "Rechteckpuls f(t) der Breite T: f̂(ξ) = T·sinc(Tξ). Im Spektrum sieht man eine si-Funktion — breite Pulse haben schmale Spektren und umgekehrt.",
-    "anwendung": "Signalverarbeitung (MP3, JPEG-Kompression), MRT, Telekommunikation, Quantenmechanik, Zeitreihenanalyse",
-    "quellen": ["Fourier, J.B.J. (1822). Théorie analytique de la chaleur.", "Stein, E. & Shakarchi, R. (2003). Fourier Analysis: An Introduction."],
-    "verwandte": ["eulersche-formel", "fundamentalsatz-analysis"],
-    "schwierigkeit": "universitaet"
-  },
-  {
-    "slug": "fundamentalsatz-analysis",
-    "name": "Fundamentalsatz der Analysis",
-    "symbol": "d/dx ∫ₐˣ f(t)dt = f(x)",
-    "latex": "\\frac{d}{dx}\\int_a^x f(t)\\,dt = f(x)",
-    "kategorie": "mathematik",
-    "unterkategorie": "Analysis",
-    "beschreibung": "Der Fundamentalsatz der Analysis verknüpft Differentiation und Integration: Die Ableitung des Integrals von f ist gleich f selbst. Ableiten und Integrieren sind inverse Operationen.",
-    "einheiten": "Abhängig von f(x); allgemein: [f(x)] = eine Einheit weniger als das Integral",
-    "variablen": [
-      { "symbol": "f(t)", "bedeutung": "Integrierbare Funktion", "einheit": "beliebig" },
-      { "symbol": "a", "bedeutung": "Untere Integrationsgrenze (konstant)", "einheit": "gleich wie t" },
-      { "symbol": "x", "bedeutung": "Obere Integrationsgrenze (Variable)", "einheit": "gleich wie t" }
+    "hintergrund": "Bekannt seit der babylonischen Mathematik (~1800 v. Chr.). Algebraisch hergeleitet durch \"quadratische Ergänzung\". Diskriminante D: D > 0 → zwei reelle Lösungen; D = 0 → eine Lösung; D < 0 → keine reellen Lösungen.",
+    "beispiel": "2x² − 4x − 6 = 0 → x = (4 ± √(16+48))/4 = (4 ± 8)/4 → x₁ = 3, x₂ = −1.",
+    "anwendung": "Physik (Wurfparabel), Ingenieurwesen, Finanzmodelle (Break-Even), Optik (Linsengleichung)",
+    "quellen": [
+      "Al-Khwarizmi (825). Kitab al-mukhtasar fi hisab al-jabr wal-muqabala."
     ],
-    "hintergrund": "Isaac Newton und Gottfried Wilhelm Leibniz entdeckten den Zusammenhang unabhängig voneinander (1660er–1680er). Augustin-Louis Cauchy und Bernhard Riemann formulierten ihn rigoros im 19. Jahrhundert.",
-    "beispiel": "F(x) = ∫₀ˣ 2t dt = x². Ableitung: F'(x) = 2x = f(x) ✓. Anwendung zur Berechnung: ∫₀³ 2t dt = [t²]₀³ = 9.",
-    "anwendung": "Physik (Arbeit, Energie, Impuls), Wirtschaft (Konsumentenrente), Wahrscheinlichkeitsrechnung, Ingenieurwesen",
-    "quellen": ["Newton, I. (1671). Methodus Fluxionum (posthum 1736).", "Leibniz, G.W. (1684). Nova methodus pro maximis et minimis. Acta Eruditorum."],
-    "verwandte": ["potenzregel-ableitung", "fourier-transformation"],
+    "verwandte": [
+      "pythagorean-theorem",
+      "binomische-formeln",
+      "eulersche-formel"
+    ],
+    "abiturRelevant": true,
     "schwierigkeit": "grundlegend"
   },
   {
     "slug": "eulersche-formel",
     "name": "Eulersche Formel",
-    "symbol": "e^(iπ) + 1 = 0",
-    "latex": "e^{i\\pi} + 1 = 0",
+    "latex": "e^{i\\varphi} = \\cos\\varphi + i \\cdot \\sin\\varphi",
+    "symbol": "e^(iφ) = cos φ + i·sin φ",
     "kategorie": "mathematik",
-    "unterkategorie": "Komplexe Analysis",
-    "beschreibung": "Die Eulersche Identität verbindet die fünf wichtigsten mathematischen Konstanten: e, i, π, 1 und 0 in einer einzigen eleganten Gleichung. Die allgemeine Eulersche Formel lautet: e^(ix) = cos(x) + i·sin(x).",
-    "einheiten": "Dimensionslos; x in Radiant [rad]",
+    "unterkategorie": "Analysis / Komplexe Zahlen",
+    "beschreibung": "Die Eulersche Formel verbindet Exponentialfunktion mit Winkelfunktionen in der komplexen Ebene.",
+    "einheiten": "φ in Radiant · Alle Werte dimensionslos (komplexe Zahlen)",
     "variablen": [
-      { "symbol": "e", "bedeutung": "Eulersche Zahl (Basis des natürlichen Logarithmus)", "einheit": "≈ 2,71828" },
-      { "symbol": "i", "bedeutung": "Imaginäre Einheit (i² = −1)", "einheit": "dimensionslos" },
-      { "symbol": "π", "bedeutung": "Kreiszahl Pi", "einheit": "≈ 3,14159" }
+      {
+        "symbol": "e",
+        "bedeutung": "Eulersche Zahl (≈ 2,718)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "i",
+        "bedeutung": "Imaginäre Einheit (i² = −1)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "φ",
+        "bedeutung": "Winkel (in Radiant)",
+        "einheit": "rad"
+      }
     ],
-    "hintergrund": "Leonhard Euler formulierte 1748 die allgemeine Formel e^(ix) = cos x + i sin x. Die spezielle Form mit x = π ergibt die 'schönste Formel der Mathematik' — sie verbindet Analysis, Geometrie und Algebra.",
-    "beispiel": "e^(iπ/2) = cos(π/2) + i·sin(π/2) = 0 + i·1 = i. Das bedeutet: Im Einheitskreis der komplexen Zahlenebene entspricht e^(iθ) einer Drehung um den Winkel θ.",
-    "anwendung": "Signalverarbeitung (Fourier: e^(iωt) statt sin/cos), Quantenmechanik (Wellenfunktion), Elektrotechnik (Wechselstrom-Phasoren), Strömungsmechanik",
-    "quellen": ["Euler, L. (1748). Introductio in Analysin Infinitorum.", "Nahin, P.J. (2006). Dr. Euler's Fabulous Formula."],
-    "verwandte": ["fourier-transformation", "fundamentalsatz-analysis"],
-    "schwierigkeit": "fortgeschritten"
+    "hintergrund": "Leonhard Euler bewies die Formel 1748. Sonderfall φ = π: e^(iπ) + 1 = 0 — die Eulersche Identität, oft als \"schönste Gleichung der Mathematik\" bezeichnet, da sie e, π, i, 1 und 0 verbindet.",
+    "beispiel": "φ = π/2: e^(iπ/2) = cos(π/2) + i·sin(π/2) = 0 + i·1 = i. φ = π: e^(iπ) = −1 → e^(iπ) + 1 = 0.",
+    "anwendung": "Signalverarbeitung (Fourier-Transformation), Quantenmechanik (Wellenfunktionen), AC-Stromanalyse",
+    "quellen": [
+      "Euler, L. (1748). Introductio in analysin infinitorum. Lausanne."
+    ],
+    "verwandte": [
+      "taylor-reihe",
+      "fourier-transformation",
+      "komplexe-zahlen"
+    ],
+    "abiturRelevant": false,
+    "schwierigkeit": "universitaet"
   },
   {
-    "slug": "potenzregel-ableitung",
-    "name": "Potenzregel für Ableitungen",
-    "symbol": "d/dx xⁿ = n·xⁿ⁻¹",
-    "latex": "\\frac{d}{dx} x^n = n \\cdot x^{n-1}",
+    "slug": "produktregel-ableitung",
+    "name": "Produktregel der Differentiation",
+    "latex": "(f \\cdot g)' = f' \\cdot g + f \\cdot g'",
+    "symbol": "(fg)' = f'g + fg'",
     "kategorie": "mathematik",
     "unterkategorie": "Analysis",
-    "beschreibung": "Die Potenzregel ist die grundlegendste Ableitungsregel: Die Ableitung von xⁿ ist n·xⁿ⁻¹. Sie gilt für alle reellen Exponenten n.",
-    "einheiten": "Gleiche Einheiten wie [x^(n−1)]",
+    "beschreibung": "Die Produktregel erlaubt die Ableitung von Produkten zweier Funktionen.",
+    "einheiten": "Dimensionslos (Analysis)",
     "variablen": [
-      { "symbol": "x", "bedeutung": "Variable", "einheit": "beliebig" },
-      { "symbol": "n", "bedeutung": "Exponent", "einheit": "dimensionslos (reell)" }
+      {
+        "symbol": "f, g",
+        "bedeutung": "Differenzierbare Funktionen",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "f', g'",
+        "bedeutung": "Ableitungen von f und g",
+        "einheit": "dimensionslos"
+      }
     ],
-    "hintergrund": "Die Potenzregel lässt sich aus der Definition der Ableitung als Grenzwert herleiten: f'(x) = lim[h→0] (f(x+h)−f(x))/h. Newton und Leibniz erkannten diese Regel als Spezialfall des Binomialsatzes.",
-    "beispiel": "f(x) = x³ → f'(x) = 3x². Bei x=2: f'(2) = 3×4 = 12 (Steigung der Tangente an x³ bei x=2). Kettenpflanzung: f(x) = (x²+1)⁵ → f'(x) = 5(x²+1)⁴ × 2x.",
-    "anwendung": "Physik (Geschwindigkeit und Beschleunigung aus Weg), Optimierungsaufgaben, Ökonometrie, Kurvendiskussion",
-    "quellen": ["Leibniz, G.W. (1684). Nova methodus pro maximis et minimis.", "Forster, O. (2008). Analysis 1. Vieweg+Teubner."],
-    "verwandte": ["fundamentalsatz-analysis", "binomischer-lehrsatz"],
+    "hintergrund": "Merkhilfe: \"Strich-normal + normal-Strich\". Leibniz-Notation: d(u·v)/dx = (du/dx)·v + u·(dv/dx). Verallgemeinerung auf n Faktoren durch vollständige Induktion.",
+    "beispiel": "(x²·sin x)' = 2x·sin x + x²·cos x. Kontrolle: Graph von (x²·sin x) sollte bei x=0 Steigung 0 zeigen: 2·0·0 + 0² = 0 ✓",
+    "anwendung": "Physik (Impuls p = mv, dp/dt = m′v + mv′), Statistik, Optimierungsprobleme",
+    "quellen": [
+      "Leibniz, G.W. (1684). Nova methodus pro maximis et minimis. Acta Eruditorum."
+    ],
+    "verwandte": [
+      "kettenregel-ableitung",
+      "quotientenregel",
+      "taylor-reihe"
+    ],
+    "abiturRelevant": true,
     "schwierigkeit": "grundlegend"
   },
   {
-    "slug": "binomischer-lehrsatz",
-    "name": "Binomischer Lehrsatz",
-    "symbol": "(a+b)ⁿ = Σ C(n,k) aⁿ⁻ᵏ bᵏ",
-    "latex": "(a+b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k} b^k",
+    "slug": "kettenregel-ableitung",
+    "name": "Kettenregel der Differentiation",
+    "latex": "(f \\circ g)'(x) = f'(g(x)) \\cdot g'(x)",
+    "symbol": "(f∘g)' = f'(g(x))·g'(x)",
     "kategorie": "mathematik",
-    "unterkategorie": "Algebra",
-    "beschreibung": "Der binomische Lehrsatz gibt an, wie man eine Potenz einer Summe (a+b)ⁿ ausmultipliziert. Die Koeffizienten C(n,k) sind die Binomialkoeffizienten aus dem Pascalschen Dreieck.",
-    "einheiten": "Dimensionslos; a, b beliebige reelle oder komplexe Zahlen",
+    "unterkategorie": "Analysis",
+    "beschreibung": "Die Kettenregel leitet verkettete Funktionen f(g(x)) ab: Äußere Ableitung mal innere Ableitung.",
+    "einheiten": "Dimensionslos (Analysis)",
     "variablen": [
-      { "symbol": "a, b", "bedeutung": "Summanden der Klammer", "einheit": "beliebig" },
-      { "symbol": "n", "bedeutung": "Exponent (natürliche Zahl)", "einheit": "dimensionslos" },
-      { "symbol": "C(n,k)", "bedeutung": "Binomialkoeffizient 'n über k' = n!/(k!(n−k)!)", "einheit": "dimensionslos" }
+      {
+        "symbol": "f",
+        "bedeutung": "Äußere Funktion",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "g",
+        "bedeutung": "Innere Funktion",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "f', g'",
+        "bedeutung": "Ableitungen",
+        "einheit": "dimensionslos"
+      }
     ],
-    "hintergrund": "Blaise Pascal systematisierte 1654 das nach ihm benannte Dreieck, obwohl der Lehrsatz älter ist. Isaac Newton verallgemeinerte ihn 1665 auf reelle Exponenten (Newton'sche Binomialreihe).",
-    "beispiel": "(x+1)³ = C(3,0)x³ + C(3,1)x² + C(3,2)x + C(3,3) = x³ + 3x² + 3x + 1. Anwendung: (a−b)² = a²−2ab+b² ist der 2. binomische Lehrsatz.",
-    "anwendung": "Kombinatorik, Wahrscheinlichkeitsrechnung (Binomialverteilung), Algebra, Numerik (Taylor-Entwicklung), Wirtschaft",
-    "quellen": ["Pascal, B. (1654). Traité du triangle arithmétique.", "Bronstein, I.N. et al. (2005). Taschenbuch der Mathematik."],
-    "verwandte": ["bayes-theorem", "potenzregel-ableitung"],
+    "hintergrund": "Merkhilfe: \"Außen ableiten, innen stehen lassen, mal innere Ableitung.\" Leibniz-Notation: dy/dx = (dy/du)·(du/dx). Grundlage des Backpropagation-Algorithmus in neuronalen Netzen.",
+    "beispiel": "sin(x²): äußere Funktion sin, innere x². → cos(x²) · 2x. Kontrolle bei x = 0: cos(0)·0 = 0 (lokales Minimum) ✓",
+    "anwendung": "Machine Learning (Backpropagation), Physik (Relativität, verkettete Koordinatentransformationen)",
+    "quellen": [
+      "Leibniz, G.W. (1684). Nova methodus."
+    ],
+    "verwandte": [
+      "produktregel-ableitung",
+      "quotientenregel",
+      "taylor-reihe"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend"
+  },
+  {
+    "slug": "taylor-reihe",
+    "name": "Taylor-Reihe",
+    "latex": "f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!} (x-a)^n",
+    "symbol": "f(x) = Σ f⁽ⁿ⁾(a)/n! · (x−a)ⁿ",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis",
+    "beschreibung": "Die Taylor-Reihe beschreibt eine Funktion als Potenzreihe um einen Entwicklungspunkt a.",
+    "einheiten": "Dimensionslos (Analysis)",
+    "variablen": [
+      {
+        "symbol": "f⁽ⁿ⁾(a)",
+        "bedeutung": "n-te Ableitung von f am Punkt a",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "n!",
+        "bedeutung": "Fakultät von n",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "a",
+        "bedeutung": "Entwicklungspunkt",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Brook Taylor 1715, Colin Maclaurin 1742 (Spezialfall a = 0). Fundamentale Bedeutung: Jede glatte Funktion kann lokal durch Polynome approximiert werden. eˣ = 1 + x + x²/2! + x³/3! + ... (konvergiert überall).",
+    "beispiel": "sin(x) um a = 0: sin(x) = x − x³/6 + x⁵/120 − ... Für x = 0,1: sin(0,1) ≈ 0,1 − 0,000167 ≈ 0,09983. Exakt: 0,09983...",
+    "anwendung": "Numerische Mathematik, Physik (Näherungen), Signal-Processing, Taschenrechner-Implementierungen",
+    "quellen": [
+      "Taylor, B. (1715). Methodus incrementorum directa et inversa."
+    ],
+    "verwandte": [
+      "eulersche-formel",
+      "produktregel-ableitung",
+      "fourier-transformation"
+    ],
+    "abiturRelevant": false,
+    "schwierigkeit": "universitaet"
+  },
+  {
+    "slug": "bayes-theorem",
+    "name": "Satz von Bayes",
+    "latex": "P(A|B) = \\frac{P(B|A) \\cdot P(A)}{P(B)}",
+    "symbol": "P(A|B) = P(B|A)·P(A) / P(B)",
+    "kategorie": "mathematik",
+    "unterkategorie": "Stochastik / Wahrscheinlichkeitsrechnung",
+    "beschreibung": "Der Satz von Bayes beschreibt die Umkehrung bedingter Wahrscheinlichkeiten.",
+    "einheiten": "Alle Werte dimensionslos, zwischen 0 und 1",
+    "variablen": [
+      {
+        "symbol": "P(A|B)",
+        "bedeutung": "Bedingte Wahrscheinlichkeit von A, gegeben B (Posterior)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "P(B|A)",
+        "bedeutung": "Bedingte Wahrscheinlichkeit von B, gegeben A (Likelihood)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "P(A)",
+        "bedeutung": "A-priori-Wahrscheinlichkeit von A",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "P(B)",
+        "bedeutung": "Randwahrscheinlichkeit von B",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Thomas Bayes (1701–1761) entwickelte das Theorem posthum veröffentlicht 1763. Grundlage der Bayesschen Statistik und des Maschinenlernens. Gegenintuitiv: Ein positiver Test bei 1% Basisrate und 99% Sensitivität liefert nur 50% Wahrscheinlichkeit einer Erkrankung.",
+    "beispiel": "Medizinischer Test: Krankheit tritt mit 1% auf (P(K) = 0,01). Test ist 95% sensitiv: P(+|K) = 0,95. Falsch-Positiv-Rate: 5%: P(+|¬K) = 0,05. P(K|+) = (0,95×0,01)/(0,95×0,01 + 0,05×0,99) ≈ 16%.",
+    "anwendung": "Medizinische Diagnostik, Spam-Filter, Machine Learning, Forensik, Risikoanalyse",
+    "quellen": [
+      "Bayes, T. (1763). An essay towards solving a problem in the doctrine of chances. Philosophical Transactions."
+    ],
+    "verwandte": [
+      "normalverteilung",
+      "erwartungswert",
+      "stochastik-grundlagen"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten"
+  },
+  {
+    "slug": "normalverteilung",
+    "name": "Normalverteilung (Gaußsche Glockenkurve)",
+    "latex": "f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}",
+    "symbol": "f(x) = 1/(σ√2π) · e^(−(x−μ)²/2σ²)",
+    "kategorie": "mathematik",
+    "unterkategorie": "Stochastik",
+    "beschreibung": "Die Normalverteilung ist die wichtigste Wahrscheinlichkeitsverteilung — sie beschreibt viele natürliche Phänomene.",
+    "einheiten": "f(x) in 1/[x] · μ und σ in gleicher Einheit wie x",
+    "variablen": [
+      {
+        "symbol": "μ",
+        "bedeutung": "Erwartungswert (Mittelwert)",
+        "einheit": "gleich wie X"
+      },
+      {
+        "symbol": "σ",
+        "bedeutung": "Standardabweichung",
+        "einheit": "gleich wie X"
+      },
+      {
+        "symbol": "σ²",
+        "bedeutung": "Varianz",
+        "einheit": "Quadrat davon"
+      }
+    ],
+    "hintergrund": "Carl Friedrich Gauß verwendete sie 1809 zur Beschreibung von Messfehlern. Zentraler Grenzwertsatz: Summen vieler unabhängiger Zufallsvariablen sind normalverteilt. 68-95-99,7-Regel: 68% der Werte liegen in μ±σ, 95% in μ±2σ, 99,7% in μ±3σ.",
+    "beispiel": "Körpergröße Männer: μ = 178 cm, σ = 7 cm. P(165 < X < 191) = P(μ−2σ < X < μ+2σ) ≈ 95%.",
+    "anwendung": "Qualitätskontrolle (6-Sigma-Methode), Finanzmathematik (Black-Scholes), Bildverarbeitung, IQ-Tests",
+    "quellen": [
+      "Gauß, C.F. (1809). Theoria Motus Corporum Coelestium. Hamburg."
+    ],
+    "verwandte": [
+      "bayes-theorem",
+      "standardabweichung",
+      "zentralgrenzwertsatz"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten"
+  },
+  {
+    "slug": "potenzregel",
+    "name": "Potenzregel der Differentiation",
+    "latex": "\\frac{d}{dx}(x^n) = n \\cdot x^{n-1}",
+    "symbol": "d/dx(xⁿ) = n·xⁿ⁻¹",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis",
+    "beschreibung": "Die Potenzregel ist die fundamentalste Ableitungsregel: Sie erlaubt die Ableitung jedes Monoms unmittelbar — Einstieg in die gesamte Differentialrechnung.",
+    "einheiten": "Dimensionslos (abstrakt)",
+    "variablen": [
+      {
+        "symbol": "x",
+        "bedeutung": "Unabhängige Variable",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "n",
+        "bedeutung": "Exponent (beliebige reelle Zahl)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "d/dx",
+        "bedeutung": "Ableitungsoperator nach x",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Newton und Leibniz entwickelten die Differentialrechnung (1670er). Die Potenzregel gilt für alle reellen n: n = 0 (Konstante → 0), n = 1 (linear → 1), n = −1 (1/x → −1/x²), n = 1/2 (√x → 1/(2√x)).",
+    "beispiel": "f(x) = 3x⁴ → f'(x) = 12x³. g(x) = x⁻² → g'(x) = −2x⁻³. h(x) = √x = x^(1/2) → h'(x) = (1/2)x^(−1/2) = 1/(2√x).",
+    "anwendung": "Physik (Geschwindigkeit/Beschleunigung), Optimierungsprobleme, Ingenieurwesen, Ökonometrie, Signalverarbeitung",
+    "quellen": [
+      "Forster, O. (2016). Analysis 1. Springer Vieweg."
+    ],
+    "verwandte": [
+      "produktregel-ableitung",
+      "kettenregel-ableitung",
+      "taylor-reihe"
+    ],
+    "abiturRelevant": false,
     "schwierigkeit": "grundlegend"
   }
 ]

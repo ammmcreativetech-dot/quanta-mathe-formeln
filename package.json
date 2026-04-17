@@ -1,6 +1,6 @@
 {
   "name": "quanta-mathe-formeln",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "6 wissenschaftlich aufbereitete Mathematik-Formeln für Studium und Universität — Analysis (Fundamentalsatz, Fourier-Transformation), Stochastik (Bayes-Theorem, Normalverteilung), Algebra (Eulersche Formel, Binomischer Lehrsatz). Mit LaTeX, Variablen, Herleitung. Von Quanta (quanta-study.de).",
   "main": "index.js",
   "types": "index.d.ts",
