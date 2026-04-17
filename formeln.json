@@ -1,0 +1,129 @@
+[
+  {
+    "slug": "bayes-theorem",
+    "name": "Bayes'sches Theorem",
+    "symbol": "P(A|B) = P(B|A)·P(A)/P(B)",
+    "latex": "P(A|B) = \\frac{P(B|A) \\cdot P(A)}{P(B)}",
+    "kategorie": "mathematik",
+    "unterkategorie": "Stochastik",
+    "beschreibung": "Das Bayes-Theorem berechnet bedingte Wahrscheinlichkeiten. Es beschreibt, wie die Wahrscheinlichkeit eines Ereignisses A aktualisiert wird, wenn neue Information B bekannt wird.",
+    "einheiten": "Alle Werte dimensionslos (Wahrscheinlichkeiten zwischen 0 und 1)",
+    "variablen": [
+      { "symbol": "P(A|B)", "bedeutung": "Bedingte Wahrscheinlichkeit von A gegeben B (Posterior)", "einheit": "[0,1]" },
+      { "symbol": "P(B|A)", "bedeutung": "Bedingte Wahrscheinlichkeit von B gegeben A (Likelihood)", "einheit": "[0,1]" },
+      { "symbol": "P(A)", "bedeutung": "Vorab-Wahrscheinlichkeit von A (Prior)", "einheit": "[0,1]" },
+      { "symbol": "P(B)", "bedeutung": "Gesamt-Wahrscheinlichkeit von B (Evidenz)", "einheit": "[0,1]" }
+    ],
+    "hintergrund": "Thomas Bayes formulierte das Theorem posthum 1763. Es ist die Grundlage der Bayesschen Statistik und moderner KI/Machine Learning. Es ermöglicht, Wahrscheinlichkeiten mit neuer Information zu aktualisieren.",
+    "beispiel": "Medizinischer Test: Krankheits-Prävalenz P(K)=0,01, Test-Sensitivität P(+|K)=0,99, Spezifität P(–|K')=0,95 → P(+)=0,99×0,01+0,05×0,99=0,0594 → P(K|+) = (0,99×0,01)/0,0594 ≈ 0,167 (nur 16,7% wirklich krank!).",
+    "anwendung": "Medizinische Diagnostik, Spam-Filter, ML/KI (Naive Bayes, neuronale Netze), Finanzmarktanalyse, Forensik",
+    "quellen": ["Bayes, T. (1763). An Essay towards solving a Problem in the Doctrine of Chances. Phil. Trans. Roy. Soc.", "Jaynes, E.T. (2003). Probability Theory: The Logic of Science."],
+    "verwandte": ["normalverteilung"],
+    "schwierigkeit": "fortgeschritten"
+  },
+  {
+    "slug": "fourier-transformation",
+    "name": "Fourier-Transformation",
+    "symbol": "f̂(ξ) = ∫f(x)e^(−2πixξ)dx",
+    "latex": "\\hat{f}(\\xi) = \\int_{-\\infty}^{\\infty} f(x)\\, e^{-2\\pi i x \\xi}\\, dx",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis",
+    "beschreibung": "Die Fourier-Transformation zerlegt eine Funktion f(x) in ihre Frequenzanteile. Das Ergebnis f̂(ξ) gibt an, wie stark jede Frequenz ξ in f(x) vorhanden ist.",
+    "einheiten": "x in [s] (Zeit), ξ in [1/s] (Frequenz), f̂(ξ) komplex",
+    "variablen": [
+      { "symbol": "f̂(ξ)", "bedeutung": "Fourier-Transformierte (Frequenzspektrum)", "einheit": "komplex" },
+      { "symbol": "f(x)", "bedeutung": "Originalfunktion (Zeitdomäne)", "einheit": "beliebig" },
+      { "symbol": "ξ", "bedeutung": "Frequenz", "einheit": "Hz" },
+      { "symbol": "e^(−2πixξ)", "bedeutung": "Komplexe Exponentialfunktion (Euler)", "einheit": "dimensionslos" }
+    ],
+    "hintergrund": "Jean-Baptiste Joseph Fourier zeigte 1822, dass (fast) jede periodische Funktion als Summe von Sinus- und Kosinus-Schwingungen dargestellt werden kann. Die diskrete Variante FFT ist ein Schlüsselalgorithmus der modernen Signalverarbeitung.",
+    "beispiel": "Rechteckpuls f(t) der Breite T: f̂(ξ) = T·sinc(Tξ). Im Spektrum sieht man eine si-Funktion — breite Pulse haben schmale Spektren und umgekehrt.",
+    "anwendung": "Signalverarbeitung (MP3, JPEG-Kompression), MRT, Telekommunikation, Quantenmechanik, Zeitreihenanalyse",
+    "quellen": ["Fourier, J.B.J. (1822). Théorie analytique de la chaleur.", "Stein, E. & Shakarchi, R. (2003). Fourier Analysis: An Introduction."],
+    "verwandte": ["eulersche-formel", "fundamentalsatz-analysis"],
+    "schwierigkeit": "universitaet"
+  },
+  {
+    "slug": "fundamentalsatz-analysis",
+    "name": "Fundamentalsatz der Analysis",
+    "symbol": "d/dx ∫ₐˣ f(t)dt = f(x)",
+    "latex": "\\frac{d}{dx}\\int_a^x f(t)\\,dt = f(x)",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis",
+    "beschreibung": "Der Fundamentalsatz der Analysis verknüpft Differentiation und Integration: Die Ableitung des Integrals von f ist gleich f selbst. Ableiten und Integrieren sind inverse Operationen.",
+    "einheiten": "Abhängig von f(x); allgemein: [f(x)] = eine Einheit weniger als das Integral",
+    "variablen": [
+      { "symbol": "f(t)", "bedeutung": "Integrierbare Funktion", "einheit": "beliebig" },
+      { "symbol": "a", "bedeutung": "Untere Integrationsgrenze (konstant)", "einheit": "gleich wie t" },
+      { "symbol": "x", "bedeutung": "Obere Integrationsgrenze (Variable)", "einheit": "gleich wie t" }
+    ],
+    "hintergrund": "Isaac Newton und Gottfried Wilhelm Leibniz entdeckten den Zusammenhang unabhängig voneinander (1660er–1680er). Augustin-Louis Cauchy und Bernhard Riemann formulierten ihn rigoros im 19. Jahrhundert.",
+    "beispiel": "F(x) = ∫₀ˣ 2t dt = x². Ableitung: F'(x) = 2x = f(x) ✓. Anwendung zur Berechnung: ∫₀³ 2t dt = [t²]₀³ = 9.",
+    "anwendung": "Physik (Arbeit, Energie, Impuls), Wirtschaft (Konsumentenrente), Wahrscheinlichkeitsrechnung, Ingenieurwesen",
+    "quellen": ["Newton, I. (1671). Methodus Fluxionum (posthum 1736).", "Leibniz, G.W. (1684). Nova methodus pro maximis et minimis. Acta Eruditorum."],
+    "verwandte": ["potenzregel-ableitung", "fourier-transformation"],
+    "schwierigkeit": "grundlegend"
+  },
+  {
+    "slug": "eulersche-formel",
+    "name": "Eulersche Formel",
+    "symbol": "e^(iπ) + 1 = 0",
+    "latex": "e^{i\\pi} + 1 = 0",
+    "kategorie": "mathematik",
+    "unterkategorie": "Komplexe Analysis",
+    "beschreibung": "Die Eulersche Identität verbindet die fünf wichtigsten mathematischen Konstanten: e, i, π, 1 und 0 in einer einzigen eleganten Gleichung. Die allgemeine Eulersche Formel lautet: e^(ix) = cos(x) + i·sin(x).",
+    "einheiten": "Dimensionslos; x in Radiant [rad]",
+    "variablen": [
+      { "symbol": "e", "bedeutung": "Eulersche Zahl (Basis des natürlichen Logarithmus)", "einheit": "≈ 2,71828" },
+      { "symbol": "i", "bedeutung": "Imaginäre Einheit (i² = −1)", "einheit": "dimensionslos" },
+      { "symbol": "π", "bedeutung": "Kreiszahl Pi", "einheit": "≈ 3,14159" }
+    ],
+    "hintergrund": "Leonhard Euler formulierte 1748 die allgemeine Formel e^(ix) = cos x + i sin x. Die spezielle Form mit x = π ergibt die 'schönste Formel der Mathematik' — sie verbindet Analysis, Geometrie und Algebra.",
+    "beispiel": "e^(iπ/2) = cos(π/2) + i·sin(π/2) = 0 + i·1 = i. Das bedeutet: Im Einheitskreis der komplexen Zahlenebene entspricht e^(iθ) einer Drehung um den Winkel θ.",
+    "anwendung": "Signalverarbeitung (Fourier: e^(iωt) statt sin/cos), Quantenmechanik (Wellenfunktion), Elektrotechnik (Wechselstrom-Phasoren), Strömungsmechanik",
+    "quellen": ["Euler, L. (1748). Introductio in Analysin Infinitorum.", "Nahin, P.J. (2006). Dr. Euler's Fabulous Formula."],
+    "verwandte": ["fourier-transformation", "fundamentalsatz-analysis"],
+    "schwierigkeit": "fortgeschritten"
+  },
+  {
+    "slug": "potenzregel-ableitung",
+    "name": "Potenzregel für Ableitungen",
+    "symbol": "d/dx xⁿ = n·xⁿ⁻¹",
+    "latex": "\\frac{d}{dx} x^n = n \\cdot x^{n-1}",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis",
+    "beschreibung": "Die Potenzregel ist die grundlegendste Ableitungsregel: Die Ableitung von xⁿ ist n·xⁿ⁻¹. Sie gilt für alle reellen Exponenten n.",
+    "einheiten": "Gleiche Einheiten wie [x^(n−1)]",
+    "variablen": [
+      { "symbol": "x", "bedeutung": "Variable", "einheit": "beliebig" },
+      { "symbol": "n", "bedeutung": "Exponent", "einheit": "dimensionslos (reell)" }
+    ],
+    "hintergrund": "Die Potenzregel lässt sich aus der Definition der Ableitung als Grenzwert herleiten: f'(x) = lim[h→0] (f(x+h)−f(x))/h. Newton und Leibniz erkannten diese Regel als Spezialfall des Binomialsatzes.",
+    "beispiel": "f(x) = x³ → f'(x) = 3x². Bei x=2: f'(2) = 3×4 = 12 (Steigung der Tangente an x³ bei x=2). Kettenpflanzung: f(x) = (x²+1)⁵ → f'(x) = 5(x²+1)⁴ × 2x.",
+    "anwendung": "Physik (Geschwindigkeit und Beschleunigung aus Weg), Optimierungsaufgaben, Ökonometrie, Kurvendiskussion",
+    "quellen": ["Leibniz, G.W. (1684). Nova methodus pro maximis et minimis.", "Forster, O. (2008). Analysis 1. Vieweg+Teubner."],
+    "verwandte": ["fundamentalsatz-analysis", "binomischer-lehrsatz"],
+    "schwierigkeit": "grundlegend"
+  },
+  {
+    "slug": "binomischer-lehrsatz",
+    "name": "Binomischer Lehrsatz",
+    "symbol": "(a+b)ⁿ = Σ C(n,k) aⁿ⁻ᵏ bᵏ",
+    "latex": "(a+b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k} b^k",
+    "kategorie": "mathematik",
+    "unterkategorie": "Algebra",
+    "beschreibung": "Der binomische Lehrsatz gibt an, wie man eine Potenz einer Summe (a+b)ⁿ ausmultipliziert. Die Koeffizienten C(n,k) sind die Binomialkoeffizienten aus dem Pascalschen Dreieck.",
+    "einheiten": "Dimensionslos; a, b beliebige reelle oder komplexe Zahlen",
+    "variablen": [
+      { "symbol": "a, b", "bedeutung": "Summanden der Klammer", "einheit": "beliebig" },
+      { "symbol": "n", "bedeutung": "Exponent (natürliche Zahl)", "einheit": "dimensionslos" },
+      { "symbol": "C(n,k)", "bedeutung": "Binomialkoeffizient 'n über k' = n!/(k!(n−k)!)", "einheit": "dimensionslos" }
+    ],
+    "hintergrund": "Blaise Pascal systematisierte 1654 das nach ihm benannte Dreieck, obwohl der Lehrsatz älter ist. Isaac Newton verallgemeinerte ihn 1665 auf reelle Exponenten (Newton'sche Binomialreihe).",
+    "beispiel": "(x+1)³ = C(3,0)x³ + C(3,1)x² + C(3,2)x + C(3,3) = x³ + 3x² + 3x + 1. Anwendung: (a−b)² = a²−2ab+b² ist der 2. binomische Lehrsatz.",
+    "anwendung": "Kombinatorik, Wahrscheinlichkeitsrechnung (Binomialverteilung), Algebra, Numerik (Taylor-Entwicklung), Wirtschaft",
+    "quellen": ["Pascal, B. (1654). Traité du triangle arithmétique.", "Bronstein, I.N. et al. (2005). Taschenbuch der Mathematik."],
+    "verwandte": ["bayes-theorem", "potenzregel-ableitung"],
+    "schwierigkeit": "grundlegend"
+  }
+]

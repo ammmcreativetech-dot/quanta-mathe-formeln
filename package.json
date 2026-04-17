@@ -1,0 +1,47 @@
+{
+  "name": "quanta-mathe-formeln",
+  "version": "1.0.0",
+  "description": "6 wissenschaftlich aufbereitete Mathematik-Formeln für Studium und Universität — Analysis (Fundamentalsatz, Fourier-Transformation), Stochastik (Bayes-Theorem, Normalverteilung), Algebra (Eulersche Formel, Binomischer Lehrsatz). Mit LaTeX, Variablen, Herleitung. Von Quanta (quanta-study.de).",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "formeln.json"
+  ],
+  "scripts": {
+    "test": "node -e \"const f = require('.'); console.log('✅', f.formeln.length, 'Mathe-Formeln geladen');\""
+  },
+  "keywords": [
+    "mathematik",
+    "mathe-formeln",
+    "mathematics",
+    "analysis",
+    "lineare-algebra",
+    "stochastik",
+    "statistik",
+    "fourier",
+    "bayes",
+    "euler",
+    "normalverteilung",
+    "latex",
+    "mint",
+    "studium",
+    "university",
+    "fsrs",
+    "spaced-repetition",
+    "quanta",
+    "education",
+    "germany"
+  ],
+  "author": "Quanta <ammm.creativetech@gmail.com> (https://quanta-study.de)",
+  "license": "CC-BY-4.0",
+  "homepage": "https://quanta-study.de/mathematik-lernen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ammmcreativetech-dot/quanta-mathe-formeln.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ammmcreativetech-dot/quanta-mathe-formeln/issues"
+  }
+}
