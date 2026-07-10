@@ -27,12 +27,49 @@
       "Euklid (ca. 300 v. Chr.). Elemente, Buch I, Satz 47."
     ],
     "verwandte": [
-      "kosinussatz",
+      "quadratische-formel",
       "eulersche-formel",
-      "vektorrechnung"
+      "potenzregel"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "grundlegend"
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Satz_des_Pythagoras"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "a^2+b^2=c^2",
+      "a²+b²=c²",
+      "a2+b2=c2",
+      "a*a+b*b=c*c",
+      "a hoch 2 plus b hoch 2 gleich c hoch 2",
+      "Pithagoras",
+      "Phytagoras",
+      "Satz des Pythagoras",
+      "Pythagorean theorem",
+      "rechtwinkliges Dreieck Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/pythagorean-theorem",
+    "herleitung": {
+      "gueltigkeit": "Gilt ausschließlich in rechtwinkligen Dreiecken in euklidischer Geometrie.",
+      "schritte": [
+        "Baue Quadrate über allen drei Seiten.",
+        "Vergleiche die Flächenzerlegung: c² setzt sich aus a² und b² zusammen."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Hypotenuse berechnen",
+        "latex": "c = \\sqrt{a^2+b^2}",
+        "hinweis": "c ist immer die Seite gegenüber dem rechten Winkel."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Eine Kathete fälschlich als Hypotenuse einsetzen.",
+        "korrektur": "Zuerst den rechten Winkel finden; gegenüber liegt c."
+      }
+    ]
   },
   {
     "slug": "quadratische-formel",
@@ -73,11 +110,47 @@
     ],
     "verwandte": [
       "pythagorean-theorem",
-      "binomische-formeln",
-      "eulersche-formel"
+      "eulersche-formel",
+      "produktregel-ableitung"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "grundlegend"
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Quadratische_Gleichung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "x=(-b±sqrt(b^2-4ac))/2a",
+      "x=(-b±wurzel(b2-4ac))/2a",
+      "(-b+/-sqrt(D))/2a",
+      "abc Formel",
+      "Mitternachtsformel",
+      "Lösungsformel quadratische Gleichung",
+      "quadratic formula",
+      "pq-Formel",
+      "Diskriminante Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/quadratische-formel",
+    "herleitung": {
+      "gueltigkeit": "Gilt für quadratische Gleichungen ax² + bx + c = 0 mit a ≠ 0.",
+      "schritte": [
+        "Teile durch a und bringe c/a auf die andere Seite.",
+        "Ergänze (b/2a)², ziehe die Wurzel und löse nach x."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Diskriminante bestimmen",
+        "latex": "D = b^2 - 4ac",
+        "hinweis": "D entscheidet über Anzahl und Art der reellen Lösungen."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Das ± vor der Wurzel vergessen.",
+        "korrektur": "Bei D > 0 entstehen zwei Lösungen."
+      }
+    ]
   },
   {
     "slug": "eulersche-formel",
@@ -113,11 +186,46 @@
     ],
     "verwandte": [
       "taylor-reihe",
-      "fourier-transformation",
-      "komplexe-zahlen"
+      "produktregel-ableitung",
+      "potenzregel"
     ],
     "abiturRelevant": false,
-    "schwierigkeit": "universitaet"
+    "schwierigkeit": "universitaet",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Eulersche_Formel"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "e^(ix)=cos(x)+i*sin(x)",
+      "e^ix = cosx + i sinx",
+      "e^(i*pi)+1=0",
+      "e hoch i pi gleich minus 1",
+      "Eulersche Identität",
+      "Euler's formula",
+      "e^(iπ) = -1",
+      "komplexe Exponentialfunktion"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/eulersche-formel",
+    "herleitung": {
+      "gueltigkeit": "Gilt für reelle Winkel φ und komplexe Exponentialfunktion; Winkel werden im Bogenmaß interpretiert.",
+      "schritte": [
+        "Setze iφ in die Exponentialreihe ein.",
+        "Gerade Potenzen ergeben cos(φ), ungerade Potenzen i·sin(φ)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Kosinus aus Exponentialform",
+        "latex": "\\cos\\varphi = \\frac{e^{i\\varphi}+e^{-i\\varphi}}{2}",
+        "hinweis": "Nützlich für Fourier-Rechnung und komplexe Signale."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Gradmaß statt Bogenmaß verwenden.",
+        "korrektur": "In Analysis und komplexer Exponentialfunktion ist φ im Bogenmaß."
+      }
+    ]
   },
   {
     "slug": "produktregel-ableitung",
@@ -148,11 +256,45 @@
     ],
     "verwandte": [
       "kettenregel-ableitung",
-      "quotientenregel",
+      "potenzregel",
       "taylor-reihe"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "grundlegend"
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Produktregel"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "(f*g)'=f'g+fg'",
+      "(uv)'=u'v+uv'",
+      "d/dx(fg)=f'g+fg'",
+      "Produktregel Ableitung",
+      "Produktregel Differentialrechnung",
+      "Strich normal plus normal Strich",
+      "product rule derivative"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/produktregel-ableitung",
+    "herleitung": {
+      "gueltigkeit": "Gilt, wenn beide Faktoren an der betrachteten Stelle differenzierbar sind.",
+      "schritte": [
+        "Schreibe f(x+h)g(x+h)-f(x)g(x).",
+        "Addiere und subtrahiere f(x+h)g(x), dann entstehen zwei Differenzenquotienten."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Produkt aus bekannter Ableitung rekonstruieren",
+        "latex": "(fg)' - f'g = fg'",
+        "hinweis": "Algebraisch nützlich, praktisch wird meist direkt f'g + fg' genutzt."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Nur die Ableitungen multiplizieren: (fg)' = f'g'.",
+        "korrektur": "Richtig ist f'g + fg'."
+      }
+    ]
   },
   {
     "slug": "kettenregel-ableitung",
@@ -188,11 +330,45 @@
     ],
     "verwandte": [
       "produktregel-ableitung",
-      "quotientenregel",
+      "potenzregel",
       "taylor-reihe"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "grundlegend"
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Kettenregel"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "(f(g(x)))'=f'(g(x))*g'(x)",
+      "außere mal innere Ableitung",
+      "d/dx f(g(x))",
+      "Kettenregel Ableitung",
+      "verkettete Funktionen ableiten",
+      "chain rule derivative",
+      "innere äußere Ableitung Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/kettenregel-ableitung",
+    "herleitung": {
+      "gueltigkeit": "Gilt für verkettete Funktionen, wenn innere und äußere Funktion an den passenden Stellen differenzierbar sind.",
+      "schritte": [
+        "Setze u = g(x).",
+        "Dann gilt dy/dx = dy/du · du/dx."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Innere Ableitung isolieren",
+        "latex": "g'(x) = \\frac{(f\\circ g)'(x)}{f'(g(x))}",
+        "hinweis": "Nur sinnvoll, wenn f'(g(x)) nicht null ist."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Die innere Ableitung vergessen.",
+        "korrektur": "Nach dem äußeren Ableiten immer mit g'(x) multiplizieren."
+      }
+    ]
   },
   {
     "slug": "taylor-reihe",
@@ -229,10 +405,44 @@
     "verwandte": [
       "eulersche-formel",
       "produktregel-ableitung",
-      "fourier-transformation"
+      "potenzregel"
     ],
     "abiturRelevant": false,
-    "schwierigkeit": "universitaet"
+    "schwierigkeit": "universitaet",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Taylorreihe"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "f(x)=Σ f^n(a)/n! (x-a)^n",
+      "Taylorreihe Formel",
+      "Taylor Polynom",
+      "Maclaurin Reihe",
+      "Taylor Entwicklung",
+      "Taylor series",
+      "Potenzreihenentwicklung Funktion"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/taylor-reihe",
+    "herleitung": {
+      "gueltigkeit": "Die Taylorreihe beschreibt Funktionen lokal; Gleichheit mit der Funktion verlangt Konvergenz und verschwindenden Restterm.",
+      "schritte": [
+        "Setze P(x)=Σ c_n(x-a)^n.",
+        "Aus P^{(n)}(a)=f^{(n)}(a) folgt c_n=f^{(n)}(a)/n!."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Taylor-Koeffizient",
+        "latex": "c_n = \\frac{f^{(n)}(a)}{n!}",
+        "hinweis": "Jeder Koeffizient speichert eine Ableitung am Entwicklungspunkt."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Konvergenzradius und Restterm ignorieren.",
+        "korrektur": "Eine Taylorreihe ist nicht automatisch überall gleich der Funktion."
+      }
+    ]
   },
   {
     "slug": "bayes-theorem",
@@ -273,11 +483,46 @@
     ],
     "verwandte": [
       "normalverteilung",
-      "erwartungswert",
-      "stochastik-grundlagen"
+      "logistisches-wachstum",
+      "michaelis-menten"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "fortgeschritten"
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Satz_von_Bayes"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "P(A|B)=P(B|A)*P(A)/P(B)",
+      "P(A gegeben B)",
+      "P(A|B) Formel",
+      "bedingte Wahrscheinlichkeit Formel",
+      "Satz von Bayes",
+      "Bayes' theorem",
+      "Bayesscher Satz",
+      "Bayes Formel Stochastik"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/bayes-theorem",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Ereignisse mit P(B)>0; Wahrscheinlichkeiten müssen konsistent auf demselben Grundraum definiert sein.",
+      "schritte": [
+        "P(A∩B)=P(A|B)P(B).",
+        "Ebenso P(A∩B)=P(B|A)P(A); nach P(A|B) umstellen."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Evidenz berechnen",
+        "latex": "P(B)=P(B|A)P(A)+P(B|\\neg A)P(\\neg A)",
+        "hinweis": "Die Evidenz ist häufig der entscheidende Nenner."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "P(A|B) und P(B|A) gleichsetzen.",
+        "korrektur": "Bayes zeigt gerade, wie man zwischen beiden Richtungen umrechnet."
+      }
+    ]
   },
   {
     "slug": "normalverteilung",
@@ -313,11 +558,45 @@
     ],
     "verwandte": [
       "bayes-theorem",
-      "standardabweichung",
-      "zentralgrenzwertsatz"
+      "logistisches-wachstum",
+      "heisenberg-unschaerfe"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "fortgeschritten"
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Normalverteilung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "f(x)=1/(sigma*sqrt(2pi))*e^(-(x-mu)^2/(2*sigma^2))",
+      "1/(sigma*sqrt(2*pi)) * e^(-0.5*((x-mu)/sigma)^2)",
+      "Gaußverteilung Formel",
+      "Glockenkurve Formel",
+      "normal distribution formula",
+      "Normalverteilung µ sigma",
+      "Standardnormalverteilung"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/normalverteilung",
+    "herleitung": {
+      "gueltigkeit": "Gilt als Modell für stetige Größen, deren Streuung durch viele kleine unabhängige Einflüsse entsteht.",
+      "schritte": [
+        "Der Exponentialterm bestraft quadratische Abweichungen vom Mittelwert.",
+        "Der Faktor 1/(σ√(2π)) normiert die Fläche unter der Kurve."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Standardisierung",
+        "latex": "z = \\frac{x-\\mu}{\\sigma}",
+        "hinweis": "Mit z-Werten lassen sich Tabellen und Standardnormalverteilung nutzen."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "σ und σ² verwechseln.",
+        "korrektur": "σ ist Standardabweichung; σ² ist Varianz."
+      }
+    ]
   },
   {
     "slug": "potenzregel",
@@ -357,6 +636,3846 @@
       "taylor-reihe"
     ],
     "abiturRelevant": false,
-    "schwierigkeit": "grundlegend"
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Potenzregel"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "d/dx(x^n)=n*x^(n-1)",
+      "x^n ableiten",
+      "x hoch n Ableitung",
+      "Potenzregel Ableitung",
+      "Ableitung Potenz",
+      "power rule derivative",
+      "x hoch n differenzieren",
+      "nx^(n-1)"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/potenzregel",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Potenzfunktionen x^n im jeweiligen Definitionsbereich, bei reellen Exponenten mit besonderer Vorsicht für x ≤ 0.",
+      "schritte": [
+        "Bei x^n kann man n gleiche Faktoren x differenzieren.",
+        "Jeder Term liefert x^{n-1}; zusammen entstehen n·x^{n-1}."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Stammfunktion als Gegenrichtung",
+        "latex": "\\int x^n dx = \\frac{x^{n+1}}{n+1}+C \\quad (n\\neq -1)",
+        "hinweis": "Die Gegenregel gilt nicht für n = -1."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Exponent nach vorne ziehen, aber Exponent nicht um 1 verringern.",
+        "korrektur": "Immer beide Schritte: n nach vorne und n-1 im Exponenten."
+      }
+    ]
+  },
+  {
+    "slug": "pq-formel",
+    "name": "pq-Formel",
+    "latex": "x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^{2} - q}",
+    "symbol": "x₁,₂ = −p/2 ± √((p/2)² − q)",
+    "kategorie": "mathematik",
+    "unterkategorie": "Algebra",
+    "beschreibung": "Die pq-Formel löst jede quadratische Gleichung in Normalform x² + px + q = 0, also mit dem Leitkoeffizienten 1.",
+    "einheiten": "Dimensionslos (Algebra)",
+    "variablen": [
+      {
+        "symbol": "p",
+        "bedeutung": "Koeffizient von x in der Normalform",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "q",
+        "bedeutung": "Absolutglied der Normalform",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "x₁, x₂",
+        "bedeutung": "Lösungen der Gleichung",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "D",
+        "bedeutung": "Diskriminante D = (p/2)² − q",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Die pq-Formel ist die deutsche Schulform der Lösungsformel für quadratische Gleichungen in Normalform. Sie entsteht durch quadratische Ergänzung. Der Ausdruck D = (p/2)² − q unter der Wurzel heißt Diskriminante: D > 0 bedeutet zwei Lösungen, D = 0 eine Doppellösung, D < 0 keine reelle Lösung. Gegenüber der ABC-Formel spart sie das Ablesen von a, verlangt aber vorheriges Normieren auf den Leitkoeffizienten 1.",
+    "beispiel": "x² − 6x + 8 = 0: p = −6, q = 8. x₁,₂ = 3 ± √(9 − 8) = 3 ± 1, also x₁ = 4, x₂ = 2. Probe: 4² − 6·4 + 8 = 0 ✓ und 2² − 6·2 + 8 = 0 ✓.",
+    "anwendung": "Nullstellen von Parabeln, Schnittpunkte von Funktionsgraphen, Wurf- und Bremswegaufgaben, Substitution bei biquadratischen Gleichungen",
+    "quellen": [
+      "Bronstein, I.N. et al. (2020). Taschenbuch der Mathematik. Springer."
+    ],
+    "verwandte": [
+      "quadratische-formel",
+      "binomische-formeln",
+      "potenzregel"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Quadratische_Gleichung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "x=-p/2±sqrt((p/2)^2-q)",
+      "x^2+px+q=0",
+      "pq Formel",
+      "p q Formel",
+      "minus p halbe plus minus wurzel",
+      "PQ-Formel Rechner",
+      "quadratische Gleichung Normalform",
+      "pq formula",
+      "Mitternachtsformel Unterschied"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/pq-formel",
+    "herleitung": {
+      "gueltigkeit": "Gilt nur für quadratische Gleichungen in Normalform x² + px + q = 0; steht ein Faktor vor x², zuerst durch ihn teilen. Reelle Lösungen existieren nur für (p/2)² − q ≥ 0.",
+      "schritte": [
+        "Ergänze x² + px zu (x + p/2)² − (p/2)² und bringe q auf die andere Seite.",
+        "Wurzelziehen und Auflösen nach x liefert x = −p/2 ± √((p/2)² − q)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Diskriminante bestimmen",
+        "latex": "D = \\left(\\frac{p}{2}\\right)^{2} - q",
+        "hinweis": "D > 0: zwei Lösungen, D = 0: eine Doppellösung, D < 0: keine reelle Lösung."
+      },
+      {
+        "ziel": "Satz von Vieta",
+        "latex": "x_{1} + x_{2} = -p, \\quad x_{1} \\cdot x_{2} = q",
+        "hinweis": "Schnelle Probe: Summe und Produkt der Lösungen müssen −p und q ergeben."
+      },
+      {
+        "ziel": "Scheitelstelle der Parabel",
+        "latex": "x_{S} = -\\frac{p}{2}",
+        "hinweis": "Die Lösungen liegen symmetrisch um die Scheitelstelle x = −p/2."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Vor x² steht ein Faktor a ≠ 1, trotzdem werden p und q direkt abgelesen.",
+        "korrektur": "Zuerst die ganze Gleichung durch a teilen, erst dann gilt die Normalform."
+      },
+      {
+        "fehler": "Vorzeichen von p falsch übernehmen: bei x² − 6x + 8 ist p = −6, nicht 6.",
+        "korrektur": "−p/2 wird dann +3; Vorzeichen konsequent mitführen."
+      },
+      {
+        "fehler": "Das ± vergessen und nur eine Lösung angeben.",
+        "korrektur": "Bei positiver Diskriminante gibt es immer zwei Lösungen."
+      },
+      {
+        "fehler": "(p/2)² als p²/2 rechnen.",
+        "korrektur": "Erst halbieren, dann quadrieren: (6/2)² = 9, nicht 36/2 = 18."
+      }
+    ]
+  },
+  {
+    "slug": "binomische-formeln",
+    "name": "Binomische Formeln",
+    "latex": "(a \\pm b)^{2} = a^{2} \\pm 2ab + b^{2}, \\quad (a+b)(a-b) = a^{2} - b^{2}",
+    "symbol": "(a ± b)² = a² ± 2ab + b²",
+    "kategorie": "mathematik",
+    "unterkategorie": "Algebra",
+    "beschreibung": "Die drei binomischen Formeln quadrieren Summen und Differenzen und faktorisieren rückwärts quadratische Terme.",
+    "einheiten": "Dimensionslos (Algebra)",
+    "variablen": [
+      {
+        "symbol": "a",
+        "bedeutung": "Erster Summand (Term oder Zahl)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "b",
+        "bedeutung": "Zweiter Summand (Term oder Zahl)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "2ab",
+        "bedeutung": "Gemischtes Glied, fehlt es, liegt kein Binom vor",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Die drei binomischen Formeln sind Spezialfälle des Distributivgesetzes: (a + b)² = a² + 2ab + b², (a − b)² = a² − 2ab + b² und (a + b)(a − b) = a² − b². Geometrisch entspricht die erste Formel der Zerlegung eines Quadrats mit Seitenlänge a + b in vier Teilflächen; so wurde sie bereits in Euklids Elementen behandelt. Rückwärts gelesen sind sie das wichtigste Werkzeug zum Faktorisieren und für die quadratische Ergänzung.",
+    "beispiel": "103² = (100 + 3)² = 100² + 2·100·3 + 3² = 10000 + 600 + 9 = 10609. Rückwärts: x² + 10x + 25 = (x + 5)², denn 2·x·5 = 10x und 5² = 25.",
+    "anwendung": "Terme vereinfachen und faktorisieren, quadratische Ergänzung, Scheitelpunktform, schnelles Kopfrechnen, Nenner rational machen",
+    "quellen": [
+      "Euklid (ca. 300 v. Chr.). Elemente, Buch II."
+    ],
+    "verwandte": [
+      "pq-formel",
+      "quadratische-formel",
+      "potenzregel"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Binomische_Formeln"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "(a+b)^2=a^2+2ab+b^2",
+      "(a-b)^2",
+      "(a+b)(a-b)=a^2-b^2",
+      "a plus b hoch 2",
+      "binomische Formel 1 2 3",
+      "binoische Formeln",
+      "Binome auflösen",
+      "binomial formulas",
+      "dritte binomische Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/binomische-formeln",
+    "herleitung": {
+      "gueltigkeit": "Gelten für beliebige reelle Terme a und b, in beide Richtungen: ausmultiplizieren und faktorisieren. Sie sind Spezialfälle des Distributivgesetzes, keine eigenständigen Axiome.",
+      "schritte": [
+        "(a + b)(a + b) = a² + ab + ba + b²; die gemischten Glieder addieren sich zu 2ab.",
+        "Mit b → −b folgt die zweite Formel, aus (a + b)(a − b) die dritte (±ab hebt sich)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Faktorisieren (rückwärts lesen)",
+        "latex": "a^{2} - b^{2} = (a+b)(a-b)",
+        "hinweis": "Differenzen von Quadraten zerfallen sofort in Linearfaktoren."
+      },
+      {
+        "ziel": "Quadratische Ergänzung",
+        "latex": "x^{2} + px = \\left(x + \\frac{p}{2}\\right)^{2} - \\left(\\frac{p}{2}\\right)^{2}",
+        "hinweis": "Grundlage der pq-Formel und der Scheitelpunktform."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "(a + b)² = a² + b² rechnen, das gemischte Glied 2ab weglassen.",
+        "korrektur": "Zahlentest: (2 + 3)² = 25, aber 4 + 9 = 13. 2ab gehört immer dazu."
+      },
+      {
+        "fehler": "Bei (2x + 3)² den Vorfaktor nicht mitquadrieren.",
+        "korrektur": "a = 2x, also a² = 4x²."
+      },
+      {
+        "fehler": "Bei (a − b)² das Minus auch vor b² setzen.",
+        "korrektur": "Nur das gemischte Glied ist negativ: a² − 2ab + b²."
+      }
+    ]
+  },
+  {
+    "slug": "ableitung-e-funktion",
+    "name": "Ableitung der e-Funktion",
+    "latex": "\\frac{d}{dx}\\, e^{x} = e^{x}, \\quad \\frac{d}{dx}\\, e^{kx} = k \\cdot e^{kx}",
+    "symbol": "(eˣ)' = eˣ",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis",
+    "beschreibung": "Die e-Funktion ist ihre eigene Ableitung; bei e^(kx) tritt nach der Kettenregel der Faktor k hinzu.",
+    "einheiten": "Dimensionslos (Analysis)",
+    "variablen": [
+      {
+        "symbol": "e",
+        "bedeutung": "Eulersche Zahl (≈ 2,71828)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "x",
+        "bedeutung": "Unabhängige Variable im Exponenten",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "k",
+        "bedeutung": "Konstanter Faktor im Exponenten (Wachstumsrate)",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Die e-Funktion ist bis auf konstante Vielfache die einzige Funktion, die mit ihrer eigenen Ableitung übereinstimmt. Genau diese Eigenschaft zeichnet die Basis e ≈ 2,71828 aus (Euler, 1748). Allgemein gilt (e^(kx))′ = k·e^(kx) nach der Kettenregel, und für a^x = e^(x·ln a) folgt (a^x)′ = ln(a)·a^x. Deshalb beschreibt die e-Funktion alle Prozesse, deren Änderungsrate proportional zum Bestand ist.",
+    "beispiel": "f(x) = 3e^(2x): f′(x) = 3·2·e^(2x) = 6e^(2x) (Kettenregel, innere Ableitung 2). Bei x = 0: f(0) = 3 und f′(0) = 6, die Steigung ist das k-Fache des Funktionswerts.",
+    "anwendung": "Exponentielles Wachstum und Zerfall, Differentialgleichungen, Populations- und Kapitalmodelle, Kurvendiskussion von e-Funktionen im Abitur",
+    "quellen": [
+      "Euler, L. (1748). Introductio in analysin infinitorum. Lausanne."
+    ],
+    "verwandte": [
+      "kettenregel-ableitung",
+      "ableitung-ln",
+      "potenzregel"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Exponentialfunktion"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "(e^x)'=e^x",
+      "e^x ableiten",
+      "e Funktion Ableitung",
+      "e hoch x abgeleitet",
+      "e^(2x) ableiten",
+      "Ableitung e^kx",
+      "derivative of e^x",
+      "e-Funktion Kettenregel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/ableitung-e-funktion",
+    "herleitung": {
+      "gueltigkeit": "Gilt für alle reellen x; die einfache Form (eˣ)′ = eˣ verlangt die Basis e. Für andere Basen gilt (aˣ)′ = ln(a)·aˣ, bei e^(kx) kommt der Faktor k aus der Kettenregel.",
+      "schritte": [
+        "(e^(x+h) − eˣ)/h = eˣ·(e^h − 1)/h.",
+        "Für h → 0 geht (e^h − 1)/h gegen 1, genau das definiert die Basis e; übrig bleibt eˣ."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Verketteter Exponent",
+        "latex": "\\frac{d}{dx}\\, e^{u(x)} = u'(x) \\cdot e^{u(x)}",
+        "hinweis": "Innere Ableitung nach vorn, die e-Funktion bleibt stehen."
+      },
+      {
+        "ziel": "Allgemeine Basis",
+        "latex": "\\frac{d}{dx}\\, a^{x} = \\ln(a) \\cdot a^{x}",
+        "hinweis": "Über a^x = e^(x·ln a); für a = e wird ln a = 1."
+      },
+      {
+        "ziel": "Stammfunktion",
+        "latex": "\\int e^{kx} \\, dx = \\frac{1}{k} e^{kx} + C",
+        "hinweis": "Integrieren teilt durch k, Ableiten multipliziert mit k."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "eˣ mit der Potenzregel ableiten: x·e^(x−1).",
+        "korrektur": "Die Potenzregel gilt für xⁿ (Variable in der Basis), nicht für eˣ (Variable im Exponenten)."
+      },
+      {
+        "fehler": "Bei e^(2x) die innere Ableitung 2 vergessen.",
+        "korrektur": "Kettenregel: (e^(2x))′ = 2e^(2x)."
+      },
+      {
+        "fehler": "(aˣ)′ = aˣ für jede Basis annehmen.",
+        "korrektur": "Nur für a = e; sonst kommt der Faktor ln a hinzu."
+      }
+    ]
+  },
+  {
+    "slug": "ableitung-ln",
+    "name": "Ableitung des natürlichen Logarithmus",
+    "latex": "\\frac{d}{dx}\\, \\ln x = \\frac{1}{x} \\quad (x > 0)",
+    "symbol": "(ln x)' = 1/x",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis",
+    "beschreibung": "Die Ableitung des natürlichen Logarithmus ln x ist die Hyperbel 1/x, gültig für alle x > 0.",
+    "einheiten": "Dimensionslos (Analysis)",
+    "variablen": [
+      {
+        "symbol": "ln x",
+        "bedeutung": "Natürlicher Logarithmus zur Basis e",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "x",
+        "bedeutung": "Argument des Logarithmus (x > 0)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "1/x",
+        "bedeutung": "Ableitungsfunktion, fällt für wachsendes x",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Der natürliche Logarithmus ist die Umkehrfunktion der e-Funktion; aus der Umkehrregel folgt (ln x)′ = 1/x für x > 0. Damit schließt ln die Lücke der Potenzregel: 1/x = x⁻¹ ist die einzige Potenz ohne Potenz-Stammfunktion, ihre Stammfunktion ist ln|x| + C. Für allgemeine Logarithmen gilt (log_b x)′ = 1/(x·ln b), und verkettet nach Kettenregel (ln u(x))′ = u′(x)/u(x).",
+    "beispiel": "f(x) = ln x: f′(2) = 1/2 = 0,5. Verkettet: g(x) = ln(x² + 1) → g′(x) = 2x/(x² + 1), also g′(1) = 2/2 = 1.",
+    "anwendung": "Kurvendiskussion von ln-Funktionen, Integration von 1/x, Halbwertszeit- und Verdopplungszeitrechnung, logarithmische Skalen",
+    "quellen": [
+      "Forster, O. (2016). Analysis 1. Springer Vieweg."
+    ],
+    "verwandte": [
+      "ableitung-e-funktion",
+      "logarithmengesetze",
+      "kettenregel-ableitung"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Logarithmus"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "(ln x)'=1/x",
+      "ln x ableiten",
+      "ln ableiten",
+      "Ableitung ln x",
+      "ln(x^2) ableiten",
+      "natürlicher Logarithmus Ableitung",
+      "derivative of ln x",
+      "ln Funktion Ableitung"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/ableitung-ln",
+    "herleitung": {
+      "gueltigkeit": "Gilt für x > 0, dem Definitionsbereich von ln x. Auf ganz R ohne 0 gilt (ln|x|)′ = 1/x, wichtig beim Integrieren von 1/x.",
+      "schritte": [
+        "Aus e^(ln x) = x folgt durch Ableiten mit Kettenregel: e^(ln x)·(ln x)′ = 1.",
+        "Wegen e^(ln x) = x ergibt sich (ln x)′ = 1/x."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Verkettung",
+        "latex": "\\frac{d}{dx}\\, \\ln u(x) = \\frac{u'(x)}{u(x)}",
+        "hinweis": "Logarithmische Ableitung, nützlich bei Produkten und Potenzen."
+      },
+      {
+        "ziel": "Allgemeine Basis",
+        "latex": "\\frac{d}{dx}\\, \\log_{b} x = \\frac{1}{x \\ln b}",
+        "hinweis": "Folgt aus log_b x = ln x/ln b."
+      },
+      {
+        "ziel": "Stammfunktion von 1/x",
+        "latex": "\\int \\frac{1}{x} \\, dx = \\ln|x| + C",
+        "hinweis": "Schließt die Lücke der Potenzregel bei n = −1."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "(ln x)′ = 1/x auch für Verkettungen wie ln(x²) verwenden.",
+        "korrektur": "Kettenregel: (ln(x²))′ = 2x/x² = 2/x."
+      },
+      {
+        "fehler": "Die Stammfunktion von ln x mit 1/x verwechseln.",
+        "korrektur": "∫ln x dx = x·ln x − x + C (partielle Integration); 1/x ist die Ableitung."
+      },
+      {
+        "fehler": "(log₁₀ x)′ = 1/x setzen.",
+        "korrektur": "Nur ln hat 1/x; allgemein gilt 1/(x·ln b)."
+      },
+      {
+        "fehler": "Den Definitionsbereich x > 0 ignorieren.",
+        "korrektur": "ln x existiert nur für positive x; Randverhalten x → 0⁺ gehört zur Kurvendiskussion."
+      }
+    ]
+  },
+  {
+    "slug": "ableitung-sinus-cosinus",
+    "name": "Ableitung von Sinus und Kosinus",
+    "latex": "(\\sin x)' = \\cos x, \\quad (\\cos x)' = -\\sin x",
+    "symbol": "(sin x)' = cos x, (cos x)' = −sin x",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis",
+    "beschreibung": "Sinus und Kosinus leiten sich zyklisch ineinander ab: sin wird zu cos, cos zu −sin, jeweils im Bogenmaß.",
+    "einheiten": "x im Bogenmaß (rad) · Funktionswerte dimensionslos",
+    "variablen": [
+      {
+        "symbol": "sin x, cos x",
+        "bedeutung": "Winkelfunktionen am Einheitskreis",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "x",
+        "bedeutung": "Winkel im Bogenmaß",
+        "einheit": "rad"
+      }
+    ],
+    "hintergrund": "Die Ableitungen der Winkelfunktionen bilden einen Viererzyklus: sin → cos → −sin → −cos → sin. Sie gelten in dieser einfachen Form nur im Bogenmaß; im Gradmaß käme der Faktor π/180 hinzu. Grundlage ist der Grenzwert sin(h)/h → 1 für h → 0. Wegen (sin x)″ = −sin x lösen Sinus und Kosinus die Schwingungsgleichung und beschreiben harmonische Schwingungen.",
+    "beispiel": "f(x) = 3·sin(2x): f′(x) = 3·cos(2x)·2 = 6·cos(2x). Bei x = 0: f′(0) = 6·cos 0 = 6, Amplitude 3 mal innere Ableitung 2 ✓.",
+    "anwendung": "Harmonische Schwingungen und Wellen, Kurvendiskussion trigonometrischer Funktionen, Extremwertaufgaben mit Perioden, Wechselstromrechnung",
+    "quellen": [
+      "Forster, O. (2016). Analysis 1. Springer Vieweg."
+    ],
+    "verwandte": [
+      "kettenregel-ableitung",
+      "ableitung-e-funktion",
+      "taylor-reihe"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Sinus_und_Kosinus"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "(sin x)'=cos x",
+      "(cos x)'=-sin x",
+      "sinus ableiten",
+      "cosinus ableiten",
+      "sin(2x) ableiten",
+      "Ableitung Sinus Kosinus",
+      "derivative of sine cosine",
+      "trigonometrische Funktionen ableiten"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/ableitung-sinus-cosinus",
+    "herleitung": {
+      "gueltigkeit": "Gilt für alle reellen x, aber nur im Bogenmaß. Im Gradmaß gilt stattdessen (sin x°)′ = (π/180)·cos x°.",
+      "schritte": [
+        "sin(x + h) − sin x = sin x·(cos h − 1) + cos x·sin h.",
+        "Mit (cos h − 1)/h → 0 und sin(h)/h → 1 bleibt cos x übrig; analog für cos x."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Innerer Faktor",
+        "latex": "(\\sin(kx))' = k \\cos(kx)",
+        "hinweis": "Die Kreisfrequenz k wandert als Faktor nach vorn."
+      },
+      {
+        "ziel": "Zweite Ableitung",
+        "latex": "(\\sin x)'' = -\\sin x",
+        "hinweis": "Sinus löst die Schwingungsgleichung y″ = −y."
+      },
+      {
+        "ziel": "Stammfunktionen",
+        "latex": "\\int \\sin x \\, dx = -\\cos x + C",
+        "hinweis": "Vorzeichen beachten: sin integriert gibt minus cos, cos integriert gibt plus sin."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "(cos x)′ = sin x ohne Minus schreiben.",
+        "korrektur": "Richtig: (cos x)′ = −sin x. Merkzyklus sin → cos → −sin → −cos."
+      },
+      {
+        "fehler": "Im Gradmaß rechnen.",
+        "korrektur": "Die Ableitungsregeln gelten im Bogenmaß; Taschenrechner auf RAD stellen."
+      },
+      {
+        "fehler": "Bei sin(2x) die innere Ableitung 2 vergessen.",
+        "korrektur": "(sin(2x))′ = 2·cos(2x)."
+      }
+    ]
+  },
+  {
+    "slug": "quotientenregel-ableitung",
+    "name": "Quotientenregel der Differentiation",
+    "latex": "\\left(\\frac{f}{g}\\right)' = \\frac{f' \\cdot g - f \\cdot g'}{g^{2}}",
+    "symbol": "(f/g)' = (f'g − fg')/g²",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis",
+    "beschreibung": "Die Quotientenregel leitet Brüche aus zwei Funktionen ab, etwa gebrochenrationale Funktionen.",
+    "einheiten": "Dimensionslos (Analysis)",
+    "variablen": [
+      {
+        "symbol": "f",
+        "bedeutung": "Zählerfunktion",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "g",
+        "bedeutung": "Nennerfunktion (g(x) ≠ 0)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "f', g'",
+        "bedeutung": "Ableitungen von Zähler und Nenner",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Die Quotientenregel folgt aus der Produktregel, angewendet auf f·(1/g) zusammen mit der Kettenregel für 1/g. Merkhilfe \"NAZ minus ZAN durch Nenner ins Quadrat\": Nenner mal Ableitung Zähler minus Zähler mal Ableitung Nenner. Die Reihenfolge im Zähler ist wegen des Minuszeichens entscheidend. Prominenter Sonderfall: (tan x)′ = 1/cos²x aus tan x = sin x/cos x.",
+    "beispiel": "h(x) = x²/(x + 1): h′(x) = (2x·(x + 1) − x²·1)/(x + 1)² = (x² + 2x)/(x + 1)². Bei x = 1: h′(1) = 3/4 = 0,75.",
+    "anwendung": "Gebrochenrationale Funktionen (Kurvendiskussion, Asymptoten), Ableitung von tan x, Wachstumsraten als Quotienten, Regelungstechnik",
+    "quellen": [
+      "Leibniz, G.W. (1684). Nova methodus pro maximis et minimis. Acta Eruditorum."
+    ],
+    "verwandte": [
+      "produktregel-ableitung",
+      "kettenregel-ableitung",
+      "potenzregel"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Quotientenregel"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "(f/g)'=(f'g-fg')/g^2",
+      "(u/v)'=(u'v-uv')/v^2",
+      "Quotientenregel Ableitung",
+      "Bruch ableiten",
+      "NAZ minus ZAN",
+      "gebrochenrationale Funktion ableiten",
+      "quotient rule derivative",
+      "Quotientenregel Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/quotientenregel-ableitung",
+    "herleitung": {
+      "gueltigkeit": "Gilt an allen Stellen, an denen Zähler f und Nenner g differenzierbar sind und g(x) ≠ 0 gilt.",
+      "schritte": [
+        "(1/g)′ = −g′/g².",
+        "(f·1/g)′ = f′/g − f·g′/g² = (f′g − fg′)/g²."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Kehrwertregel",
+        "latex": "\\left(\\frac{1}{g}\\right)' = -\\frac{g'}{g^{2}}",
+        "hinweis": "Der Spezialfall f = 1 der Quotientenregel."
+      },
+      {
+        "ziel": "Ableitung des Tangens",
+        "latex": "(\\tan x)' = \\frac{1}{\\cos^{2} x}",
+        "hinweis": "Aus tan x = sin x/cos x mit sin² + cos² = 1."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Die Zähler-Reihenfolge vertauschen: fg′ − f′g.",
+        "korrektur": "Wegen des Minus ist die Reihenfolge fest: f′g − fg′."
+      },
+      {
+        "fehler": "Das Quadrat im Nenner vergessen.",
+        "korrektur": "Der Nenner der Ableitung ist g², nicht g."
+      },
+      {
+        "fehler": "Wie bei der Produktregel ein Plus im Zähler setzen.",
+        "korrektur": "Produktregel: plus; Quotientenregel: minus im Zähler."
+      },
+      {
+        "fehler": "Die Quotientenregel anwenden, wo Kürzen einfacher wäre.",
+        "korrektur": "x³/x = x² erst vereinfachen, dann ableiten."
+      }
+    ]
+  },
+  {
+    "slug": "grundintegrale-stammfunktion",
+    "name": "Stammfunktion und Grundintegrale",
+    "latex": "\\int x^{n} \\, dx = \\frac{x^{n+1}}{n+1} + C \\quad (n \\neq -1)",
+    "symbol": "∫xⁿ dx = xⁿ⁺¹/(n+1) + C",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis / Integralrechnung",
+    "beschreibung": "Die Potenzregel der Integration liefert Stammfunktionen: Exponent um 1 erhöhen, durch den neuen Exponenten teilen.",
+    "einheiten": "Dimensionslos (Analysis)",
+    "variablen": [
+      {
+        "symbol": "x",
+        "bedeutung": "Integrationsvariable",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "n",
+        "bedeutung": "Exponent (n ≠ −1)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "C",
+        "bedeutung": "Integrationskonstante (beliebige reelle Zahl)",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Integrieren kehrt das Ableiten um: F heißt Stammfunktion von f, wenn F′ = f gilt. Die Potenzregel der Integration spiegelt die Potenzregel der Ableitung. Wichtige Grundintegrale: ∫e^x dx = e^x + C, ∫1/x dx = ln|x| + C (der Sonderfall n = −1), ∫sin x dx = −cos x + C, ∫cos x dx = sin x + C. Da Konstanten beim Ableiten verschwinden, ist jede Stammfunktion nur bis auf +C bestimmt.",
+    "beispiel": "∫(3x² + 2) dx = x³ + 2x + C. Probe durch Ableiten: (x³ + 2x + C)′ = 3x² + 2 ✓. Ebenso: ∫cos x dx = sin x + C, denn (sin x)′ = cos x.",
+    "anwendung": "Flächen- und Volumenberechnung, Rekonstruktion von Beständen aus Änderungsraten, Physik (Weg aus Geschwindigkeit), Wahrscheinlichkeitsdichten",
+    "quellen": [
+      "Forster, O. (2016). Analysis 1. Springer Vieweg."
+    ],
+    "verwandte": [
+      "potenzregel",
+      "hauptsatz-integralrechnung",
+      "partielle-integration"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Stammfunktion"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "Integral x^n dx = x^(n+1)/(n+1)+C",
+      "Stammfunktion bilden",
+      "aufleiten",
+      "Grundintegrale Tabelle",
+      "Stammfunktion x^2",
+      "Integral Regeln",
+      "antiderivative power rule",
+      "unbestimmtes Integral"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/grundintegrale-stammfunktion",
+    "herleitung": {
+      "gueltigkeit": "Die Potenzregel der Integration gilt für alle reellen n ≠ −1; für n = −1 ist ln|x| + C die Stammfunktion. Stammfunktionen sind nur bis auf eine Konstante C eindeutig.",
+      "schritte": [
+        "Leite x^(n+1)/(n+1) ab: (n+1)·xⁿ/(n+1) = xⁿ ✓.",
+        "Da Konstanten beim Ableiten verschwinden, ist jede Stammfunktion nur bis auf +C bestimmt."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Sonderfall n = −1",
+        "latex": "\\int \\frac{1}{x} \\, dx = \\ln|x| + C",
+        "hinweis": "Die Potenzregel würde durch 0 teilen; hier springt der Logarithmus ein."
+      },
+      {
+        "ziel": "e-Funktion und Trigonometrie",
+        "latex": "\\int e^{x} dx = e^{x} + C, \\; \\int \\sin x \\, dx = -\\cos x + C",
+        "hinweis": "Die Grundintegrale des Abiturs; Vorzeichen bei sin beachten."
+      },
+      {
+        "ziel": "Lineare Substitution",
+        "latex": "\\int f(ax+b) \\, dx = \\frac{1}{a} F(ax+b) + C",
+        "hinweis": "Innere lineare Funktion: durch a teilen statt multiplizieren."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Beim Integrieren den Exponenten verringern wie beim Ableiten.",
+        "korrektur": "Integrieren erhöht: xⁿ → x^(n+1)/(n+1)."
+      },
+      {
+        "fehler": "Das +C weglassen.",
+        "korrektur": "Ohne C fehlen unendlich viele Stammfunktionen; Anfangsbedingungen legen C fest."
+      },
+      {
+        "fehler": "∫1/x dx mit der Potenzregel rechnen.",
+        "korrektur": "n = −1 ist der Sonderfall: ln|x| + C."
+      },
+      {
+        "fehler": "∫sin x dx = cos x + C schreiben.",
+        "korrektur": "Richtig: −cos x + C; zur Kontrolle ableiten."
+      }
+    ]
+  },
+  {
+    "slug": "hauptsatz-integralrechnung",
+    "name": "Hauptsatz der Differential- und Integralrechnung",
+    "latex": "\\int_{a}^{b} f(x) \\, dx = F(b) - F(a)",
+    "symbol": "∫ₐᵇ f(x) dx = F(b) − F(a)",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis / Integralrechnung",
+    "beschreibung": "Der Hauptsatz verbindet Ableiten und Integrieren: Ein bestimmtes Integral wird über eine Stammfunktion an den Grenzen ausgewertet.",
+    "einheiten": "Dimensionslos (Analysis)",
+    "variablen": [
+      {
+        "symbol": "f",
+        "bedeutung": "Stetige Integrandenfunktion",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "F",
+        "bedeutung": "Stammfunktion von f (F′ = f)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "a, b",
+        "bedeutung": "Untere und obere Integrationsgrenze",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Der Hauptsatz (Newton, Leibniz, um 1670-1686) ist das Fundament der Analysis: Die Integralfunktion I(x) = ∫ₐˣ f(t) dt ist differenzierbar mit I′ = f. Damit wird die mühsame Grenzwertbildung über Ober- und Untersummen durch das Auffinden einer Stammfunktion ersetzt. Die Schreibweise [F(x)]ₐᵇ bedeutet F(b) − F(a); welche Stammfunktion man wählt, ist egal, das +C hebt sich weg.",
+    "beispiel": "∫₁³ 2x dx = [x²]₁³ = 3² − 1² = 9 − 1 = 8. Die Stammfunktion F(x) = x² wird nur an den Grenzen ausgewertet, keine Zerlegung in Rechtecke nötig.",
+    "anwendung": "Berechnung bestimmter Integrale, Flächen- und Mittelwertberechnung, Physik (Arbeit als Kraft-Weg-Integral), Gesamtänderung aus Änderungsrate",
+    "quellen": [
+      "Leibniz, G.W. (1686). De geometria recondita. Acta Eruditorum."
+    ],
+    "verwandte": [
+      "grundintegrale-stammfunktion",
+      "bestimmtes-integral-flaeche",
+      "potenzregel"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Fundamentalsatz_der_Analysis"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "Integral a bis b f(x)dx=F(b)-F(a)",
+      "Hauptsatz der Analysis",
+      "HDI",
+      "bestimmtes Integral berechnen",
+      "F(b)-F(a)",
+      "Integralfunktion Ableitung",
+      "fundamental theorem of calculus",
+      "Newton-Leibniz-Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/hauptsatz-integralrechnung",
+    "herleitung": {
+      "gueltigkeit": "Gilt für stetige Funktionen f auf [a; b] mit Stammfunktion F. Bei Definitionslücken im Intervall darf der Satz nicht über die Lücke hinweg angewendet werden.",
+      "schritte": [
+        "Der Zuwachs I(x + h) − I(x) ist ein schmaler Streifen ≈ f(x)·h, also I′ = f.",
+        "I und F unterscheiden sich nur um eine Konstante; aus I(a) = 0 folgt I(b) = F(b) − F(a)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Integralfunktion ableiten",
+        "latex": "\\frac{d}{dx} \\int_{a}^{x} f(t) \\, dt = f(x)",
+        "hinweis": "Teil 1 des Hauptsatzes: Integrieren und Ableiten heben sich auf."
+      },
+      {
+        "ziel": "Vertauschte Grenzen",
+        "latex": "\\int_{b}^{a} f(x) \\, dx = -\\int_{a}^{b} f(x) \\, dx",
+        "hinweis": "Grenzen tauschen dreht das Vorzeichen."
+      },
+      {
+        "ziel": "Mittelwert einer Funktion",
+        "latex": "\\bar{f} = \\frac{1}{b-a} \\int_{a}^{b} f(x) \\, dx",
+        "hinweis": "Durchschnittswert von f auf [a; b], eine Standard-Klausurfrage."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "F(a) − F(b) statt F(b) − F(a) rechnen.",
+        "korrektur": "Obere Grenze zuerst; sonst dreht sich das Vorzeichen."
+      },
+      {
+        "fehler": "Beim bestimmten Integral das +C mitschleppen.",
+        "korrektur": "C hebt sich in F(b) − F(a) weg."
+      },
+      {
+        "fehler": "Über eine Polstelle hinweg integrieren, etwa ∫₋₁¹ 1/x² dx.",
+        "korrektur": "f ist bei 0 nicht stetig; der Hauptsatz ist dort nicht anwendbar."
+      }
+    ]
+  },
+  {
+    "slug": "bestimmtes-integral-flaeche",
+    "name": "Fläche unter einer Kurve (bestimmtes Integral)",
+    "latex": "A = \\int_{a}^{b} f(x) \\, dx \\quad (f(x) \\geq 0)",
+    "symbol": "A = ∫ₐᵇ f(x) dx",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis / Integralrechnung",
+    "beschreibung": "Das bestimmte Integral misst die Fläche zwischen Graph und x-Achse, solange der Graph oberhalb der Achse verläuft.",
+    "einheiten": "A in Flächeneinheiten (FE) · x und f(x) je nach Kontext",
+    "variablen": [
+      {
+        "symbol": "A",
+        "bedeutung": "Flächeninhalt zwischen Graph und x-Achse",
+        "einheit": "FE"
+      },
+      {
+        "symbol": "f(x)",
+        "bedeutung": "Randfunktion (Integrand)",
+        "einheit": "kontextabhängig"
+      },
+      {
+        "symbol": "a, b",
+        "bedeutung": "Linke und rechte Grenze des Bereichs",
+        "einheit": "kontextabhängig"
+      }
+    ],
+    "hintergrund": "Das bestimmte Integral ist als Grenzwert von Rechteckssummen (Riemann-Summen) definiert und misst orientierte Flächen: Bereiche unterhalb der x-Achse zählen negativ. Für den geometrischen Flächeninhalt zerlegt man das Intervall an den Nullstellen und addiert die Beträge der Teilintegrale. Die Fläche zwischen zwei Graphen f und g berechnet sich als ∫ₐᵇ (f(x) − g(x)) dx mit f ≥ g auf [a; b].",
+    "beispiel": "f(x) = x² über [0; 2]: A = ∫₀² x² dx = [x³/3]₀² = 8/3 ≈ 2,67 FE. Läge der Graph unter der x-Achse, wäre das Integral negativ, die Fläche ist dann der Betrag.",
+    "anwendung": "Flächenberechnung in der Kurvendiskussion, Physik (Weg als Fläche im v-t-Diagramm), Ökonomie (Konsumentenrente), Wahrscheinlichkeit als Fläche unter Dichten",
+    "quellen": [
+      "Riemann, B. (1854). Über die Darstellbarkeit einer Function durch eine trigonometrische Reihe. Göttingen."
+    ],
+    "verwandte": [
+      "hauptsatz-integralrechnung",
+      "grundintegrale-stammfunktion",
+      "normalverteilung"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Integralrechnung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "A=Integral a bis b f(x) dx",
+      "Fläche unter Kurve berechnen",
+      "Fläche unter Graph",
+      "Fläche zwischen zwei Graphen",
+      "Integral Fläche negativ",
+      "orientierter Flächeninhalt",
+      "area under curve integral",
+      "Flächeninhalt Integral"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/bestimmtes-integral-flaeche",
+    "herleitung": {
+      "gueltigkeit": "Als Fläche direkt nur für f ≥ 0 auf [a; b]; unterhalb der x-Achse liefert das Integral negative Werte. Für Flächen zuerst Nullstellen bestimmen und abschnittsweise mit Beträgen rechnen.",
+      "schritte": [
+        "Zerlege [a; b] in n Streifen der Breite Δx mit Höhe f(xᵢ); die Summe nähert die Fläche.",
+        "Für n → ∞ konvergieren die Summen gegen ∫ₐᵇ f(x) dx (Riemann-Integral)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Fläche zwischen zwei Graphen",
+        "latex": "A = \\int_{a}^{b} \\big(f(x) - g(x)\\big) \\, dx",
+        "hinweis": "f oben, g unten; die Grenzen sind oft die Schnittstellen."
+      },
+      {
+        "ziel": "Fläche unter der Achse",
+        "latex": "A = \\left| \\int_{x_{1}}^{x_{2}} f(x) \\, dx \\right|",
+        "hinweis": "Zwischen Nullstellen integrieren und den Betrag nehmen."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Integralwert und Flächeninhalt gleichsetzen, wenn der Graph unter der Achse liegt.",
+        "korrektur": "Nullstellen suchen, abschnittsweise integrieren, Beträge addieren."
+      },
+      {
+        "fehler": "Bei Flächen zwischen Graphen über Schnittstellen hinweg integrieren.",
+        "korrektur": "An den Schnittstellen wechselt f − g das Vorzeichen; dort aufteilen."
+      },
+      {
+        "fehler": "∫₋₁¹ x³ dx = 0 als „keine Fläche\" deuten.",
+        "korrektur": "Der orientierte Wert 0 heißt nur: die Teilflächen heben sich auf. Die Fläche ist 2·(1/4) = 1/2 FE."
+      }
+    ]
+  },
+  {
+    "slug": "partielle-integration",
+    "name": "Partielle Integration",
+    "latex": "\\int u \\cdot v' \\, dx = u \\cdot v - \\int u' \\cdot v \\, dx",
+    "symbol": "∫u·v' dx = u·v − ∫u'·v dx",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis / Integralrechnung",
+    "beschreibung": "Die partielle Integration integriert Produkte, indem sie die Produktregel der Ableitung umkehrt.",
+    "einheiten": "Dimensionslos (Analysis)",
+    "variablen": [
+      {
+        "symbol": "u",
+        "bedeutung": "Faktor, der abgeleitet wird (vereinfacht sich)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "v'",
+        "bedeutung": "Faktor, der integriert wird",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "v",
+        "bedeutung": "Stammfunktion von v′",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Integriert man die Produktregel (u·v)′ = u′v + uv′ und stellt um, entsteht die partielle Integration. Strategie: u so wählen, dass u′ einfacher wird (Polynome), v′ so, dass es leicht integrierbar bleibt (e^x, sin, cos). Klassiker: ∫ln x dx über den Trick 1·ln x mit u = ln x. Manchmal ist zweimalige Anwendung nötig, etwa bei ∫x²·e^x dx oder beim Phönix-Trick für ∫e^x·sin x dx.",
+    "beispiel": "∫x·eˣ dx: u = x, v′ = eˣ. Ergebnis: x·eˣ − ∫1·eˣ dx = x·eˣ − eˣ + C = (x − 1)·eˣ + C. Probe: ((x − 1)eˣ)′ = eˣ + (x − 1)eˣ = x·eˣ ✓.",
+    "anwendung": "Integrale von Produkten (x·e^x, x·sin x, ln x), Erwartungswerte stetiger Verteilungen, Fourier-Koeffizienten, Physik (Schwerpunkte)",
+    "quellen": [
+      "Taylor, B. (1715). Methodus incrementorum directa et inversa. London."
+    ],
+    "verwandte": [
+      "produktregel-ableitung",
+      "grundintegrale-stammfunktion",
+      "hauptsatz-integralrechnung"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Partielle_Integration"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "Integral u*v' dx = uv - Integral u'*v dx",
+      "partielle Integration Formel",
+      "Produktintegration",
+      "x*e^x integrieren",
+      "ln x integrieren",
+      "integration by parts",
+      "partiell integrieren Aufgaben",
+      "Phönix Integral"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/partielle-integration",
+    "herleitung": {
+      "gueltigkeit": "Gilt, wenn u und v auf dem Intervall stetig differenzierbar sind. Sinnvoll nur, wenn das neue Integral ∫u′v dx einfacher ist als das ursprüngliche.",
+      "schritte": [
+        "(u·v)′ = u′v + uv′; beidseitig integrieren: u·v = ∫u′v dx + ∫uv′ dx.",
+        "Umstellen liefert ∫uv′ dx = u·v − ∫u′v dx."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Bestimmtes Integral",
+        "latex": "\\int_{a}^{b} u v' \\, dx = [u v]_{a}^{b} - \\int_{a}^{b} u' v \\, dx",
+        "hinweis": "Der ausintegrierte Teil wird an den Grenzen ausgewertet."
+      },
+      {
+        "ziel": "ln-Trick",
+        "latex": "\\int \\ln x \\, dx = x \\ln x - x + C",
+        "hinweis": "Mit u = ln x und v′ = 1; Standard-Klausuraufgabe."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "u und v′ ungünstig wählen, etwa u = eˣ bei ∫x·eˣ dx.",
+        "korrektur": "Polynome ableiten lassen (u = x), e-Funktion/sin/cos integrieren."
+      },
+      {
+        "fehler": "Das Minuszeichen vor dem Restintegral vergessen.",
+        "korrektur": "Formel: u·v MINUS ∫u′v dx."
+      },
+      {
+        "fehler": "v falsch bestimmen: zu v′ = sin x gehört v = −cos x, nicht cos x.",
+        "korrektur": "v durch Ableiten prüfen: (−cos x)′ = sin x ✓."
+      },
+      {
+        "fehler": "Nach einmaliger Anwendung aufgeben.",
+        "korrektur": "Bei x²·eˣ zweimal anwenden; bei eˣ·sin x nach zweimal aufs Ausgangsintegral zurückführen und auflösen."
+      }
+    ]
+  },
+  {
+    "slug": "binomialverteilung",
+    "name": "Binomialverteilung",
+    "latex": "P(X = k) = \\binom{n}{k} \\cdot p^{k} \\cdot (1-p)^{n-k}",
+    "symbol": "P(X=k) = (n über k)·pᵏ·(1−p)ⁿ⁻ᵏ",
+    "kategorie": "mathematik",
+    "unterkategorie": "Stochastik",
+    "beschreibung": "Die Binomialverteilung gibt die Wahrscheinlichkeit für genau k Treffer in n unabhängigen Versuchen mit Trefferwahrscheinlichkeit p an.",
+    "einheiten": "Wahrscheinlichkeiten dimensionslos, zwischen 0 und 1",
+    "variablen": [
+      {
+        "symbol": "n",
+        "bedeutung": "Anzahl der unabhängigen Versuche",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "k",
+        "bedeutung": "Anzahl der Treffer (0 ≤ k ≤ n)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "p",
+        "bedeutung": "Trefferwahrscheinlichkeit pro Versuch",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "(n über k)",
+        "bedeutung": "Binomialkoeffizient, Anzahl der Trefferanordnungen",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Jakob Bernoulli untersuchte in der Ars conjectandi (1713) Ketten identischer Ja/Nein-Versuche. Voraussetzungen: feste Versuchszahl n, nur zwei Ausgänge, konstantes p, unabhängige Versuche (Bernoulli-Kette). Kennwerte: E(X) = n·p und σ = √(n·p·(1−p)). Für große n nähert sich die Binomialverteilung der Normalverteilung (Laplace-Bedingung σ > 3).",
+    "beispiel": "10 Münzwürfe (n = 10, p = 0,5), genau 3-mal Kopf: P(X = 3) = (10 über 3)·0,5³·0,5⁷ = 120·0,5¹⁰ = 120/1024 ≈ 0,117, also rund 11,7 %.",
+    "anwendung": "Qualitätskontrolle (Ausschussquoten), Trefferaufgaben im Abitur, Multiple-Choice-Raten, Stichprobenmodelle, Hypothesentests",
+    "quellen": [
+      "Bernoulli, J. (1713). Ars conjectandi. Basel."
+    ],
+    "verwandte": [
+      "erwartungswert",
+      "standardabweichung",
+      "normalverteilung"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Binomialverteilung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "P(X=k)=(n über k)*p^k*(1-p)^(n-k)",
+      "Binomialverteilung Formel",
+      "Bernoulli Formel",
+      "Bernoulli-Kette",
+      "binomialverteilt",
+      "kumulierte Binomialverteilung",
+      "binomial distribution formula",
+      "n über k"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/binomialverteilung",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Bernoulli-Ketten: feste Anzahl n unabhängiger Versuche mit genau zwei Ausgängen und konstantem p. Beim Ziehen ohne Zurücklegen nur näherungsweise gültig.",
+      "schritte": [
+        "Ein fester Pfad mit k Treffern und n − k Nieten hat die Wahrscheinlichkeit pᵏ·(1−p)ⁿ⁻ᵏ.",
+        "Es gibt (n über k) solcher Pfade; Addition ergibt die Formel."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Erwartungswert",
+        "latex": "E(X) = n \\cdot p",
+        "hinweis": "Mittlere Trefferzahl einer Bernoulli-Kette."
+      },
+      {
+        "ziel": "Standardabweichung",
+        "latex": "\\sigma = \\sqrt{n \\cdot p \\cdot (1-p)}",
+        "hinweis": "Grundlage der Sigma-Regeln und Prognoseintervalle."
+      },
+      {
+        "ziel": "Mindestens ein Treffer",
+        "latex": "P(X \\geq 1) = 1 - (1-p)^{n}",
+        "hinweis": "Über das Gegenereignis: kein einziger Treffer."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Den Binomialkoeffizienten (n über k) weglassen.",
+        "korrektur": "pᵏ(1−p)ⁿ⁻ᵏ ist nur EIN Pfad; die Anordnungen zählen mit."
+      },
+      {
+        "fehler": "„Mindestens k\" als P(X = k) rechnen.",
+        "korrektur": "P(X ≥ k) = 1 − P(X ≤ k − 1) mit der kumulierten Verteilung."
+      },
+      {
+        "fehler": "Die Binomialverteilung beim Ziehen ohne Zurücklegen ansetzen.",
+        "korrektur": "Dann ändert sich p von Zug zu Zug; korrekt ist die hypergeometrische Verteilung, bei großen Grundgesamtheiten näherungsweise binomial."
+      },
+      {
+        "fehler": "p und 1 − p vertauschen.",
+        "korrektur": "p gehört zum Exponenten k der Treffer."
+      }
+    ]
+  },
+  {
+    "slug": "erwartungswert",
+    "name": "Erwartungswert",
+    "latex": "E(X) = \\mu = \\sum_{i} x_{i} \\cdot p_{i}",
+    "symbol": "E(X) = Σ xᵢ·pᵢ",
+    "kategorie": "mathematik",
+    "unterkategorie": "Stochastik",
+    "beschreibung": "Der Erwartungswert ist der auf lange Sicht zu erwartende Mittelwert einer Zufallsgröße: Werte mal Wahrscheinlichkeiten, aufsummiert.",
+    "einheiten": "E(X) in der Einheit der Zufallsgröße X · pᵢ dimensionslos",
+    "variablen": [
+      {
+        "symbol": "E(X), μ",
+        "bedeutung": "Erwartungswert der Zufallsgröße X",
+        "einheit": "wie X"
+      },
+      {
+        "symbol": "xᵢ",
+        "bedeutung": "Mögliche Werte der Zufallsgröße",
+        "einheit": "wie X"
+      },
+      {
+        "symbol": "pᵢ",
+        "bedeutung": "Wahrscheinlichkeit P(X = xᵢ)",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Christiaan Huygens führte den Begriff 1657 für Glücksspiele ein. Der Erwartungswert ist das gewichtete Mittel aller möglichen Werte; nach dem Gesetz der großen Zahlen stabilisiert sich der Durchschnitt vieler Wiederholungen bei E(X). Ein Spiel heißt fair, wenn der Erwartungswert des Gewinns 0 ist. Für die Binomialverteilung gilt kurz E(X) = n·p.",
+    "beispiel": "Fairer Würfel: E(X) = (1 + 2 + 3 + 4 + 5 + 6)·1/6 = 21/6 = 3,5. Binomialverteilung mit n = 100 und p = 0,3: E(X) = n·p = 30 Treffer im Mittel.",
+    "anwendung": "Bewertung von Glücksspielen und Versicherungen, faire Einsätze, mittlere Trefferzahlen im Abitur, Entscheidungstheorie, Risikoanalyse",
+    "quellen": [
+      "Huygens, C. (1657). De ratiociniis in ludo aleae. Leiden."
+    ],
+    "verwandte": [
+      "binomialverteilung",
+      "standardabweichung",
+      "normalverteilung"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Erwartungswert"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "E(X)=Summe xi*pi",
+      "Erwartungswert berechnen",
+      "Erwartungswert Formel",
+      "mü Stochastik",
+      "faires Spiel Erwartungswert",
+      "Erwartungswert Würfel",
+      "expected value formula",
+      "Erwartungswert Binomialverteilung n*p"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/erwartungswert",
+    "herleitung": {
+      "gueltigkeit": "Gilt für diskrete Zufallsgrößen mit endlich vielen Werten; alle pᵢ summieren sich zu 1. Bei stetigen Zufallsgrößen tritt ein Integral an die Stelle der Summe.",
+      "schritte": [
+        "Bei N Wiederholungen tritt xᵢ etwa N·pᵢ-mal auf; der Durchschnitt ist Σxᵢ·N·pᵢ/N.",
+        "Kürzen von N liefert E(X) = Σxᵢ·pᵢ; das Gesetz der großen Zahlen sichert die Stabilisierung."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Binomialverteilung",
+        "latex": "E(X) = n \\cdot p",
+        "hinweis": "Kurzformel statt Summierung über alle k."
+      },
+      {
+        "ziel": "Linearität",
+        "latex": "E(aX + b) = a \\cdot E(X) + b",
+        "hinweis": "Lineare Transformationen wandern direkt in den Erwartungswert."
+      },
+      {
+        "ziel": "Faires Spiel",
+        "latex": "E(G) = 0",
+        "hinweis": "G = Gewinn abzüglich Einsatz; E(G) = 0 heißt fair."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Einfach das arithmetische Mittel der Werte bilden.",
+        "korrektur": "Nur bei Gleichverteilung richtig; sonst mit den pᵢ gewichten."
+      },
+      {
+        "fehler": "E(X) als „wahrscheinlichsten Wert\" deuten.",
+        "korrektur": "E(X) = 3,5 beim Würfel wird nie gewürfelt; es ist der Langzeit-Durchschnitt."
+      },
+      {
+        "fehler": "Beim fairen Spiel den Einsatz vergessen.",
+        "korrektur": "Fair heißt E(Gewinn) = 0 inklusive Einsatz, nicht E(Auszahlung) = 0."
+      }
+    ]
+  },
+  {
+    "slug": "bedingte-wahrscheinlichkeit",
+    "name": "Bedingte Wahrscheinlichkeit",
+    "latex": "P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} \\quad (P(B) > 0)",
+    "symbol": "P(A|B) = P(A∩B)/P(B)",
+    "kategorie": "mathematik",
+    "unterkategorie": "Stochastik",
+    "beschreibung": "Die bedingte Wahrscheinlichkeit P(A|B) misst die Wahrscheinlichkeit von A unter der Bedingung, dass B bereits eingetreten ist.",
+    "einheiten": "Alle Werte dimensionslos, zwischen 0 und 1",
+    "variablen": [
+      {
+        "symbol": "P(A|B)",
+        "bedeutung": "Wahrscheinlichkeit von A, gegeben B",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "P(A∩B)",
+        "bedeutung": "Wahrscheinlichkeit, dass A und B eintreten",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "P(B)",
+        "bedeutung": "Wahrscheinlichkeit der Bedingung (P(B) > 0)",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Andrei Kolmogorov machte die bedingte Wahrscheinlichkeit 1933 zur Definitionsgrundlage der modernen Stochastik. Anschaulich schrumpft der Ergebnisraum auf B zusammen; A wird nur noch innerhalb von B gemessen. Umgestellt liefert die Formel den Multiplikationssatz P(A∩B) = P(A|B)·P(B), die Rechenregel der Baumdiagramm-Pfade. A und B sind genau dann stochastisch unabhängig, wenn P(A|B) = P(A) gilt.",
+    "beispiel": "Würfel: B = \"Augenzahl gerade\" mit P(B) = 1/2, A = \"Augenzahl > 3\". A∩B = {4, 6}, also P(A∩B) = 2/6 = 1/3. P(A|B) = (1/3)/(1/2) = 2/3.",
+    "anwendung": "Vierfeldertafeln und Baumdiagramme, medizinische Testaufgaben im Abitur, Unabhängigkeitsprüfung, Risikobewertung, Grundlage des Satzes von Bayes",
+    "quellen": [
+      "Kolmogorov, A. (1933). Grundbegriffe der Wahrscheinlichkeitsrechnung. Springer."
+    ],
+    "verwandte": [
+      "bayes-theorem",
+      "binomialverteilung",
+      "erwartungswert"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Bedingte_Wahrscheinlichkeit"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "P(A|B)=P(A und B)/P(B)",
+      "bedingte Wahrscheinlichkeit Formel",
+      "P(A gegeben B)",
+      "Vierfeldertafel bedingte Wahrscheinlichkeit",
+      "Baumdiagramm Pfadregel",
+      "stochastische Unabhängigkeit",
+      "conditional probability",
+      "Multiplikationssatz"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/bedingte-wahrscheinlichkeit",
+    "herleitung": {
+      "gueltigkeit": "Definiert nur für P(B) > 0. P(A|B) und P(B|A) sind verschiedene Größen und dürfen nicht vertauscht werden.",
+      "schritte": [
+        "Relevant sind nur Ausgänge in B; davon gehören die in A∩B zu A.",
+        "Das Verhältnis P(A∩B)/P(B) normiert B zur neuen Gesamtwahrscheinlichkeit 1."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Multiplikationssatz",
+        "latex": "P(A \\cap B) = P(A \\mid B) \\cdot P(B)",
+        "hinweis": "Pfadregel im Baumdiagramm: Wahrscheinlichkeiten längs des Pfades multiplizieren."
+      },
+      {
+        "ziel": "Satz von Bayes",
+        "latex": "P(B \\mid A) = \\frac{P(A \\mid B) \\cdot P(B)}{P(A)}",
+        "hinweis": "Kehrt die Bedingungsrichtung um."
+      },
+      {
+        "ziel": "Unabhängigkeit prüfen",
+        "latex": "P(A \\mid B) = P(A)",
+        "hinweis": "Gilt genau dann, wenn A und B stochastisch unabhängig sind."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "P(A|B) mit P(B|A) verwechseln.",
+        "korrektur": "Die Bedingung steht hinter dem Strich; Umrechnung nur über den Satz von Bayes."
+      },
+      {
+        "fehler": "P(A∩B) mit P(A|B) gleichsetzen.",
+        "korrektur": "P(A∩B) misst im ganzen Ergebnisraum, P(A|B) nur innerhalb von B."
+      },
+      {
+        "fehler": "In der Vierfeldertafel durch die falsche Randsumme teilen.",
+        "korrektur": "Für P(A|B) durch die Randsumme von B teilen."
+      }
+    ]
+  },
+  {
+    "slug": "standardabweichung",
+    "name": "Standardabweichung",
+    "latex": "\\sigma = \\sqrt{\\operatorname{Var}(X)} = \\sqrt{E\\big((X - \\mu)^{2}\\big)}",
+    "symbol": "σ = √Var(X)",
+    "kategorie": "mathematik",
+    "unterkategorie": "Stochastik",
+    "beschreibung": "Die Standardabweichung σ misst die typische Streuung einer Zufallsgröße um ihren Erwartungswert μ.",
+    "einheiten": "σ in der Einheit der Zufallsgröße X · Var(X) im Quadrat davon",
+    "variablen": [
+      {
+        "symbol": "σ",
+        "bedeutung": "Standardabweichung",
+        "einheit": "wie X"
+      },
+      {
+        "symbol": "Var(X) = σ²",
+        "bedeutung": "Varianz, mittlere quadratische Abweichung",
+        "einheit": "Quadrat von X"
+      },
+      {
+        "symbol": "μ = E(X)",
+        "bedeutung": "Erwartungswert der Zufallsgröße",
+        "einheit": "wie X"
+      }
+    ],
+    "hintergrund": "Die Varianz mittelt die quadrierten Abweichungen vom Erwartungswert; die Wurzel daraus bringt das Maß in die Einheit der Daten zurück. Für die Binomialverteilung gilt die Kurzformel σ = √(n·p·(1−p)). Abzugrenzen: die empirische Standardabweichung s einer Stichprobe teilt durch n − 1 statt n (Bessel-Korrektur). Bei der Normalverteilung liegen rund 68 % der Werte in μ ± σ und 95 % in μ ± 2σ.",
+    "beispiel": "Binomialverteilung mit n = 100, p = 0,5: σ = √(n·p·(1−p)) = √(100·0,5·0,5) = √25 = 5. Das 2σ-Intervall um μ = 50 reicht von 40 bis 60 (rund 95 %).",
+    "anwendung": "Sigma-Regeln und Prognoseintervalle im Abitur, Hypothesentests, Qualitätskontrolle, Messunsicherheiten, Risikomaß in der Finanzmathematik",
+    "quellen": [
+      "Henze, N. (2018). Stochastik für Einsteiger. Springer."
+    ],
+    "verwandte": [
+      "erwartungswert",
+      "binomialverteilung",
+      "normalverteilung"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Varianz_(Stochastik)"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "sigma=sqrt(Var(X))",
+      "sigma=sqrt(n*p*q)",
+      "Standardabweichung berechnen",
+      "Standardabweichung Formel",
+      "Varianz und Standardabweichung",
+      "Streuung Stochastik",
+      "standard deviation formula",
+      "Sigma-Regeln"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/standardabweichung",
+    "herleitung": {
+      "gueltigkeit": "Definiert für Zufallsgrößen mit endlicher Varianz. σ beschreibt theoretische Verteilungen; die empirische Standardabweichung s (Teilen durch n − 1) beschreibt Stichproben.",
+      "schritte": [
+        "Var(X) = Σ(xᵢ − μ)²·pᵢ misst die mittlere quadratische Abweichung von μ.",
+        "σ = √Var(X) bringt das Maß zurück in die Einheit von X."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Verschiebungssatz",
+        "latex": "\\operatorname{Var}(X) = E(X^{2}) - \\mu^{2}",
+        "hinweis": "Oft schneller als das direkte Summieren der Abweichungen."
+      },
+      {
+        "ziel": "Binomialverteilung",
+        "latex": "\\sigma = \\sqrt{n \\cdot p \\cdot (1-p)}",
+        "hinweis": "Kurzformel für Bernoulli-Ketten, Basis der Sigma-Regeln."
+      },
+      {
+        "ziel": "Lineare Transformation",
+        "latex": "\\sigma(aX + b) = |a| \\cdot \\sigma(X)",
+        "hinweis": "Verschiebungen (+b) ändern die Streuung nicht."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "σ und Varianz verwechseln.",
+        "korrektur": "Die Varianz ist σ²; die Standardabweichung ist ihre Wurzel und trägt die Einheit von X."
+      },
+      {
+        "fehler": "Bei Stichproben durch n statt n − 1 teilen.",
+        "korrektur": "Die empirische Standardabweichung s nutzt n − 1 (Bessel-Korrektur)."
+      },
+      {
+        "fehler": "√(n·p·q) auf beliebige Verteilungen anwenden.",
+        "korrektur": "Die Kurzformel gilt nur für die Binomialverteilung."
+      },
+      {
+        "fehler": "Abweichungen ohne Quadrieren mitteln.",
+        "korrektur": "Σ(xᵢ − μ)·pᵢ ist immer 0; erst das Quadrieren macht Streuung messbar."
+      }
+    ]
+  },
+  {
+    "slug": "skalarprodukt",
+    "name": "Skalarprodukt",
+    "latex": "\\vec{a} \\cdot \\vec{b} = a_{1}b_{1} + a_{2}b_{2} + a_{3}b_{3} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos\\varphi",
+    "symbol": "a⃗·b⃗ = a₁b₁ + a₂b₂ + a₃b₃",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analytische Geometrie / Vektoren",
+    "beschreibung": "Das Skalarprodukt zweier Vektoren liefert eine Zahl und misst Winkel und Orthogonalität.",
+    "einheiten": "Bei geometrischen Vektoren: Produkt der Längeneinheiten · φ in Grad oder Bogenmaß",
+    "variablen": [
+      {
+        "symbol": "a⃗, b⃗",
+        "bedeutung": "Vektoren mit Koordinaten a₁..a₃, b₁..b₃",
+        "einheit": "Längeneinheit"
+      },
+      {
+        "symbol": "|a⃗|, |b⃗|",
+        "bedeutung": "Beträge (Längen) der Vektoren",
+        "einheit": "Längeneinheit"
+      },
+      {
+        "symbol": "φ",
+        "bedeutung": "Eingeschlossener Winkel zwischen a⃗ und b⃗",
+        "einheit": "° oder rad"
+      }
+    ],
+    "hintergrund": "Das Skalarprodukt (Grassmann, Hamilton, um 1844) verbindet Algebra und Geometrie: Koordinatenform und Winkelform beschreiben dieselbe Zahl. Zentrale Folgerung: a⃗ ⊥ b⃗ genau dann, wenn a⃗·b⃗ = 0. Außerdem gilt a⃗·a⃗ = |a⃗|², womit sich Längen berechnen lassen. Das Vorzeichen zeigt die Winkelklasse: positiv bedeutet spitzer, negativ stumpfer Winkel.",
+    "beispiel": "a⃗ = (1|2|2), b⃗ = (2|0|1): a⃗·b⃗ = 1·2 + 2·0 + 2·1 = 4. |a⃗| = √9 = 3, |b⃗| = √5. cos φ = 4/(3·√5) ≈ 0,596, also φ ≈ 53,4°.",
+    "anwendung": "Winkel zwischen Vektoren, Geraden und Ebenen, Orthogonalitätsnachweise, Normalenform von Ebenen, Physik (Arbeit W = F⃗·s⃗)",
+    "quellen": [
+      "Grassmann, H. (1844). Die lineale Ausdehnungslehre. Leipzig."
+    ],
+    "verwandte": [
+      "kreuzprodukt",
+      "pythagorean-theorem",
+      "kosinussatz"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Skalarprodukt"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "a*b=a1b1+a2b2+a3b3",
+      "a·b=|a||b|cos(phi)",
+      "Skalarprodukt berechnen",
+      "Skalarprodukt Winkel",
+      "Vektoren orthogonal Skalarprodukt 0",
+      "inneres Produkt",
+      "dot product formula",
+      "Punktprodukt Vektoren"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/skalarprodukt",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Vektoren gleicher Dimension; die Winkelform verlangt vom Nullvektor verschiedene Vektoren. Das Ergebnis ist stets eine Zahl (Skalar), kein Vektor.",
+      "schritte": [
+        "|a⃗ − b⃗|² = |a⃗|² + |b⃗|² − 2|a⃗||b⃗|cos φ (Kosinussatz).",
+        "Koordinatenweises Ausrechnen von |a⃗ − b⃗|² und Vergleich liefert a⃗·b⃗ = |a⃗||b⃗|cos φ."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Winkel berechnen",
+        "latex": "\\cos\\varphi = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}| \\cdot |\\vec{b}|}",
+        "hinweis": "Standardformel für Winkel zwischen Vektoren, Geraden und Ebenen."
+      },
+      {
+        "ziel": "Orthogonalität",
+        "latex": "\\vec{a} \\cdot \\vec{b} = 0 \\Leftrightarrow \\vec{a} \\perp \\vec{b}",
+        "hinweis": "Der wichtigste Spezialfall für Nachweise."
+      },
+      {
+        "ziel": "Länge eines Vektors",
+        "latex": "|\\vec{a}| = \\sqrt{\\vec{a} \\cdot \\vec{a}}",
+        "hinweis": "Selbst-Skalarprodukt = Betragsquadrat."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Als Ergebnis einen Vektor angeben, etwa (a₁b₁|a₂b₂|a₃b₃).",
+        "korrektur": "Die Produkte werden addiert; das Ergebnis ist eine einzige Zahl."
+      },
+      {
+        "fehler": "Skalarprodukt und Kreuzprodukt verwechseln.",
+        "korrektur": "Skalarprodukt: Zahl (Winkel, Orthogonalität); Kreuzprodukt: Vektor (Normale, Fläche)."
+      },
+      {
+        "fehler": "Beim Winkel vergessen, durch die Beträge zu teilen.",
+        "korrektur": "cos φ = a⃗·b⃗/(|a⃗|·|b⃗|), sonst entstehen Werte über 1."
+      }
+    ]
+  },
+  {
+    "slug": "kreuzprodukt",
+    "name": "Kreuzprodukt (Vektorprodukt)",
+    "latex": "\\vec{a} \\times \\vec{b} = \\begin{pmatrix} a_{2}b_{3} - a_{3}b_{2} \\\\ a_{3}b_{1} - a_{1}b_{3} \\\\ a_{1}b_{2} - a_{2}b_{1} \\end{pmatrix}",
+    "symbol": "a⃗×b⃗ = (a₂b₃−a₃b₂ | a₃b₁−a₁b₃ | a₁b₂−a₂b₁)",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analytische Geometrie / Vektoren",
+    "beschreibung": "Das Kreuzprodukt zweier Vektoren im Raum liefert einen Vektor, der auf beiden senkrecht steht.",
+    "einheiten": "Betrag in Flächeneinheiten (Produkt der Längeneinheiten) · Koordinaten in Längeneinheiten",
+    "variablen": [
+      {
+        "symbol": "a⃗, b⃗",
+        "bedeutung": "Vektoren im R³ mit Koordinaten a₁..b₃",
+        "einheit": "Längeneinheit"
+      },
+      {
+        "symbol": "a⃗×b⃗",
+        "bedeutung": "Ergebnisvektor, senkrecht auf a⃗ und b⃗",
+        "einheit": "Längeneinheit²"
+      },
+      {
+        "symbol": "|a⃗×b⃗|",
+        "bedeutung": "Fläche des von a⃗ und b⃗ aufgespannten Parallelogramms",
+        "einheit": "FE"
+      }
+    ],
+    "hintergrund": "Das Kreuzprodukt existiert in dieser Form nur im R³ (Gibbs, Ende des 19. Jahrhunderts). Es ist antikommutativ: b⃗×a⃗ = −(a⃗×b⃗); die Richtung folgt der Rechte-Hand-Regel. Der Betrag |a⃗×b⃗| = |a⃗|·|b⃗|·sin φ misst die Parallelogrammfläche; a⃗×b⃗ = 0⃗ bedeutet parallele (kollineare) Vektoren. Merkschema: jede Koordinate entsteht zyklisch aus den beiden anderen Zeilen.",
+    "beispiel": "a⃗ = (1|2|0), b⃗ = (3|0|1): a⃗×b⃗ = (2·1−0·0 | 0·3−1·1 | 1·0−2·3) = (2|−1|−6). |a⃗×b⃗| = √(4+1+36) = √41 ≈ 6,4 FE (Parallelogrammfläche).",
+    "anwendung": "Normalenvektoren von Ebenen, Flächen von Parallelogrammen und Dreiecken, Spatprodukt und Volumen, Physik (Drehmoment, Lorentzkraft)",
+    "quellen": [
+      "Gibbs, J.W. & Wilson, E.B. (1901). Vector Analysis. Yale University Press."
+    ],
+    "verwandte": [
+      "skalarprodukt",
+      "pythagorean-theorem",
+      "sinussatz"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Kreuzprodukt"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "a x b Vektorprodukt",
+      "Kreuzprodukt berechnen",
+      "Vektorprodukt Formel",
+      "Normalenvektor Kreuzprodukt",
+      "Kreuzprodukt Parallelogramm Fläche",
+      "cross product formula",
+      "a kreuz b",
+      "Rechte-Hand-Regel Vektoren"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/kreuzprodukt",
+    "herleitung": {
+      "gueltigkeit": "Nur im dreidimensionalen Raum definiert. Antikommutativ: b⃗×a⃗ = −(a⃗×b⃗). Für parallele Vektoren ist das Ergebnis der Nullvektor.",
+      "schritte": [
+        "Der Ansatz n⃗·a⃗ = 0 und n⃗·b⃗ = 0 führt auf ein Gleichungssystem.",
+        "Die zyklische Lösung (a₂b₃−a₃b₂ | a₃b₁−a₁b₃ | a₁b₂−a₂b₁) erfüllt beide Bedingungen."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Betrag und Fläche",
+        "latex": "|\\vec{a} \\times \\vec{b}| = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\sin\\varphi",
+        "hinweis": "Parallelogrammfläche; die Dreiecksfläche ist die Hälfte."
+      },
+      {
+        "ziel": "Kollinearität",
+        "latex": "\\vec{a} \\times \\vec{b} = \\vec{0} \\Leftrightarrow \\vec{a} \\parallel \\vec{b}",
+        "hinweis": "Nullvektor als Test auf Parallelität."
+      },
+      {
+        "ziel": "Spatprodukt",
+        "latex": "V = |(\\vec{a} \\times \\vec{b}) \\cdot \\vec{c}|",
+        "hinweis": "Volumen des von drei Vektoren aufgespannten Spats."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Die mittlere Koordinate mit falschem Vorzeichen bilden.",
+        "korrektur": "Mittlere Koordinate: a₃b₁ − a₁b₃ (Reihenfolge gedreht)."
+      },
+      {
+        "fehler": "Das Kreuzprodukt im R² ansetzen.",
+        "korrektur": "Es existiert nur im R³; im R² dient a₁b₂ − a₂b₁ als Flächenmaß."
+      },
+      {
+        "fehler": "a⃗×b⃗ = b⃗×a⃗ annehmen.",
+        "korrektur": "Antikommutativ: Tauschen dreht das Vorzeichen."
+      },
+      {
+        "fehler": "Das Ergebnis nicht prüfen.",
+        "korrektur": "Kontrolle in Sekunden: Skalarprodukt mit a⃗ und b⃗ muss 0 sein."
+      }
+    ]
+  },
+  {
+    "slug": "logarithmengesetze",
+    "name": "Logarithmengesetze",
+    "latex": "\\log_{b}(x \\cdot y) = \\log_{b} x + \\log_{b} y, \\quad \\log_{b}(x^{r}) = r \\cdot \\log_{b} x",
+    "symbol": "log(x·y) = log x + log y",
+    "kategorie": "mathematik",
+    "unterkategorie": "Algebra",
+    "beschreibung": "Die Logarithmengesetze verwandeln Produkte in Summen, Quotienten in Differenzen und Potenzen in Vielfache.",
+    "einheiten": "Dimensionslos (Algebra) · Argumente x, y > 0",
+    "variablen": [
+      {
+        "symbol": "log_b",
+        "bedeutung": "Logarithmus zur Basis b (b > 0, b ≠ 1)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "x, y",
+        "bedeutung": "Positive Argumente",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "r",
+        "bedeutung": "Exponent, wandert als Faktor vor den Logarithmus",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "John Napier veröffentlichte 1614 die ersten Logarithmentafeln; sie machten Multiplikationen zu Additionen und revolutionierten das Rechnen in Astronomie und Navigation. Die drei Gesetze: log(x·y) = log x + log y, log(x/y) = log x − log y, log(x^r) = r·log x. Dazu der Basiswechsel log_b x = ln x/ln b. Wichtig: Für log(x + y) gibt es kein Gesetz.",
+    "beispiel": "2ˣ = 10: x = log₂ 10 = ln 10/ln 2 ≈ 2,303/0,693 ≈ 3,32. Probe: 2^3,32 ≈ 9,98 ≈ 10 ✓. Und: lg(1000·100) = lg 1000 + lg 100 = 3 + 2 = 5.",
+    "anwendung": "Exponentialgleichungen lösen (Halbwertszeit, Verdopplungszeit), pH-Wert und Dezibel-Skalen, Zinsrechnung, Komplexitätsanalyse in der Informatik",
+    "quellen": [
+      "Napier, J. (1614). Mirifici logarithmorum canonis descriptio. Edinburgh."
+    ],
+    "verwandte": [
+      "ableitung-ln",
+      "potenzregel",
+      "eulersche-formel"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Logarithmus"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "log(x*y)=log x+log y",
+      "log(x/y)=log x-log y",
+      "log(x^r)=r*log x",
+      "Logarithmusgesetze",
+      "Logarithmus Regeln",
+      "Basiswechsel Logarithmus",
+      "logarithm rules",
+      "ln Rechenregeln"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/logarithmengesetze",
+    "herleitung": {
+      "gueltigkeit": "Gelten für positive Argumente x, y > 0 und Basen b > 0, b ≠ 1, in jeder Basis (ln, lg, log₂). Für log(x + y) existiert kein Gesetz.",
+      "schritte": [
+        "Mit x = b^m und y = b^n gilt x·y = b^(m+n) (Potenzgesetz).",
+        "Logarithmieren liefert log(x·y) = m + n = log x + log y; analog Quotient und Potenz."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Quotient",
+        "latex": "\\log_{b}\\frac{x}{y} = \\log_{b} x - \\log_{b} y",
+        "hinweis": "Division wird zur Subtraktion."
+      },
+      {
+        "ziel": "Basiswechsel",
+        "latex": "\\log_{b} x = \\frac{\\ln x}{\\ln b}",
+        "hinweis": "Macht jede Basis mit dem Taschenrechner zugänglich."
+      },
+      {
+        "ziel": "Exponentialgleichung lösen",
+        "latex": "a^{x} = c \\;\\Rightarrow\\; x = \\frac{\\ln c}{\\ln a}",
+        "hinweis": "Logarithmieren holt x aus dem Exponenten."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "log(x + y) in log x + log y zerlegen.",
+        "korrektur": "Das Gesetz gilt nur für Produkte: log(x·y) = log x + log y."
+      },
+      {
+        "fehler": "(log x)² mit log(x²) verwechseln.",
+        "korrektur": "log(x²) = 2·log x; (log x)² ist das Quadrat des Logarithmus."
+      },
+      {
+        "fehler": "Logarithmen negativer Zahlen bilden.",
+        "korrektur": "log ist nur für positive Argumente definiert."
+      },
+      {
+        "fehler": "Beim Basiswechsel Zähler und Nenner vertauschen.",
+        "korrektur": "log_b x = ln x/ln b, die Basis steht unten."
+      }
+    ]
+  },
+  {
+    "slug": "kosinussatz",
+    "name": "Kosinussatz",
+    "latex": "c^{2} = a^{2} + b^{2} - 2ab \\cdot \\cos\\gamma",
+    "symbol": "c² = a² + b² − 2ab·cos γ",
+    "kategorie": "mathematik",
+    "unterkategorie": "Trigonometrie",
+    "beschreibung": "Der Kosinussatz verallgemeinert den Satz des Pythagoras auf beliebige Dreiecke ohne rechten Winkel.",
+    "einheiten": "Seiten in gleicher Längeneinheit · γ in Grad oder Bogenmaß",
+    "variablen": [
+      {
+        "symbol": "a, b, c",
+        "bedeutung": "Seiten des Dreiecks",
+        "einheit": "m, cm, etc."
+      },
+      {
+        "symbol": "γ",
+        "bedeutung": "Der Seite c gegenüberliegender Winkel",
+        "einheit": "° oder rad"
+      }
+    ],
+    "hintergrund": "In Euklids Elementen (Buch II, Sätze 12 und 13) geometrisch formuliert, in heutiger Form seit der arabischen und frühneuzeitlichen Trigonometrie. Für γ = 90° ist cos γ = 0 und der Satz wird zum Satz des Pythagoras. Er löst die Fälle SWS (zwei Seiten und eingeschlossener Winkel) und SSS (drei Seiten); umgestellt liefert er cos γ = (a² + b² − c²)/(2ab).",
+    "beispiel": "a = 5, b = 7, γ = 60°: c² = 25 + 49 − 2·5·7·cos 60° = 74 − 70·0,5 = 39, also c = √39 ≈ 6,24. Mit γ = 90° bliebe c² = a² + b² (Pythagoras).",
+    "anwendung": "Dreiecksberechnung bei SWS und SSS, Vermessung und Navigation, Kräfteaddition in der Physik, Abstandsberechnung in der Geometrie",
+    "quellen": [
+      "Euklid (ca. 300 v. Chr.). Elemente, Buch II, Sätze 12-13."
+    ],
+    "verwandte": [
+      "pythagorean-theorem",
+      "sinussatz",
+      "skalarprodukt"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Kosinussatz"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "c^2=a^2+b^2-2ab*cos(gamma)",
+      "Kosinussatz Formel",
+      "Cosinussatz",
+      "Kosinussatz Winkel berechnen",
+      "Dreieck zwei Seiten ein Winkel",
+      "law of cosines",
+      "SWS Dreieck berechnen",
+      "verallgemeinerter Pythagoras"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/kosinussatz",
+    "herleitung": {
+      "gueltigkeit": "Gilt in jedem ebenen Dreieck, für jede Seite mit ihrem Gegenwinkel. Für γ = 90° geht er in den Satz des Pythagoras über.",
+      "schritte": [
+        "Lege C in den Ursprung: A = (b|0), B = (a·cos γ|a·sin γ).",
+        "c² = (a·cos γ − b)² + (a·sin γ)² = a² + b² − 2ab·cos γ (mit sin² + cos² = 1)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Winkel aus drei Seiten",
+        "latex": "\\cos\\gamma = \\frac{a^{2} + b^{2} - c^{2}}{2ab}",
+        "hinweis": "SSS-Fall: damit alle Winkel bestimmen."
+      },
+      {
+        "ziel": "Andere Seiten",
+        "latex": "a^{2} = b^{2} + c^{2} - 2bc \\cdot \\cos\\alpha",
+        "hinweis": "Der Satz gilt zyklisch für jede Seite mit ihrem Gegenwinkel."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Einen Winkel verwenden, der nicht der gesuchten Seite gegenüberliegt.",
+        "korrektur": "Seite und Gegenwinkel gehören zusammen: c mit γ, a mit α."
+      },
+      {
+        "fehler": "Den Term −2ab·cos γ bei stumpfem γ falsch behandeln.",
+        "korrektur": "Für γ > 90° ist cos γ negativ, der Term wird positiv und c größer."
+      },
+      {
+        "fehler": "Taschenrechner im falschen Winkelmodus.",
+        "korrektur": "DEG/RAD prüfen; 60° ist nicht 60 rad."
+      }
+    ]
+  },
+  {
+    "slug": "sinussatz",
+    "name": "Sinussatz",
+    "latex": "\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta} = \\frac{c}{\\sin\\gamma}",
+    "symbol": "a/sin α = b/sin β = c/sin γ",
+    "kategorie": "mathematik",
+    "unterkategorie": "Trigonometrie",
+    "beschreibung": "Im Dreieck verhalten sich die Seiten wie die Sinuswerte ihrer gegenüberliegenden Winkel.",
+    "einheiten": "Seiten in gleicher Längeneinheit · Winkel in Grad oder Bogenmaß",
+    "variablen": [
+      {
+        "symbol": "a, b, c",
+        "bedeutung": "Seiten des Dreiecks",
+        "einheit": "m, cm, etc."
+      },
+      {
+        "symbol": "α, β, γ",
+        "bedeutung": "Jeweils gegenüberliegende Winkel",
+        "einheit": "° oder rad"
+      }
+    ],
+    "hintergrund": "Systematisch dargestellt von Regiomontanus (De triangulis omnimodis, 1464). Der gemeinsame Wert aller drei Quotienten ist 2R, der Durchmesser des Umkreises. Der Sinussatz löst die Fälle WSW/SWW (zwei Winkel, eine Seite) und SSW. Achtung beim Fall SSW: Wegen sin(180° − x) = sin x kann es zwei gültige Dreiecke geben (mehrdeutiger Fall).",
+    "beispiel": "a = 8, α = 45°, β = 60°: b = a·sin β/sin α = 8·0,866/0,707 ≈ 9,80. Mit γ = 180° − 45° − 60° = 75°: c = 8·sin 75°/sin 45° ≈ 8·0,966/0,707 ≈ 10,93.",
+    "anwendung": "Dreiecksberechnung bei WSW und SSW, Triangulation in der Landvermessung, Navigation und Peilung, Kräftezerlegung",
+    "quellen": [
+      "Regiomontanus, J. (1464). De triangulis omnimodis."
+    ],
+    "verwandte": [
+      "kosinussatz",
+      "pythagorean-theorem",
+      "kreisflaeche-umfang"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Sinussatz"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "a/sin(alpha)=b/sin(beta)",
+      "Sinussatz Formel",
+      "Sinussatz Dreieck",
+      "Sinussatz Winkel berechnen",
+      "WSW Dreieck berechnen",
+      "Sinussatz Umkreis 2R",
+      "law of sines",
+      "Sinussatz mehrdeutiger Fall"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/sinussatz",
+    "herleitung": {
+      "gueltigkeit": "Gilt in jedem ebenen Dreieck. Beim Fall SSW kann die Lösung mehrdeutig sein, weil sin(180° − x) = sin x gilt.",
+      "schritte": [
+        "Die Höhe auf c erfüllt h = b·sin α und h = a·sin β.",
+        "Gleichsetzen liefert a/sin α = b/sin β; analog für die dritte Seite."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Seite berechnen",
+        "latex": "b = \\frac{a \\cdot \\sin\\beta}{\\sin\\alpha}",
+        "hinweis": "WSW-Fall: fehlenden Winkel über die Winkelsumme 180° bestimmen."
+      },
+      {
+        "ziel": "Winkel berechnen",
+        "latex": "\\sin\\beta = \\frac{b \\cdot \\sin\\alpha}{a}",
+        "hinweis": "Achtung: β und 180° − β haben denselben Sinus (SSW-Mehrdeutigkeit)."
+      },
+      {
+        "ziel": "Umkreisradius",
+        "latex": "\\frac{a}{\\sin\\alpha} = 2R",
+        "hinweis": "Alle drei Quotienten gleichen dem Umkreisdurchmesser."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Den Sinussatz bei SWS anwenden (zwei Seiten, eingeschlossener Winkel).",
+        "korrektur": "Dafür fehlt ein Seite-Gegenwinkel-Paar; Kosinussatz nutzen."
+      },
+      {
+        "fehler": "Beim SSW-Fall die zweite Lösung 180° − β übersehen.",
+        "korrektur": "Immer prüfen, ob auch der stumpfe Winkel ein gültiges Dreieck ergibt."
+      },
+      {
+        "fehler": "Seiten und Winkel falsch paaren.",
+        "korrektur": "Im Quotienten stehen immer Seite und ihr Gegenwinkel."
+      }
+    ]
+  },
+  {
+    "slug": "kreisflaeche-umfang",
+    "name": "Kreisfläche und Kreisumfang",
+    "latex": "A = \\pi r^{2}, \\quad U = 2\\pi r",
+    "symbol": "A = πr², U = 2πr",
+    "kategorie": "mathematik",
+    "unterkategorie": "Geometrie",
+    "beschreibung": "Fläche und Umfang eines Kreises hängen nur vom Radius r ab, verknüpft über die Kreiszahl π.",
+    "einheiten": "r in m oder cm · A in m² oder cm² · U in m oder cm",
+    "variablen": [
+      {
+        "symbol": "A",
+        "bedeutung": "Flächeninhalt des Kreises",
+        "einheit": "m², cm²"
+      },
+      {
+        "symbol": "U",
+        "bedeutung": "Umfang des Kreises",
+        "einheit": "m, cm"
+      },
+      {
+        "symbol": "r",
+        "bedeutung": "Radius (halber Durchmesser d)",
+        "einheit": "m, cm"
+      },
+      {
+        "symbol": "π",
+        "bedeutung": "Kreiszahl (≈ 3,14159)",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Archimedes (ca. 250 v. Chr.) schachtelte den Kreis zwischen Vielecke ein und bewies 3 10/71 < π < 3 1/7 sowie A = U·r/2, was beide Formeln verbindet. π ist als Verhältnis von Umfang zu Durchmesser definiert (U = πd) und irrational. Skalierung: Der Umfang wächst linear mit r, die Fläche quadratisch; Radiusverdopplung vervierfacht also die Fläche.",
+    "beispiel": "r = 5 cm: A = π·5² = 25π ≈ 78,5 cm² und U = 2π·5 = 10π ≈ 31,4 cm. Verdoppelt man den Radius auf 10 cm, vervierfacht sich die Fläche auf ≈ 314,2 cm².",
+    "anwendung": "Geometrie- und Sachaufgaben, Kreisring- und Sektorflächen, Rotationsvolumen in der Analysis, Technik (Rohrquerschnitte, Räder)",
+    "quellen": [
+      "Archimedes (ca. 250 v. Chr.). Kreismessung."
+    ],
+    "verwandte": [
+      "pythagorean-theorem",
+      "bestimmtes-integral-flaeche",
+      "kosinussatz"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Kreis"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "A=pi*r^2",
+      "U=2*pi*r",
+      "Kreisfläche berechnen",
+      "Kreisumfang berechnen",
+      "Fläche Kreis Formel",
+      "Umfang Kreis Formel",
+      "circle area circumference",
+      "Kreis Durchmesser Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/kreisflaeche-umfang",
+    "herleitung": {
+      "gueltigkeit": "Exakt für ideale Kreise in der Ebene; r ist der Radius, d = 2r der Durchmesser. Für Sektoren und Ringe werden die Formeln anteilig kombiniert.",
+      "schritte": [
+        "Viele schmale „Tortenstücke\" ergeben angenähert ein Rechteck mit Seiten U/2 und r.",
+        "A = (U/2)·r = (2πr/2)·r = πr²; das verbindet Fläche und Umfang."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Radius aus dem Umfang",
+        "latex": "r = \\frac{U}{2\\pi}",
+        "hinweis": "Rückwärtsrechnen, etwa aus gemessenem Umfang."
+      },
+      {
+        "ziel": "Radius aus der Fläche",
+        "latex": "r = \\sqrt{\\frac{A}{\\pi}}",
+        "hinweis": "Wurzel nicht vergessen, A wächst quadratisch mit r."
+      },
+      {
+        "ziel": "Mit Durchmesser",
+        "latex": "A = \\frac{\\pi}{4} d^{2}, \\quad U = \\pi d",
+        "hinweis": "Praktisch, wenn der Durchmesser gemessen wird."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Fläche und Umfang verwechseln: A = 2πr.",
+        "korrektur": "2πr ist der Umfang; die Fläche ist πr² mit Quadrat-Einheit."
+      },
+      {
+        "fehler": "Den Durchmesser statt des Radius einsetzen.",
+        "korrektur": "Bei gegebenem d zuerst halbieren: r = d/2."
+      },
+      {
+        "fehler": "πr² als (πr)² rechnen.",
+        "korrektur": "Nur r wird quadriert, π bleibt Faktor."
+      }
+    ]
+  },
+  {
+    "slug": "kugel-volumen-oberflaeche",
+    "name": "Kugel: Volumen und Oberfläche",
+    "latex": "V = \\frac{4}{3}\\pi r^{3}, \\quad O = 4\\pi r^{2}",
+    "symbol": "V = 4/3·πr³, O = 4πr²",
+    "kategorie": "mathematik",
+    "unterkategorie": "Geometrie / Körper",
+    "beschreibung": "Volumen und Oberfläche einer Kugel hängen nur vom Radius ab: Das Volumen wächst mit der dritten, die Oberfläche mit der zweiten Potenz von r.",
+    "einheiten": "r in cm oder m · V in cm³ oder m³ · O in cm² oder m²",
+    "variablen": [
+      {
+        "symbol": "V",
+        "bedeutung": "Volumen der Kugel",
+        "einheit": "cm³, m³"
+      },
+      {
+        "symbol": "O",
+        "bedeutung": "Oberflächeninhalt der Kugel",
+        "einheit": "cm², m²"
+      },
+      {
+        "symbol": "r",
+        "bedeutung": "Radius (halber Durchmesser d)",
+        "einheit": "cm, m"
+      },
+      {
+        "symbol": "π",
+        "bedeutung": "Kreiszahl (≈ 3,14159)",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Archimedes bewies um 225 v. Chr. in \"Über Kugel und Zylinder\", dass die Kugel genau 2/3 des umschriebenen Zylinders füllt; er war so stolz darauf, dass Kugel und Zylinder sein Grabmal zierten. Bemerkenswert: O ist die Ableitung von V nach r (dV/dr = 4πr²), weil die Kugel schalenweise wächst. Skalierung: Doppelter Radius bedeutet vierfache Oberfläche und achtfaches Volumen.",
+    "beispiel": "r = 3 cm: V = 4/3·π·3³ = 36π ≈ 113,1 cm³ und O = 4π·3² = 36π ≈ 113,1 cm². Verdoppelt auf r = 6 cm: V = 288π ≈ 904,8 cm³ (8-fach), O = 144π ≈ 452,4 cm² (4-fach).",
+    "anwendung": "Körperberechnung in Prüfungen, Tank- und Ballonvolumen, Oberfläche von Planeten und Zellen, Verpackungsoptimierung (minimale Oberfläche bei gegebenem Volumen)",
+    "quellen": [
+      "Archimedes (ca. 225 v. Chr.). Über Kugel und Zylinder."
+    ],
+    "verwandte": [
+      "kreisflaeche-umfang",
+      "zylinder-volumen-oberflaeche",
+      "kegel-volumen-oberflaeche"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Kugel"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "V=4/3*pi*r^3",
+      "O=4*pi*r^2",
+      "4 drittel pi r hoch 3",
+      "Kugelvolumen Formel",
+      "Kugeloberfläche berechnen",
+      "Volumen Kugel",
+      "sphere volume surface area",
+      "Radius aus Kugelvolumen"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/kugel-volumen-oberflaeche",
+    "herleitung": {
+      "gueltigkeit": "Exakt für ideale Kugeln; r ist der Radius, d = 2r der Durchmesser. Für Halbkugeln werden die Formeln anteilig kombiniert (V = 2/3·πr³, O = 3πr² inklusive Schnittkreis).",
+      "schritte": [
+        "Zylinder um die Kugel: Radius r, Höhe 2r, also V = πr²·2r = 2πr³; davon 2/3 ergibt 4/3·πr³.",
+        "Die Oberfläche folgt als Ableitung des Volumens nach r: O = dV/dr = 4πr²."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Radius aus dem Volumen",
+        "latex": "r = \\sqrt[3]{\\frac{3V}{4\\pi}}",
+        "hinweis": "Dritte Wurzel nicht vergessen, V wächst kubisch mit r."
+      },
+      {
+        "ziel": "Radius aus der Oberfläche",
+        "latex": "r = \\sqrt{\\frac{O}{4\\pi}}",
+        "hinweis": "Quadratwurzel, weil O quadratisch mit r wächst."
+      },
+      {
+        "ziel": "Mit Durchmesser",
+        "latex": "V = \\frac{\\pi}{6} d^{3}",
+        "hinweis": "Praktisch, wenn der Durchmesser gemessen wird (r = d/2)."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Volumen- und Oberflächenformel verwechseln (4πr² als Volumen).",
+        "korrektur": "Volumen hat r³ und Einheit cm³, Oberfläche r² und cm²."
+      },
+      {
+        "fehler": "Den Durchmesser statt des Radius einsetzen.",
+        "korrektur": "Erst halbieren: r = d/2; sonst ist V um den Faktor 8 zu groß."
+      },
+      {
+        "fehler": "4/3·πr³ als (4/3·πr)³ rechnen.",
+        "korrektur": "Nur r wird mit 3 potenziert, 4/3 und π bleiben Faktoren."
+      }
+    ]
+  },
+  {
+    "slug": "zylinder-volumen-oberflaeche",
+    "name": "Zylinder: Volumen und Oberfläche",
+    "latex": "V = \\pi r^{2} h, \\quad O = 2\\pi r (r + h)",
+    "symbol": "V = πr²h, O = 2πr(r+h)",
+    "kategorie": "mathematik",
+    "unterkategorie": "Geometrie / Körper",
+    "beschreibung": "Das Zylindervolumen ist Grundfläche mal Höhe; die Oberfläche besteht aus zwei Deckelkreisen und dem abgerollten Mantelrechteck.",
+    "einheiten": "r und h in cm oder m · V in cm³ oder m³ · O und M in cm² oder m²",
+    "variablen": [
+      {
+        "symbol": "V",
+        "bedeutung": "Volumen des Zylinders",
+        "einheit": "cm³, m³"
+      },
+      {
+        "symbol": "O",
+        "bedeutung": "Gesamtoberfläche (2 Kreise + Mantel)",
+        "einheit": "cm², m²"
+      },
+      {
+        "symbol": "M",
+        "bedeutung": "Mantelfläche M = 2πrh",
+        "einheit": "cm², m²"
+      },
+      {
+        "symbol": "r",
+        "bedeutung": "Radius der Grundfläche",
+        "einheit": "cm, m"
+      },
+      {
+        "symbol": "h",
+        "bedeutung": "Höhe des Zylinders",
+        "einheit": "cm, m"
+      }
+    ],
+    "hintergrund": "Grundfläche mal Höhe gilt für jeden geraden Zylinder- und Prismenkörper; nach dem Prinzip von Cavalieri haben Körper mit gleichen Querschnitten in jeder Höhe gleiches Volumen. Der Mantel ist abgerollt ein Rechteck mit den Seiten U = 2πr und h, daher M = 2πrh. Zusammen mit Boden und Deckel folgt O = 2πr² + 2πrh = 2πr(r + h).",
+    "beispiel": "r = 4 cm, h = 10 cm: V = π·4²·10 = 160π ≈ 502,7 cm³. Mantel: M = 2π·4·10 = 80π ≈ 251,3 cm². Oberfläche: O = 2π·4·(4 + 10) = 112π ≈ 351,9 cm².",
+    "anwendung": "Dosen und Tanks (Füllmenge in Litern), Rohre und Silos, Materialbedarf über die Mantelfläche, Extremwertaufgaben (optimale Dose)",
+    "quellen": [
+      "Bronstein, I.N. et al. (2020). Taschenbuch der Mathematik. Springer."
+    ],
+    "verwandte": [
+      "kugel-volumen-oberflaeche",
+      "kegel-volumen-oberflaeche",
+      "kreisflaeche-umfang"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Zylinder_(Geometrie)"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "V=pi*r^2*h",
+      "O=2*pi*r*(r+h)",
+      "M=2*pi*r*h",
+      "Zylinder Volumen Formel",
+      "Zylinder Oberfläche berechnen",
+      "Mantelfläche Zylinder",
+      "cylinder volume surface area",
+      "Volumen Dose berechnen"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/zylinder-volumen-oberflaeche",
+    "herleitung": {
+      "gueltigkeit": "Gilt für gerade Kreiszylinder: Grundfläche ist ein Kreis, die Achse steht senkrecht auf der Grundfläche. Für schiefe Zylinder gilt V = G·h weiter, die Mantelformel aber nicht.",
+      "schritte": [
+        "Kreisscheiben der Fläche πr² übereinander gestapelt bis zur Höhe h ergeben V = πr²·h.",
+        "Der Mantel abgerollt ist ein Rechteck mit den Seiten 2πr und h; plus zwei Deckelkreise: O = 2πr² + 2πrh."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Höhe aus dem Volumen",
+        "latex": "h = \\frac{V}{\\pi r^{2}}",
+        "hinweis": "Standard bei Füllaufgaben: Volumen und Radius gegeben."
+      },
+      {
+        "ziel": "Radius aus dem Volumen",
+        "latex": "r = \\sqrt{\\frac{V}{\\pi h}}",
+        "hinweis": "Wurzel nicht vergessen, r geht quadratisch ein."
+      },
+      {
+        "ziel": "Mantelfläche",
+        "latex": "M = 2\\pi r h",
+        "hinweis": "Etikett einer Dose: Umfang mal Höhe, ohne Boden und Deckel."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Mantelfläche M und Gesamtoberfläche O verwechseln.",
+        "korrektur": "O = M + 2 Deckelkreise: O = 2πrh + 2πr²."
+      },
+      {
+        "fehler": "Durchmesser statt Radius einsetzen.",
+        "korrektur": "r = d/2; sonst wird V viermal zu groß."
+      },
+      {
+        "fehler": "Kubik- und Literangaben falsch umrechnen.",
+        "korrektur": "1 l = 1000 cm³ = 1 dm³; 1 m³ = 1000 l."
+      }
+    ]
+  },
+  {
+    "slug": "kegel-volumen-oberflaeche",
+    "name": "Kegel: Volumen und Oberfläche",
+    "latex": "V = \\frac{1}{3}\\pi r^{2} h, \\quad M = \\pi r s",
+    "symbol": "V = ⅓·πr²h, M = πrs",
+    "kategorie": "mathematik",
+    "unterkategorie": "Geometrie / Körper",
+    "beschreibung": "Ein Kegel fasst ein Drittel des Zylinders mit gleicher Grundfläche und Höhe; der Mantel wird über die Mantellinie s berechnet.",
+    "einheiten": "r, h und s in cm oder m · V in cm³ oder m³ · M und O in cm² oder m²",
+    "variablen": [
+      {
+        "symbol": "V",
+        "bedeutung": "Volumen des Kegels",
+        "einheit": "cm³, m³"
+      },
+      {
+        "symbol": "M",
+        "bedeutung": "Mantelfläche (O = πr² + πrs)",
+        "einheit": "cm², m²"
+      },
+      {
+        "symbol": "r",
+        "bedeutung": "Radius der Grundfläche",
+        "einheit": "cm, m"
+      },
+      {
+        "symbol": "h",
+        "bedeutung": "Höhe (senkrecht von Spitze zur Grundfläche)",
+        "einheit": "cm, m"
+      },
+      {
+        "symbol": "s",
+        "bedeutung": "Mantellinie s = √(r² + h²)",
+        "einheit": "cm, m"
+      }
+    ],
+    "hintergrund": "Demokrit vermutete den Faktor 1/3, Eudoxos bewies ihn mit der Exhaustionsmethode (überliefert in Euklids Elementen, Buch XII). Höhe h, Radius r und Mantellinie s bilden ein rechtwinkliges Dreieck: s² = r² + h². Abgerollt ist der Mantel ein Kreissektor mit Radius s und Bogenlänge 2πr, daraus folgt M = πrs; die Gesamtoberfläche ist O = πr² + πrs.",
+    "beispiel": "r = 3 cm, h = 4 cm: s = √(9 + 16) = 5 cm. V = ⅓·π·9·4 = 12π ≈ 37,7 cm³, M = π·3·5 = 15π ≈ 47,1 cm², O = π·3² + 15π = 24π ≈ 75,4 cm².",
+    "anwendung": "Eistüten und Trichter, Dach- und Schüttkegel, Extremwertaufgaben, Rotationskörper in der Analysis",
+    "quellen": [
+      "Euklid (ca. 300 v. Chr.). Elemente, Buch XII, Satz 10."
+    ],
+    "verwandte": [
+      "zylinder-volumen-oberflaeche",
+      "pyramide-volumen",
+      "pythagorean-theorem"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Kegel_(Geometrie)"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "V=1/3*pi*r^2*h",
+      "M=pi*r*s",
+      "Kegel Volumen Formel",
+      "Kegel Mantelfläche",
+      "Mantellinie Kegel berechnen",
+      "cone volume lateral surface",
+      "Kegel Oberfläche Formel",
+      "ein drittel pi r quadrat h"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/kegel-volumen-oberflaeche",
+    "herleitung": {
+      "gueltigkeit": "Gilt für gerade Kreiskegel: Spitze senkrecht über dem Kreismittelpunkt. r, h und s hängen über s² = r² + h² zusammen; bei schiefen Kegeln gilt nur V = ⅓·G·h weiter.",
+      "schritte": [
+        "Umschütt-Experiment und Exhaustionsbeweis zeigen: Der Kegel fasst genau 1/3 des Zylinders gleicher Grundfläche und Höhe.",
+        "Der Mantel abgerollt ist ein Sektor mit Radius s und Bogen 2πr; sein Flächenanteil ergibt M = πrs."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Höhe aus dem Volumen",
+        "latex": "h = \\frac{3V}{\\pi r^{2}}",
+        "hinweis": "Der Faktor 3 kommt aus dem 1/3 der Volumenformel."
+      },
+      {
+        "ziel": "Mantellinie",
+        "latex": "s = \\sqrt{r^{2} + h^{2}}",
+        "hinweis": "Pythagoras im Achsenschnitt; s wird für M gebraucht."
+      },
+      {
+        "ziel": "Gesamtoberfläche",
+        "latex": "O = \\pi r^{2} + \\pi r s",
+        "hinweis": "Grundkreis plus Mantel; ohne Grundkreis nur M = πrs."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Höhe h und Mantellinie s verwechseln.",
+        "korrektur": "h steht senkrecht, s läuft schräg am Mantel; s = √(r² + h²) ist immer länger als h."
+      },
+      {
+        "fehler": "Den Faktor 1/3 im Volumen vergessen.",
+        "korrektur": "πr²h ist der Zylinder; der Kegel fasst nur ein Drittel davon."
+      },
+      {
+        "fehler": "In M = πrs die Höhe h statt s einsetzen.",
+        "korrektur": "Die Mantelformel braucht die Mantellinie s, nicht h."
+      }
+    ]
+  },
+  {
+    "slug": "pyramide-volumen",
+    "name": "Pyramide: Volumen",
+    "latex": "V = \\frac{1}{3} \\cdot G \\cdot h",
+    "symbol": "V = ⅓·G·h",
+    "kategorie": "mathematik",
+    "unterkategorie": "Geometrie / Körper",
+    "beschreibung": "Jede Pyramide fasst ein Drittel des Prismas mit gleicher Grundfläche G und Höhe h, unabhängig von der Form der Grundfläche.",
+    "einheiten": "G in cm² oder m² · h in cm oder m · V in cm³ oder m³",
+    "variablen": [
+      {
+        "symbol": "V",
+        "bedeutung": "Volumen der Pyramide",
+        "einheit": "cm³, m³"
+      },
+      {
+        "symbol": "G",
+        "bedeutung": "Grundfläche (Quadrat: G = a²)",
+        "einheit": "cm², m²"
+      },
+      {
+        "symbol": "h",
+        "bedeutung": "Körperhöhe (senkrecht von Spitze zur Grundfläche)",
+        "einheit": "cm, m"
+      }
+    ],
+    "hintergrund": "Der Faktor 1/3 stammt aus der Exhaustionsmethode des Eudoxos (Euklid, Elemente XII): Ein dreiseitiges Prisma lässt sich in drei volumengleiche Pyramiden zerlegen. Die Formel gilt für jede Grundfläche (Quadrat, Dreieck, beliebiges Vieleck); der Kegel ist der Grenzfall mit Kreisgrundfläche. Wichtig: h ist die senkrechte Körperhöhe, nicht die Seitenhöhe hₛ der Seitendreiecke (quadratisch: hₛ = √(h² + (a/2)²)).",
+    "beispiel": "Quadratische Pyramide mit a = 6 cm und h = 10 cm: G = 36 cm², V = ⅓·36·10 = 120 cm³. Cheops-Pyramide (a ≈ 230 m, h ≈ 147 m): V = ⅓·230²·147 ≈ 2,59 Mio. m³.",
+    "anwendung": "Architektur (Pyramiden, Zeltdächer, Obeliskspitzen), zusammengesetzte Körper in Prüfungen, Schütt- und Haufwerksvolumen, Kristallformen",
+    "quellen": [
+      "Euklid (ca. 300 v. Chr.). Elemente, Buch XII, Satz 7."
+    ],
+    "verwandte": [
+      "kegel-volumen-oberflaeche",
+      "kugel-volumen-oberflaeche",
+      "pythagorean-theorem"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Pyramide_(Geometrie)"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "V=1/3*G*h",
+      "Pyramide Volumen Formel",
+      "Volumen quadratische Pyramide",
+      "ein drittel Grundfläche mal Höhe",
+      "pyramid volume formula",
+      "Pyramidenvolumen berechnen",
+      "Cheops Pyramide Volumen",
+      "Höhe Pyramide berechnen"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/pyramide-volumen",
+    "herleitung": {
+      "gueltigkeit": "Gilt für jede Pyramide, egal ob die Grundfläche Quadrat, Rechteck, Dreieck oder ein beliebiges Vieleck ist und ob die Spitze mittig sitzt; h ist stets die senkrechte Höhe von der Spitze auf die Grundflächenebene.",
+      "schritte": [
+        "Zerlege ein dreiseitiges Prisma mit Grundfläche G und Höhe h in drei Pyramiden; je zwei stimmen in Grundfläche und Höhe überein.",
+        "Alle drei sind volumengleich, also V = (G·h)/3; beliebige Grundflächen folgen durch Zerlegung in Dreiecke."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Höhe aus dem Volumen",
+        "latex": "h = \\frac{3V}{G}",
+        "hinweis": "Der Faktor 3 kompensiert das Drittel der Volumenformel."
+      },
+      {
+        "ziel": "Grundfläche aus dem Volumen",
+        "latex": "G = \\frac{3V}{h}",
+        "hinweis": "Bei quadratischer Grundfläche danach a = √G."
+      },
+      {
+        "ziel": "Quadratische Pyramide",
+        "latex": "V = \\frac{1}{3} a^{2} h",
+        "hinweis": "Häufigster Prüfungsfall: G = a² direkt einsetzen."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Körperhöhe h mit der Seitenhöhe hₛ der Dreiecksflächen verwechseln.",
+        "korrektur": "h steht senkrecht auf der Grundfläche; quadratisch gilt hₛ = √(h² + (a/2)²)."
+      },
+      {
+        "fehler": "Den Faktor 1/3 vergessen.",
+        "korrektur": "G·h ist das Prisma; die Pyramide fasst nur ein Drittel."
+      },
+      {
+        "fehler": "Bei G = a² die Kante der Seitenfläche als a nehmen.",
+        "korrektur": "a ist die Grundkante; Seitenkanten sind länger und gehören nicht in G."
+      }
+    ]
+  },
+  {
+    "slug": "trigonometrie-rechtwinkliges-dreieck",
+    "name": "Trigonometrie im rechtwinkligen Dreieck",
+    "latex": "\\sin\\alpha = \\frac{\\text{GK}}{\\text{Hyp}}, \\quad \\cos\\alpha = \\frac{\\text{AK}}{\\text{Hyp}}, \\quad \\tan\\alpha = \\frac{\\text{GK}}{\\text{AK}}",
+    "symbol": "sin α = GK/Hyp, cos α = AK/Hyp, tan α = GK/AK",
+    "kategorie": "mathematik",
+    "unterkategorie": "Trigonometrie",
+    "beschreibung": "Sinus, Kosinus und Tangens verknüpfen im rechtwinkligen Dreieck einen spitzen Winkel mit den Seitenverhältnissen.",
+    "einheiten": "Seiten in gleicher Längeneinheit · α in Grad oder Bogenmaß · Verhältnisse dimensionslos",
+    "variablen": [
+      {
+        "symbol": "α",
+        "bedeutung": "Spitzer Winkel im rechtwinkligen Dreieck",
+        "einheit": "° oder rad"
+      },
+      {
+        "symbol": "GK",
+        "bedeutung": "Gegenkathete (liegt α gegenüber)",
+        "einheit": "cm, m"
+      },
+      {
+        "symbol": "AK",
+        "bedeutung": "Ankathete (liegt an α an)",
+        "einheit": "cm, m"
+      },
+      {
+        "symbol": "Hyp",
+        "bedeutung": "Hypotenuse (gegenüber dem rechten Winkel)",
+        "einheit": "cm, m"
+      }
+    ],
+    "hintergrund": "Die Seitenverhältnisse hängen nur vom Winkel ab, weil alle rechtwinkligen Dreiecke mit gleichem α ähnlich sind; deshalb sind sin, cos und tan Funktionen des Winkels. Merkhilfe: GAGA HühnerHof AG oder englisch SOH-CAH-TOA. Zusammenhänge: tan α = sin α/cos α und sin²α + cos²α = 1 (Pythagoras am Einheitskreis). Für schiefwinklige Dreiecke übernehmen Sinussatz und Kosinussatz.",
+    "beispiel": "Hypotenuse 10 cm, α = 30°: GK = 10·sin 30° = 5 cm und AK = 10·cos 30° ≈ 8,66 cm. Kontrolle mit Pythagoras: 5² + 8,66² ≈ 25 + 75 = 100 = 10² ✓.",
+    "anwendung": "Höhen- und Entfernungsmessung (Leitern, Türme, Steigungen), Vermessung, Kräftezerlegung in der Physik, Grundlage der gesamten Trigonometrie",
+    "quellen": [
+      "Bronstein, I.N. et al. (2020). Taschenbuch der Mathematik. Springer."
+    ],
+    "verwandte": [
+      "sinussatz",
+      "kosinussatz",
+      "pythagorean-theorem"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Trigonometrie"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "sin=Gegenkathete/Hypotenuse",
+      "cos=Ankathete/Hypotenuse",
+      "tan=Gegenkathete/Ankathete",
+      "SOHCAHTOA",
+      "GAGA Hühnerhof AG",
+      "Sinus Kosinus Tangens Dreieck",
+      "Winkel berechnen rechtwinkliges Dreieck",
+      "trigonometry right triangle"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/trigonometrie-rechtwinkliges-dreieck",
+    "herleitung": {
+      "gueltigkeit": "Gilt nur im rechtwinkligen Dreieck für die beiden spitzen Winkel; Gegen- und Ankathete sind stets relativ zum betrachteten Winkel benannt. Schiefwinklige Dreiecke brauchen Sinus- oder Kosinussatz.",
+      "schritte": [
+        "Alle rechtwinkligen Dreiecke mit Winkel α sind ähnlich, ihre Seitenverhältnisse hängen nur von α ab.",
+        "Die drei Verhältnisse GK/Hyp, AK/Hyp und GK/AK erhalten die Namen sin α, cos α und tan α."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Seite berechnen",
+        "latex": "\\text{GK} = \\text{Hyp} \\cdot \\sin\\alpha",
+        "hinweis": "Analog AK = Hyp·cos α und GK = AK·tan α."
+      },
+      {
+        "ziel": "Winkel berechnen",
+        "latex": "\\alpha = \\arctan\\left(\\frac{\\text{GK}}{\\text{AK}}\\right)",
+        "hinweis": "Umkehrfunktionen sin⁻¹, cos⁻¹, tan⁻¹ auf dem Taschenrechner."
+      },
+      {
+        "ziel": "Hypotenuse berechnen",
+        "latex": "\\text{Hyp} = \\frac{\\text{GK}}{\\sin\\alpha}",
+        "hinweis": "Beim Umstellen wandert die gesuchte Größe in den Zähler."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Gegen- und Ankathete vertauschen.",
+        "korrektur": "Vom Winkel aus schauen: gegenüber liegt die GK, anliegend (nicht Hypotenuse) die AK."
+      },
+      {
+        "fehler": "Taschenrechner im falschen Winkelmodus.",
+        "korrektur": "DEG für Gradangaben prüfen; sin 30 in RAD ergibt nicht 0,5."
+      },
+      {
+        "fehler": "sin, cos, tan auf schiefwinklige Dreiecke anwenden.",
+        "korrektur": "Ohne rechten Winkel gelten Sinussatz und Kosinussatz."
+      }
+    ]
+  },
+  {
+    "slug": "geradengleichung-steigung",
+    "name": "Geradengleichung und Steigung",
+    "latex": "m = \\frac{y_{2} - y_{1}}{x_{2} - x_{1}}, \\quad y = m \\cdot x + b",
+    "symbol": "m = Δy/Δx, y = mx + b",
+    "kategorie": "mathematik",
+    "unterkategorie": "Funktionen",
+    "beschreibung": "Die Steigung m misst die Änderung von y pro Schritt in x; zusammen mit dem y-Achsenabschnitt b legt sie die Gerade y = mx + b fest.",
+    "einheiten": "Dimensionslos (Algebra) · in Sachkontexten trägt m die Einheit y-Einheit pro x-Einheit",
+    "variablen": [
+      {
+        "symbol": "m",
+        "bedeutung": "Steigung (Änderung von y pro x-Einheit)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "b",
+        "bedeutung": "y-Achsenabschnitt (Schnittpunkt mit der y-Achse)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "(x₁|y₁), (x₂|y₂)",
+        "bedeutung": "Zwei Punkte der Geraden",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Das Steigungsdreieck macht m anschaulich: m = Δy/Δx. Es gilt m > 0 steigend, m < 0 fallend, m = 0 waagerecht; senkrechte Geraden haben keine Steigung. Parallele Geraden haben gleiches m, senkrechte erfüllen m₁·m₂ = −1. Der Steigungswinkel θ zur x-Achse erfüllt tan θ = m; m = 1 entspricht 45°. In der Analysis wird m lokal: Die Tangentensteigung ist die Ableitung.",
+    "beispiel": "Gerade durch P(1|2) und Q(4|11): m = (11 − 2)/(4 − 1) = 9/3 = 3. b über P: 2 = 3·1 + b, also b = −1. Ergebnis: y = 3x − 1. Probe mit Q: 3·4 − 1 = 11 ✓.",
+    "anwendung": "Lineare Prozesse (Tarife, Füllvorgänge, Abschreibungen), Tangenten- und Normalengleichungen in der Analysis, lineare Interpolation, Umrechnungsformeln (z. B. °C in °F)",
+    "quellen": [
+      "Bronstein, I.N. et al. (2020). Taschenbuch der Mathematik. Springer."
+    ],
+    "verwandte": [
+      "scheitelpunktform-parabel",
+      "differenzenquotient-h-methode",
+      "lineare-regression"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Lineare_Funktion"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "m=(y2-y1)/(x2-x1)",
+      "y=mx+b",
+      "y=mx+n",
+      "Steigung berechnen zwei Punkte",
+      "Geradengleichung aufstellen",
+      "lineare Funktion Formel",
+      "slope formula",
+      "Steigungsdreieck",
+      "y-Achsenabschnitt bestimmen"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/geradengleichung-steigung",
+    "herleitung": {
+      "gueltigkeit": "Gilt für alle nicht senkrechten Geraden in der Ebene; senkrechte Geraden (x = c) haben keine Steigung. Die Zwei-Punkte-Formel verlangt x₁ ≠ x₂.",
+      "schritte": [
+        "Zwischen zwei Punkten gilt m = Δy/Δx = (y₂ − y₁)/(x₂ − x₁); das Verhältnis ist für jede Punktwahl gleich.",
+        "Einsetzen eines Punktes in y = mx + b liefert b = y₁ − m·x₁."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "y-Achsenabschnitt bestimmen",
+        "latex": "b = y_{1} - m \\cdot x_{1}",
+        "hinweis": "Ein bekannter Punkt plus m genügt für die ganze Gerade."
+      },
+      {
+        "ziel": "Punktsteigungsform",
+        "latex": "y = m(x - x_{1}) + y_{1}",
+        "hinweis": "Direkt einsetzbar, ohne b vorher auszurechnen."
+      },
+      {
+        "ziel": "Nullstelle",
+        "latex": "x_{0} = -\\frac{b}{m}",
+        "hinweis": "Schnittpunkt mit der x-Achse (m ≠ 0)."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Zähler und Nenner der Steigungsformel vertauschen (Δx/Δy).",
+        "korrektur": "Steigung ist Höhenänderung pro Rechtsschritt: Δy oben, Δx unten."
+      },
+      {
+        "fehler": "Die Punktreihenfolge mischen: (y₂ − y₁)/(x₁ − x₂).",
+        "korrektur": "Gleiche Reihenfolge in Zähler und Nenner, sonst kippt das Vorzeichen."
+      },
+      {
+        "fehler": "Steigung m und y-Achsenabschnitt b verwechseln.",
+        "korrektur": "m steht vor x und misst die Schräge; b ist der Schnitt mit der y-Achse."
+      }
+    ]
+  },
+  {
+    "slug": "hesse-normalform-abstand-ebene",
+    "name": "Hessesche Normalform (Abstand Punkt-Ebene)",
+    "latex": "d(P;E) = \\frac{|a p_{1} + b p_{2} + c p_{3} - d|}{\\sqrt{a^{2} + b^{2} + c^{2}}}",
+    "symbol": "d(P;E) = |n⃗·p⃗ − d| / |n⃗|",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analytische Geometrie / Vektoren",
+    "beschreibung": "Die Hessesche Normalform liefert den Abstand eines Punktes von einer Ebene: Punkt in die Koordinatengleichung einsetzen, durch die Länge des Normalenvektors teilen.",
+    "einheiten": "Koordinaten und d(P;E) in Längeneinheiten (LE) · Normalenvektor-Koordinaten dimensionslos",
+    "variablen": [
+      {
+        "symbol": "P(p₁|p₂|p₃)",
+        "bedeutung": "Punkt, dessen Abstand gesucht ist",
+        "einheit": "LE"
+      },
+      {
+        "symbol": "a, b, c",
+        "bedeutung": "Koordinaten des Normalenvektors n⃗ der Ebene",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "d",
+        "bedeutung": "Rechte Seite der Ebenengleichung ax + by + cz = d",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "|n⃗|",
+        "bedeutung": "Länge des Normalenvektors √(a² + b² + c²)",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Benannt nach Otto Hesse (19. Jahrhundert). Normiert man die Koordinatengleichung auf |n⃗| = 1, liefert das Einsetzen eines Punktes direkt den orientierten Abstand: positives Vorzeichen auf der Seite, in die n⃗ zeigt, negatives auf der anderen. Der Betrag macht daraus den geometrischen Abstand; ein Punkt in der Ebene ergibt 0. Auch der Abstand paralleler Ebenen folgt so in einem Schritt.",
+    "beispiel": "E: 2x + y + 2z = 9 und P(3|1|5): Zähler |2·3 + 1 + 2·5 − 9| = |8| = 8, Nenner √(4 + 1 + 4) = 3. Abstand d(P;E) = 8/3 ≈ 2,67 LE.",
+    "anwendung": "Abstandsaufgaben im Abitur (Punkt-Ebene, parallele Ebenen), Tangentialebenen an Kugeln, Sicherheitsabstände von Flugbahnen, Kollisionsprüfung in der Computergrafik",
+    "quellen": [
+      "Hesse, O. (1861). Vorlesungen über analytische Geometrie des Raumes. Teubner."
+    ],
+    "verwandte": [
+      "ebenengleichung-normalenform",
+      "abstand-punkt-gerade",
+      "skalarprodukt"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Hessesche_Normalform"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "d=|ax+by+cz-d|/sqrt(a^2+b^2+c^2)",
+      "Hessesche Normalform",
+      "HNF",
+      "Abstand Punkt Ebene",
+      "Abstand Punkt Ebene Formel",
+      "Abstand paralleler Ebenen",
+      "distance point plane",
+      "Ebene normieren Abstand"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/hesse-normalform-abstand-ebene",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Ebenen in Koordinatenform ax + by + cz = d im Raum; der Normalenvektor (a|b|c) darf nicht der Nullvektor sein. Ohne Betrag entsteht der orientierte Abstand mit Seiteninformation.",
+      "schritte": [
+        "Für einen Ebenenpunkt A ist der Abstand von P die Länge der Projektion von AP⃗ auf n⃗: d = |AP⃗·n⃗|/|n⃗|.",
+        "Ausschreiben mit n⃗·a⃗ = d ergibt d(P;E) = |a·p₁ + b·p₂ + c·p₃ − d|/√(a² + b² + c²)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Normierte Ebenengleichung",
+        "latex": "\\frac{a x + b y + c z - d}{\\sqrt{a^{2}+b^{2}+c^{2}}} = 0",
+        "hinweis": "Nach der Normierung liefert Einsetzen eines Punktes direkt den Abstand."
+      },
+      {
+        "ziel": "Abstand paralleler Ebenen",
+        "latex": "d = \\frac{|d_{1} - d_{2}|}{|\\vec{n}|}",
+        "hinweis": "Gleicher Normalenvektor vorausgesetzt; sonst zuerst angleichen."
+      },
+      {
+        "ziel": "Punkte mit Wunschabstand",
+        "latex": "a x + b y + c z = d \\pm k \\cdot |\\vec{n}|",
+        "hinweis": "Beide Parallelebenen im Abstand k, z. B. für Tangentialebenen."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Das Teilen durch |n⃗| vergessen.",
+        "korrektur": "Einsetzen allein liefert nur ein Vielfaches; erst /√(a²+b²+c²) macht daraus den Abstand."
+      },
+      {
+        "fehler": "Die rechte Seite d nicht abziehen.",
+        "korrektur": "In den Zähler gehört a·p₁ + b·p₂ + c·p₃ − d, nicht nur die linke Seite."
+      },
+      {
+        "fehler": "Negatives Ergebnis als Fehler deuten.",
+        "korrektur": "Ohne Betrag zeigt das Vorzeichen nur die Seite der Ebene an; der Abstand ist der Betrag."
+      }
+    ]
+  },
+  {
+    "slug": "ebenengleichung-normalenform",
+    "name": "Ebenengleichung in Normalenform",
+    "latex": "E: (\\vec{x} - \\vec{p}) \\cdot \\vec{n} = 0",
+    "symbol": "E: (x⃗ − p⃗)·n⃗ = 0",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analytische Geometrie / Vektoren",
+    "beschreibung": "Eine Ebene ist durch einen Punkt und einen Normalenvektor festgelegt: Genau die Ortsvektoren x⃗ mit (x⃗ − p⃗)·n⃗ = 0 liegen in ihr.",
+    "einheiten": "Koordinaten in Längeneinheiten (LE) · Skalarprodukt dimensionslos",
+    "variablen": [
+      {
+        "symbol": "x⃗",
+        "bedeutung": "Ortsvektor eines beliebigen Ebenenpunktes",
+        "einheit": "LE"
+      },
+      {
+        "symbol": "p⃗",
+        "bedeutung": "Stützvektor (Ortsvektor eines bekannten Punktes)",
+        "einheit": "LE"
+      },
+      {
+        "symbol": "n⃗",
+        "bedeutung": "Normalenvektor (steht senkrecht auf der Ebene)",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Die Kernidee: Jeder Verbindungsvektor x⃗ − p⃗ innerhalb der Ebene steht senkrecht auf n⃗, das Skalarprodukt ist also 0. Ausmultipliziert entsteht die Koordinatenform ax + by + cz = d mit (a|b|c) = n⃗ und d = n⃗·p⃗. Aus einer Parameterform gewinnt man n⃗ als Kreuzprodukt der beiden Spannvektoren. n⃗ ist nur bis auf Vielfache bestimmt: Jedes Vielfache beschreibt dieselbe Ebene.",
+    "beispiel": "n⃗ = (2|−1|3) und P(1|0|2): d = n⃗·p⃗ = 2·1 − 0 + 3·2 = 8, also E: 2x − y + 3z = 8. Probe mit P: 2 − 0 + 6 = 8 ✓.",
+    "anwendung": "Umwandlung Parameterform in Koordinatenform, Lagebeziehungen von Punkt, Gerade und Ebene, Winkel zwischen Ebenen über Normalenvektoren, Vorstufe der Hesseschen Normalform",
+    "quellen": [
+      "Bronstein, I.N. et al. (2020). Taschenbuch der Mathematik. Springer."
+    ],
+    "verwandte": [
+      "hesse-normalform-abstand-ebene",
+      "kreuzprodukt",
+      "skalarprodukt"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Normalenform"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "(x-p)*n=0",
+      "ax+by+cz=d",
+      "Normalenform Ebene",
+      "Koordinatenform Ebene",
+      "Ebenengleichung aufstellen",
+      "Normalenvektor bestimmen",
+      "plane equation normal form",
+      "Parameterform in Koordinatenform"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/ebenengleichung-normalenform",
+    "herleitung": {
+      "gueltigkeit": "Beschreibt jede Ebene im Raum; n⃗ muss senkrecht auf der Ebene stehen und darf nicht der Nullvektor sein. Vielfache von n⃗ und jeder andere Ebenenpunkt als Stützpunkt beschreiben dieselbe Ebene.",
+      "schritte": [
+        "X liegt genau dann in E, wenn der Verbindungsvektor x⃗ − p⃗ in der Ebene verläuft, also senkrecht zu n⃗ ist: (x⃗ − p⃗)·n⃗ = 0.",
+        "Ausmultiplizieren liefert n⃗·x⃗ = n⃗·p⃗, also die Koordinatenform ax + by + cz = d."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Koordinatenform",
+        "latex": "a x + b y + c z = \\vec{n} \\cdot \\vec{p}",
+        "hinweis": "(a|b|c) = n⃗; d entsteht durch Einsetzen des Stützpunktes."
+      },
+      {
+        "ziel": "Normalenvektor aus Parameterform",
+        "latex": "\\vec{n} = \\vec{u} \\times \\vec{v}",
+        "hinweis": "Kreuzprodukt der Spannvektoren; danach Stützpunkt einsetzen."
+      },
+      {
+        "ziel": "Punktprobe",
+        "latex": "(\\vec{q} - \\vec{p}) \\cdot \\vec{n} \\stackrel{?}{=} 0",
+        "hinweis": "Ergebnis 0 heißt: Q liegt in der Ebene."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Normalenvektor mit Richtungsvektor verwechseln.",
+        "korrektur": "n⃗ steht senkrecht auf der Ebene; Spannvektoren liegen in ihr."
+      },
+      {
+        "fehler": "d vergessen oder als d = 0 annehmen.",
+        "korrektur": "d = n⃗·p⃗ mit einem Ebenenpunkt berechnen; d = 0 gilt nur für Ebenen durch den Ursprung."
+      },
+      {
+        "fehler": "Beim Kreuzprodukt Rechenfehler in den Vorzeichen.",
+        "korrektur": "Ergebnis prüfen: n⃗·AB⃗ = 0 und n⃗·AC⃗ = 0 müssen gelten."
+      }
+    ]
+  },
+  {
+    "slug": "abstand-punkt-gerade",
+    "name": "Abstand Punkt-Gerade",
+    "latex": "d(Q;g) = \\frac{|(\\vec{q} - \\vec{p}) \\times \\vec{u}|}{|\\vec{u}|}",
+    "symbol": "d(Q;g) = |(q⃗−p⃗)×u⃗| / |u⃗|",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analytische Geometrie / Vektoren",
+    "beschreibung": "Der Abstand eines Punktes von einer Geraden im Raum ist die Länge des Lots; die Kreuzprodukt-Formel liefert ihn in einem Schritt.",
+    "einheiten": "Koordinaten und d(Q;g) in Längeneinheiten (LE)",
+    "variablen": [
+      {
+        "symbol": "q⃗",
+        "bedeutung": "Ortsvektor des Punktes Q",
+        "einheit": "LE"
+      },
+      {
+        "symbol": "p⃗",
+        "bedeutung": "Stützvektor der Geraden g",
+        "einheit": "LE"
+      },
+      {
+        "symbol": "u⃗",
+        "bedeutung": "Richtungsvektor der Geraden g",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "d(Q;g)",
+        "bedeutung": "Abstand (Länge des Lots von Q auf g)",
+        "einheit": "LE"
+      }
+    ],
+    "hintergrund": "Geometrische Deutung: |(q⃗−p⃗) × u⃗| ist die Fläche des von q⃗−p⃗ und u⃗ aufgespannten Parallelogramms; geteilt durch die Grundseite |u⃗| bleibt dessen Höhe übrig, genau der Abstand. Alternativ liefert das Lotfußpunkt-Verfahren F = p⃗ + t·u⃗ mit t = (q⃗−p⃗)·u⃗/(u⃗·u⃗) zusätzlich den Fußpunkt F; dann ist d = |QF⃗|. Beide Wege führen zum selben Ergebnis.",
+    "beispiel": "g: x⃗ = (1|0|2) + t·(2|1|2) und Q(3|4|2): q⃗−p⃗ = (2|4|0), Kreuzprodukt (q⃗−p⃗)×u⃗ = (8|−4|−6) mit Betrag √116 ≈ 10,77. |u⃗| = 3. Abstand d = √116/3 ≈ 3,59 LE.",
+    "anwendung": "Abstandsaufgaben im Abitur, kürzeste Entfernung zu Flugbahnen und Leitungen, Toleranzprüfung in CAD-Systemen, Vorstufe für den Abstand windschiefer Geraden",
+    "quellen": [
+      "Bronstein, I.N. et al. (2020). Taschenbuch der Mathematik. Springer."
+    ],
+    "verwandte": [
+      "hesse-normalform-abstand-ebene",
+      "kreuzprodukt",
+      "vektor-betrag-laenge"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Abstand"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "d=|(q-p)xu|/|u|",
+      "Abstand Punkt Gerade",
+      "Abstand Punkt Gerade Vektoren",
+      "Lotfußpunktverfahren",
+      "Lotfußpunkt berechnen",
+      "distance point line 3d",
+      "Abstand Punkt Gerade Kreuzprodukt",
+      "kürzester Abstand Gerade"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/abstand-punkt-gerade",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Geraden in Parameterform im Raum (u⃗ ≠ 0⃗). In der Ebene nutzt man die 2D-Variante über die Lotgerade oder die HNF der Geraden; für windschiefe Geraden gilt eine eigene Formel.",
+      "schritte": [
+        "q⃗ − p⃗ und u⃗ spannen ein Parallelogramm mit Fläche |(q⃗ − p⃗) × u⃗| auf.",
+        "Fläche = Grundseite mal Höhe: Division durch |u⃗| lässt die Höhe übrig, den Abstand von Q zu g."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Lotfußpunkt-Parameter",
+        "latex": "t = \\frac{(\\vec{q} - \\vec{p}) \\cdot \\vec{u}}{\\vec{u} \\cdot \\vec{u}}",
+        "hinweis": "F = p⃗ + t·u⃗ ist der Fußpunkt; d = |QF⃗| als Alternative."
+      },
+      {
+        "ziel": "Abstand in der Ebene (2D)",
+        "latex": "d = \\frac{|a q_{1} + b q_{2} - c|}{\\sqrt{a^{2} + b^{2}}}",
+        "hinweis": "HNF der Geradengleichung ax + by = c."
+      },
+      {
+        "ziel": "Windschiefe Geraden",
+        "latex": "d = \\frac{|(\\vec{q} - \\vec{p}) \\cdot (\\vec{u} \\times \\vec{v})|}{|\\vec{u} \\times \\vec{v}|}",
+        "hinweis": "Verallgemeinerung mit beiden Richtungsvektoren u⃗ und v⃗."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Den Ortsvektor q⃗ statt der Differenz q⃗ − p⃗ verwenden.",
+        "korrektur": "In die Formel gehört der Verbindungsvektor vom Stützpunkt zu Q."
+      },
+      {
+        "fehler": "Kreuz- und Skalarprodukt verwechseln.",
+        "korrektur": "Der Zähler ist der Betrag eines Vektors (Kreuzprodukt), kein Skalar aus dem Punktprodukt."
+      },
+      {
+        "fehler": "Vergessen, durch |u⃗| zu teilen.",
+        "korrektur": "Ohne Division bleibt die Parallelogrammfläche statt der Höhe."
+      }
+    ]
+  },
+  {
+    "slug": "vektor-betrag-laenge",
+    "name": "Betrag eines Vektors (Länge)",
+    "latex": "|\\vec{v}| = \\sqrt{v_{1}^{2} + v_{2}^{2} + v_{3}^{2}}",
+    "symbol": "|v⃗| = √(v₁² + v₂² + v₃²)",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analytische Geometrie / Vektoren",
+    "beschreibung": "Der Betrag eines Vektors ist seine Länge: die Wurzel aus der Summe der Koordinatenquadrate, ein doppelt angewendeter Pythagoras im Raum.",
+    "einheiten": "|v⃗| in Längeneinheiten (LE) · Koordinaten in LE",
+    "variablen": [
+      {
+        "symbol": "v⃗",
+        "bedeutung": "Vektor im R² oder R³",
+        "einheit": "LE"
+      },
+      {
+        "symbol": "v₁, v₂, v₃",
+        "bedeutung": "Koordinaten des Vektors",
+        "einheit": "LE"
+      },
+      {
+        "symbol": "|v⃗|",
+        "bedeutung": "Betrag (Länge) des Vektors",
+        "einheit": "LE"
+      }
+    ],
+    "hintergrund": "In der Ebene ist der Betrag der Pythagoras im Steigungsdreieck; im Raum wendet man ihn zweimal an (Raumdiagonale des Quaders). Der Abstand zweier Punkte A und B ist der Betrag des Verbindungsvektors |AB⃗|. Division durch den Betrag normiert: v⃗⁰ = v⃗/|v⃗| ist der Einheitsvektor der Länge 1. Wichtig für die Vektorrechnung: |v⃗|² = v⃗·v⃗ verbindet Betrag und Skalarprodukt.",
+    "beispiel": "v⃗ = (2|3|6): |v⃗| = √(4 + 9 + 36) = √49 = 7 LE. Abstand von A(1|2|3) und B(4|6|3): AB⃗ = (3|4|0), |AB⃗| = √(9 + 16 + 0) = 5 LE.",
+    "anwendung": "Längen und Abstände in der Vektorgeometrie, Einheitsvektoren und Normierung (Hessesche Normalform), Beträge von Geschwindigkeit und Kraft in der Physik, Seitenlängen von Dreiecken im Raum",
+    "quellen": [
+      "Gibbs, J.W. & Wilson, E.B. (1901). Vector Analysis. Yale University Press."
+    ],
+    "verwandte": [
+      "skalarprodukt",
+      "kreuzprodukt",
+      "pythagorean-theorem"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Vektor"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "|v|=sqrt(x^2+y^2+z^2)",
+      "Betrag Vektor berechnen",
+      "Länge Vektor Formel",
+      "Vektorbetrag",
+      "Abstand zweier Punkte Vektor",
+      "Einheitsvektor berechnen",
+      "vector magnitude formula",
+      "Norm eines Vektors"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/vektor-betrag-laenge",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Vektoren im R² (ohne dritte Koordinate) und R³ mit kartesischen Koordinaten; der Betrag ist nie negativ und genau dann 0, wenn v⃗ der Nullvektor ist.",
+      "schritte": [
+        "In der xy-Ebene hat (v₁|v₂) die Länge √(v₁² + v₂²) (Pythagoras im Steigungsdreieck).",
+        "Mit der dritten Koordinate als Höhe folgt |v⃗| = √((√(v₁²+v₂²))² + v₃²) = √(v₁² + v₂² + v₃²)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Einheitsvektor",
+        "latex": "\\vec{v}^{0} = \\frac{\\vec{v}}{|\\vec{v}|}",
+        "hinweis": "Länge 1, gleiche Richtung; Basis für HNF und Richtungswinkel."
+      },
+      {
+        "ziel": "Abstand zweier Punkte",
+        "latex": "d(A;B) = |\\vec{AB}| = \\sqrt{(b_{1}-a_{1})^{2} + (b_{2}-a_{2})^{2} + (b_{3}-a_{3})^{2}}",
+        "hinweis": "Verbindungsvektor bilden, dann Betrag."
+      },
+      {
+        "ziel": "Betrag über Skalarprodukt",
+        "latex": "|\\vec{v}|^{2} = \\vec{v} \\cdot \\vec{v}",
+        "hinweis": "Nützlich in Beweisen und beim Rechnen ohne Wurzel."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Koordinaten erst addieren, dann quadrieren.",
+        "korrektur": "Jede Koordinate einzeln quadrieren, dann summieren, dann wurzeln."
+      },
+      {
+        "fehler": "Negative Koordinaten ohne Quadrat übernehmen.",
+        "korrektur": "(−3)² = 9; durch das Quadrieren verschwinden alle Vorzeichen."
+      },
+      {
+        "fehler": "Betrag eines Vektors mit dem Betrag einer Zahl verwechseln.",
+        "korrektur": "|v⃗| ist eine Länge aus allen Koordinaten, nicht das Weglassen von Vorzeichen."
+      }
+    ]
+  },
+  {
+    "slug": "differenzenquotient-h-methode",
+    "name": "Differenzenquotient und h-Methode",
+    "latex": "f'(x_{0}) = \\lim_{h \\to 0} \\frac{f(x_{0}+h) - f(x_{0})}{h}",
+    "symbol": "f'(x₀) = lim (f(x₀+h)−f(x₀))/h",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis",
+    "beschreibung": "Der Differenzenquotient misst die mittlere Änderungsrate; im Grenzwert h gegen 0 wird er zur Ableitung, der lokalen Änderungsrate.",
+    "einheiten": "Dimensionslos (Analysis) · in Sachkontexten y-Einheit pro x-Einheit",
+    "variablen": [
+      {
+        "symbol": "x₀",
+        "bedeutung": "Stelle, an der die Steigung gesucht ist",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "h",
+        "bedeutung": "Schrittweite (h ≠ 0, wird beliebig klein)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "f(x₀+h) − f(x₀)",
+        "bedeutung": "Höhenunterschied der Sekante",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "f'(x₀)",
+        "bedeutung": "Ableitung (Tangentensteigung an der Stelle x₀)",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Der Differenzenquotient ist die Sekantensteigung durch (x₀|f(x₀)) und (x₀+h|f(x₀+h)). Lässt man h gegen 0 laufen, kippt die Sekante in die Tangente: Der Grenzwert heißt Differentialquotient und definiert die Ableitung (Newton, Leibniz, um 1670-1684). Die h-Methode rechnet das konkret aus: einsetzen, ausmultiplizieren, h kürzen, dann h gegen 0. Gleichwertig ist die Form lim x→x₀ von (f(x) − f(x₀))/(x − x₀).",
+    "beispiel": "f(x) = x² an x₀ = 3: (f(3+h) − f(3))/h = (9 + 6h + h² − 9)/h = 6 + h. Für h → 0 folgt f′(3) = 6. Kontrolle mit der Potenzregel: f′(x) = 2x, also f′(3) = 6 ✓.",
+    "anwendung": "Herleitung von Ableitungen im hilfsmittelfreien Teil, Verständnisaufgaben zu mittlerer und lokaler Änderungsrate, numerisches Differenzieren, Physik (Momentangeschwindigkeit aus Weg-Zeit-Daten)",
+    "quellen": [
+      "Leibniz, G.W. (1684). Nova methodus pro maximis et minimis. Acta Eruditorum."
+    ],
+    "verwandte": [
+      "potenzregel",
+      "produktregel-ableitung",
+      "geradengleichung-steigung"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Differenzenquotient"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "f'(x)=lim (f(x+h)-f(x))/h",
+      "h-Methode",
+      "Differenzenquotient Formel",
+      "Differentialquotient",
+      "mittlere Änderungsrate",
+      "lokale Änderungsrate",
+      "Ableitung Definition Grenzwert",
+      "difference quotient",
+      "Sekantensteigung"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/differenzenquotient-h-methode",
+    "herleitung": {
+      "gueltigkeit": "Der Differenzenquotient existiert für jede Funktion auf einem Intervall; der Grenzwert (die Ableitung) existiert nur, wenn f an der Stelle x₀ differenzierbar ist, z. B. nicht am Knick von |x|.",
+      "schritte": [
+        "Die Sekante durch (x₀|f(x₀)) und (x₀+h|f(x₀+h)) hat die Steigung (f(x₀+h) − f(x₀))/h.",
+        "Für h → 0 rückt der zweite Punkt an x₀ heran; der Grenzwert der Sekantensteigungen ist die Tangentensteigung f′(x₀)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Mittlere Änderungsrate",
+        "latex": "m_{[a;b]} = \\frac{f(b) - f(a)}{b - a}",
+        "hinweis": "Ohne Grenzwert: Sekantensteigung über einem Intervall."
+      },
+      {
+        "ziel": "x-Form des Grenzwerts",
+        "latex": "f'(x_{0}) = \\lim_{x \\to x_{0}} \\frac{f(x) - f(x_{0})}{x - x_{0}}",
+        "hinweis": "Gleichwertige Definition; oft bequemer bei Faktorisierungen."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "h = 0 direkt einsetzen und durch 0 teilen.",
+        "korrektur": "Erst algebraisch vereinfachen und h kürzen, dann den Grenzwert h → 0 bilden."
+      },
+      {
+        "fehler": "Beim Ausmultiplizieren von (x₀+h)² den gemischten Term 2x₀h vergessen.",
+        "korrektur": "Binomische Formel: (x₀+h)² = x₀² + 2x₀h + h²."
+      },
+      {
+        "fehler": "Mittlere und lokale Änderungsrate gleichsetzen.",
+        "korrektur": "Die mittlere Rate gehört zu einem Intervall (Sekante), die lokale zu einem Punkt (Tangente)."
+      }
+    ]
+  },
+  {
+    "slug": "scheitelpunktform-parabel",
+    "name": "Scheitelpunktform der Parabel",
+    "latex": "y = a(x - d)^{2} + e",
+    "symbol": "y = a(x − d)² + e",
+    "kategorie": "mathematik",
+    "unterkategorie": "Funktionen",
+    "beschreibung": "Die Scheitelpunktform zeigt den Scheitel S(d|e) einer Parabel direkt in der Gleichung; der Faktor a steuert Öffnung und Streckung.",
+    "einheiten": "Dimensionslos (Algebra)",
+    "variablen": [
+      {
+        "symbol": "a",
+        "bedeutung": "Streckfaktor (a > 0 nach oben, a < 0 nach unten geöffnet)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "d",
+        "bedeutung": "x-Koordinate des Scheitels (Vorzeichen beachten)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "e",
+        "bedeutung": "y-Koordinate des Scheitels",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "S(d|e)",
+        "bedeutung": "Scheitelpunkt (Extrempunkt der Parabel)",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Aus der Normalparabel y = ax² entsteht die allgemeine Parabel durch Verschieben um d nach rechts und e nach oben. Der Übergang aus der Normalform y = ax² + bx + c gelingt per quadratischer Ergänzung, der Rückweg durch Ausmultiplizieren. Der Scheitel ist Tiefpunkt für a > 0 und Hochpunkt für a < 0; allgemein gilt d = −b/(2a). Für |a| > 1 ist die Parabel gestreckt, für |a| < 1 gestaucht.",
+    "beispiel": "y = 2(x − 3)² + 1 hat den Scheitel S(3|1) und ist nach oben geöffnet. Rückweg per Ergänzung: x² + 6x + 5 = (x + 3)² − 9 + 5 = (x + 3)² − 4, also S(−3|−4).",
+    "anwendung": "Extremwert- und Optimierungsaufgaben (Wurfhöhe, Gewinnmaximum), Brücken- und Wurfparabeln modellieren, schnelles Skizzieren von Parabeln, Funktionstransformationen",
+    "quellen": [
+      "Bronstein, I.N. et al. (2020). Taschenbuch der Mathematik. Springer."
+    ],
+    "verwandte": [
+      "pq-formel",
+      "quadratische-formel",
+      "binomische-formeln"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Scheitelpunkt"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "y=a(x-d)^2+e",
+      "Scheitelpunktform",
+      "Scheitelform Parabel",
+      "Scheitelpunkt ablesen",
+      "quadratische Ergänzung Scheitelpunkt",
+      "vertex form parabola",
+      "Scheitelpunkt berechnen Formel",
+      "Normalform in Scheitelpunktform"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/scheitelpunktform-parabel",
+    "herleitung": {
+      "gueltigkeit": "Gilt für alle quadratischen Funktionen (a ≠ 0); jede Parabel lässt sich eindeutig in Scheitelpunktform schreiben. Achtung Vorzeichen: y = a(x + 3)² + 1 hat den Scheitel bei d = −3.",
+      "schritte": [
+        "Aus y = ax² + bx + c wird a ausgeklammert und (b/(2a))² ergänzt und wieder abgezogen.",
+        "Zusammenfassen liefert y = a(x + b/(2a))² + c − b²/(4a), also d = −b/(2a) und e = c − b²/(4a)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Scheitel aus der Normalform",
+        "latex": "d = -\\frac{b}{2a}, \\quad e = f(d)",
+        "hinweis": "Schneller Weg ohne Ergänzung: d berechnen, dann einsetzen."
+      },
+      {
+        "ziel": "Nullstellen aus der Scheitelpunktform",
+        "latex": "x_{1,2} = d \\pm \\sqrt{-\\frac{e}{a}}",
+        "hinweis": "Nur lösbar, wenn −e/a ≥ 0; sonst keine reellen Nullstellen."
+      },
+      {
+        "ziel": "Aufstellen aus Scheitel und Punkt",
+        "latex": "a = \\frac{y_{P} - e}{(x_{P} - d)^{2}}",
+        "hinweis": "Scheitel einsetzen, mit einem weiteren Punkt a bestimmen."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Das Vorzeichen von d falsch ablesen: (x − 3)² heißt d = 3, nicht −3.",
+        "korrektur": "Der Scheitel liegt dort, wo die Klammer 0 wird."
+      },
+      {
+        "fehler": "Bei der Ergänzung das Abziehen des Ergänzungsterms vergessen.",
+        "korrektur": "Was ergänzt wird, muss sofort wieder abgezogen werden, sonst ändert sich die Funktion."
+      },
+      {
+        "fehler": "Vor der Ergänzung a nicht ausklammern.",
+        "korrektur": "Bei y = 2x² + 8x zuerst 2(x² + 4x), dann innerhalb der Klammer ergänzen."
+      }
+    ]
+  },
+  {
+    "slug": "lineare-regression",
+    "name": "Lineare Regression (Ausgleichsgerade)",
+    "latex": "b = \\frac{\\sum (x_{i}-\\bar{x})(y_{i}-\\bar{y})}{\\sum (x_{i}-\\bar{x})^{2}}, \\quad a = \\bar{y} - b\\bar{x}",
+    "symbol": "ŷ = a + b·x",
+    "kategorie": "mathematik",
+    "unterkategorie": "Stochastik / Statistik",
+    "beschreibung": "Die lineare Regression legt die Ausgleichsgerade ŷ = a + bx so durch eine Punktwolke, dass die Summe der quadrierten Abweichungen minimal wird.",
+    "einheiten": "b in y-Einheit pro x-Einheit · a in y-Einheit · r dimensionslos (−1 bis 1)",
+    "variablen": [
+      {
+        "symbol": "b",
+        "bedeutung": "Steigung der Ausgleichsgeraden",
+        "einheit": "y-Einheit/x-Einheit"
+      },
+      {
+        "symbol": "a",
+        "bedeutung": "y-Achsenabschnitt der Ausgleichsgeraden",
+        "einheit": "y-Einheit"
+      },
+      {
+        "symbol": "x̄, ȳ",
+        "bedeutung": "Mittelwerte der x- und y-Daten",
+        "einheit": "wie Daten"
+      },
+      {
+        "symbol": "r",
+        "bedeutung": "Korrelationskoeffizient (Stärke des linearen Zusammenhangs)",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Methode der kleinsten Quadrate, veröffentlicht von Legendre 1805 und von Gauß für die Bahnbestimmung des Zwergplaneten Ceres genutzt. Die Ausgleichsgerade läuft immer durch den Schwerpunkt (x̄|ȳ) der Daten. Der Korrelationskoeffizient r misst nur die Stärke des linearen Zusammenhangs: r nahe ±1 bedeutet enge Kopplung, r nahe 0 keinen linearen Zusammenhang. Korrelation belegt keine Kausalität, und Prognosen weit außerhalb der Daten sind unsicher.",
+    "beispiel": "Punkte (1|2), (2|3), (3|5), (4|6): x̄ = 2,5 und ȳ = 4. b = 7/5 = 1,4 und a = 4 − 1,4·2,5 = 0,5, also ŷ = 1,4x + 0,5. Prognose für x = 5: ŷ = 7,5.",
+    "anwendung": "Trendprognosen aus Messreihen (Klima- und Absatzdaten), Statistikaufgaben mit GTR/CAS, Kalibriergeraden in den Naturwissenschaften, Sozialforschung",
+    "quellen": [
+      "Legendre, A.M. (1805). Nouvelles méthodes pour la détermination des orbites des comètes. Paris."
+    ],
+    "verwandte": [
+      "standardabweichung",
+      "erwartungswert",
+      "geradengleichung-steigung"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Lineare_Regression"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "y=a+bx Regression",
+      "Ausgleichsgerade berechnen",
+      "Regressionsgerade Formel",
+      "Methode der kleinsten Quadrate",
+      "Korrelationskoeffizient r",
+      "linear regression formula",
+      "Trendlinie berechnen",
+      "least squares"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/lineare-regression",
+    "herleitung": {
+      "gueltigkeit": "Sinnvoll nur, wenn der Zusammenhang näherungsweise linear ist (Streudiagramm prüfen); Ausreißer verzerren die Gerade stark, und Prognosen gelten nur im Bereich der Daten.",
+      "schritte": [
+        "Für S(a,b) = Σ(yᵢ − a − bxᵢ)² werden die partiellen Ableitungen nach a und b gleich 0 gesetzt.",
+        "Die Normalgleichungen liefern b = Σ(xᵢ−x̄)(yᵢ−ȳ)/Σ(xᵢ−x̄)² und a = ȳ − b·x̄."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "y-Achsenabschnitt",
+        "latex": "a = \\bar{y} - b \\cdot \\bar{x}",
+        "hinweis": "Folgt daraus, dass die Gerade durch (x̄|ȳ) läuft."
+      },
+      {
+        "ziel": "Korrelationskoeffizient",
+        "latex": "r = \\frac{\\sum (x_{i}-\\bar{x})(y_{i}-\\bar{y})}{\\sqrt{\\sum (x_{i}-\\bar{x})^{2} \\cdot \\sum (y_{i}-\\bar{y})^{2}}}",
+        "hinweis": "Misst die Stärke des linearen Zusammenhangs (−1 bis 1)."
+      },
+      {
+        "ziel": "Steigung über r",
+        "latex": "b = r \\cdot \\frac{s_{y}}{s_{x}}",
+        "hinweis": "Verbindung von Korrelation und Standardabweichungen."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Korrelation als Kausalität deuten.",
+        "korrektur": "r misst nur Gleichlauf; ob x die Ursache von y ist, sagt die Statistik nicht."
+      },
+      {
+        "fehler": "Weit außerhalb des Datenbereichs extrapolieren.",
+        "korrektur": "Der lineare Trend gilt nur im beobachteten Bereich; außerhalb kann das Modell brechen."
+      },
+      {
+        "fehler": "x- und y-Rolle vertauschen.",
+        "korrektur": "Die Regression von y auf x minimiert senkrechte y-Abweichungen; vertauschte Rollen ergeben eine andere Gerade."
+      }
+    ]
+  },
+  {
+    "slug": "binomialkoeffizient-kombinatorik",
+    "name": "Binomialkoeffizient (n über k)",
+    "latex": "\\binom{n}{k} = \\frac{n!}{k!\\,(n-k)!}",
+    "symbol": "(n über k) = n!/(k!·(n−k)!)",
+    "kategorie": "mathematik",
+    "unterkategorie": "Stochastik / Kombinatorik",
+    "beschreibung": "Der Binomialkoeffizient n über k zählt, wie viele k-elementige Teilmengen sich aus n Objekten auswählen lassen, ohne Beachtung der Reihenfolge.",
+    "einheiten": "Dimensionslos (Anzahlen)",
+    "variablen": [
+      {
+        "symbol": "n",
+        "bedeutung": "Anzahl der verfügbaren Objekte",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "k",
+        "bedeutung": "Anzahl der ausgewählten Objekte (0 ≤ k ≤ n)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "n!",
+        "bedeutung": "Fakultät n! = n·(n−1)·...·1, mit 0! = 1",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Der Binomialkoeffizient zählt Kombinationen ohne Wiederholung. Spielt die Reihenfolge eine Rolle, zählt die Variation nPk = n!/(n−k)! = (n über k)·k!. Im Pascalschen Dreieck (Traité 1665, in Asien Jahrhunderte früher bekannt) gilt die Bausteinregel (n über k) = (n−1 über k−1) + (n−1 über k) und die Symmetrie (n über k) = (n über n−k). Auf dem Taschenrechner heißt die Funktion nCr. In der Binomialverteilung zählt er die Pfade mit k Treffern.",
+    "beispiel": "Lotto 6 aus 49: (49 über 6) = 49!/(6!·43!) = 13 983 816 mögliche Tipps. Kleines Beispiel: (10 über 3) = (10·9·8)/(3·2·1) = 120.",
+    "anwendung": "Lotto- und Auswahlaufgaben, Pfadanzahlen in Bernoulli-Ketten (Binomialverteilung), Qualitätskontrolle (Stichproben), Teamzusammenstellungen",
+    "quellen": [
+      "Pascal, B. (1665). Traité du triangle arithmétique. Paris."
+    ],
+    "verwandte": [
+      "binomialverteilung",
+      "bedingte-wahrscheinlichkeit",
+      "erwartungswert"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Binomialkoeffizient"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "n über k Formel",
+      "nCr Formel",
+      "n!/(k!(n-k)!)",
+      "Binomialkoeffizient berechnen",
+      "Kombinationen ohne Wiederholung",
+      "nPr Permutation",
+      "binomial coefficient",
+      "Lotto 6 aus 49 Möglichkeiten",
+      "Pascalsches Dreieck"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/binomialkoeffizient-kombinatorik",
+    "herleitung": {
+      "gueltigkeit": "Zählt Kombinationen ohne Wiederholung: n verschiedene Objekte, k davon auswählen, Reihenfolge egal, kein Zurücklegen. Mit Reihenfolge gilt nPk, mit Zurücklegen andere Zählformeln.",
+      "schritte": [
+        "Geordnete Auswahlen: n·(n−1)·...·(n−k+1) = n!/(n−k)! Möglichkeiten.",
+        "Jede ungeordnete Auswahl wurde k!-mal gezählt; Division ergibt n!/(k!(n−k)!)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Variation (mit Reihenfolge)",
+        "latex": "nPk = \\frac{n!}{(n-k)!} = \\binom{n}{k} \\cdot k!",
+        "hinweis": "Podestplätze statt Teams: Reihenfolge zählt."
+      },
+      {
+        "ziel": "Symmetrie",
+        "latex": "\\binom{n}{k} = \\binom{n}{n-k}",
+        "hinweis": "k auswählen heißt n−k weglassen; spart Rechenarbeit."
+      },
+      {
+        "ziel": "Pascal-Regel",
+        "latex": "\\binom{n}{k} = \\binom{n-1}{k-1} + \\binom{n-1}{k}",
+        "hinweis": "Bauprinzip des Pascalschen Dreiecks."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Kombination und Variation verwechseln.",
+        "korrektur": "Reihenfolge egal: nCk. Reihenfolge zählt: nPk = nCk·k!."
+      },
+      {
+        "fehler": "n!/(k!(n−k)!) stur voll ausrechnen und Überlauf riskieren.",
+        "korrektur": "Kürzen: (n über k) = n·(n−1)·...·(n−k+1)/k!; große Fakultäten heben sich weg."
+      },
+      {
+        "fehler": "0! = 0 annehmen.",
+        "korrektur": "0! = 1 per Definition; daher (n über 0) = (n über n) = 1."
+      }
+    ]
+  },
+  {
+    "slug": "geometrische-reihe",
+    "name": "Geometrische Reihe",
+    "latex": "s_{n} = a_{1} \\cdot \\frac{q^{n}-1}{q-1} \\quad (q \\neq 1), \\qquad s_{\\infty} = \\frac{a_{1}}{1-q} \\quad (|q| < 1)",
+    "symbol": "sₙ = a₁·(qⁿ−1)/(q−1)",
+    "kategorie": "mathematik",
+    "unterkategorie": "Folgen und Reihen",
+    "beschreibung": "Die geometrische Reihe summiert Glieder mit konstantem Faktor q; für |q| < 1 besitzt sogar die unendliche Reihe einen endlichen Wert.",
+    "einheiten": "Dimensionslos · in Sachkontexten Einheit der Glieder (z. B. Euro)",
+    "variablen": [
+      {
+        "symbol": "a₁",
+        "bedeutung": "Erstes Glied der Reihe",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "q",
+        "bedeutung": "Konstanter Quotient aufeinanderfolgender Glieder",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "n",
+        "bedeutung": "Anzahl der summierten Glieder",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "sₙ, s∞",
+        "bedeutung": "Summe der ersten n Glieder bzw. Grenzwert",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Schon Euklid behandelte die endliche geometrische Summe (Elemente IX, 35). Herleitung als Teleskoptrick: sₙ − q·sₙ lässt fast alle Glieder wegfallen. Für |q| < 1 strebt qⁿ gegen 0, daher s∞ = a₁/(1 − q); für |q| ≥ 1 divergiert die unendliche Reihe. Klassiker: 0,999... = 0,9·1/(1 − 0,1) = 1. In der Finanzmathematik ist der Endwert eines Sparplans eine geometrische Summe mit q = Zinsfaktor.",
+    "beispiel": "s₈ von 3 + 6 + 12 + ...: a₁ = 3, q = 2: s₈ = 3·(2⁸ − 1)/(2 − 1) = 3·255 = 765. Unendlich: a₁ = 1, q = 1/2: s∞ = 1/(1 − 0,5) = 2.",
+    "anwendung": "Zinseszins- und Rentenrechnung (Sparpläne, Kredite), Medikamentenspiegel bei regelmäßiger Gabe, Grenzwertaufgaben, Informatik (Laufzeitabschätzungen)",
+    "quellen": [
+      "Euklid (ca. 300 v. Chr.). Elemente, Buch IX, Satz 35."
+    ],
+    "verwandte": [
+      "exponentielles-wachstum",
+      "arithmetische-reihe-gauss",
+      "logarithmengesetze"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Geometrische_Reihe"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "s=a*(q^n-1)/(q-1)",
+      "s=a/(1-q)",
+      "geometrische Reihe Formel",
+      "geometrische Summenformel",
+      "unendliche geometrische Reihe",
+      "geometric series formula",
+      "Grenzwert geometrische Reihe",
+      "Zinseszins Reihe"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/geometrische-reihe",
+    "herleitung": {
+      "gueltigkeit": "Die endliche Summenformel gilt für q ≠ 1 (für q = 1 ist sₙ = n·a₁); die unendliche Reihe konvergiert nur für |q| < 1, sonst divergiert sie.",
+      "schritte": [
+        "sₙ = a₁ + a₁q + ... + a₁qⁿ⁻¹ und q·sₙ = a₁q + ... + a₁qⁿ; Subtraktion lässt nur a₁ − a₁qⁿ übrig.",
+        "Also sₙ(1 − q) = a₁(1 − qⁿ), und für |q| < 1 strebt qⁿ → 0, daher s∞ = a₁/(1 − q)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Unendliche Summe",
+        "latex": "s_{\\infty} = \\frac{a_{1}}{1-q} \\quad (|q| < 1)",
+        "hinweis": "Nur bei |q| < 1; sonst existiert kein Grenzwert."
+      },
+      {
+        "ziel": "Erstes Glied",
+        "latex": "a_{1} = s_{\\infty} \\cdot (1 - q)",
+        "hinweis": "Rückwärts aus Grenzwert und Quotient."
+      },
+      {
+        "ziel": "n-tes Glied der Folge",
+        "latex": "a_{n} = a_{1} \\cdot q^{\\,n-1}",
+        "hinweis": "Folge (einzelnes Glied) und Reihe (Summe) auseinanderhalten."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Die unendliche Summenformel bei |q| ≥ 1 anwenden.",
+        "korrektur": "Für |q| ≥ 1 divergiert die Reihe; s∞ existiert nur für |q| < 1."
+      },
+      {
+        "fehler": "Folge und Reihe verwechseln.",
+        "korrektur": "aₙ = a₁qⁿ⁻¹ ist ein Glied, sₙ die Summe aller Glieder bis n."
+      },
+      {
+        "fehler": "Exponenten falsch zählen (qⁿ⁻¹ vs. qⁿ).",
+        "korrektur": "In der Summe der n Glieder ist der höchste Exponent n − 1; in der Formel steht qⁿ."
+      }
+    ]
+  },
+  {
+    "slug": "arithmetische-reihe-gauss",
+    "name": "Arithmetische Reihe (Gaußsche Summenformel)",
+    "latex": "s_{n} = \\frac{n \\cdot (a_{1} + a_{n})}{2}",
+    "symbol": "sₙ = n·(a₁ + aₙ)/2",
+    "kategorie": "mathematik",
+    "unterkategorie": "Folgen und Reihen",
+    "beschreibung": "Die Gaußsche Summenformel addiert Glieder mit konstantem Abstand: Anzahl der Glieder mal Mittelwert aus erstem und letztem Glied.",
+    "einheiten": "Dimensionslos (Anzahlen und Summen)",
+    "variablen": [
+      {
+        "symbol": "sₙ",
+        "bedeutung": "Summe der ersten n Glieder",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "n",
+        "bedeutung": "Anzahl der Glieder",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "a₁",
+        "bedeutung": "Erstes Glied der Reihe",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "aₙ",
+        "bedeutung": "Letztes Glied: aₙ = a₁ + (n−1)·d",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Berühmte Anekdote: Der neunjährige Gauß addierte die Zahlen 1 bis 100 in Sekunden, indem er 50 Paare mit gleicher Summe 101 bildete (1+100, 2+99, ...), also 50·101 = 5050. Genau das steckt in der Formel: Erstes und letztes Glied koppeln, jedes Paar summiert gleich. Sonderfall 1 + 2 + ... + n = n(n+1)/2. Mit dem konstanten Abstand d lautet die Variante sₙ = n/2·(2a₁ + (n−1)·d).",
+    "beispiel": "1 + 2 + ... + 100 = 100·101/2 = 5050. Allgemein: a₁ = 5, d = 3, n = 20: a₂₀ = 5 + 19·3 = 62 und s₂₀ = 20·(5 + 62)/2 = 670.",
+    "anwendung": "Summen- und Zählaufgaben, Sitzreihen- und Stapelprobleme, lineare Abschreibung und Ratenpläne, Induktionsbeweise, Informatik (Kosten von Schleifen)",
+    "quellen": [
+      "Sartorius von Waltershausen, W. (1856). Gauss zum Gedächtniss. Leipzig."
+    ],
+    "verwandte": [
+      "geometrische-reihe",
+      "binomialkoeffizient-kombinatorik",
+      "erwartungswert"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Gau%C3%9Fsche_Summenformel"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "s=n*(a1+an)/2",
+      "n(n+1)/2",
+      "Gaußsche Summenformel",
+      "kleiner Gauß",
+      "arithmetische Reihe Formel",
+      "Summe 1 bis 100",
+      "arithmetic series formula",
+      "Summenformel arithmetische Folge"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/arithmetische-reihe-gauss",
+    "herleitung": {
+      "gueltigkeit": "Gilt für arithmetische Folgen, also konstante Differenz d zwischen den Gliedern; die Paar-Formel braucht erstes und letztes Glied, die d-Variante nur a₁, d und n.",
+      "schritte": [
+        "sₙ = a₁ + a₂ + ... + aₙ und rückwärts sₙ = aₙ + aₙ₋₁ + ... + a₁; jede der n Spalten summiert zu a₁ + aₙ.",
+        "Also 2sₙ = n·(a₁ + aₙ), geteilt durch 2 folgt die Formel."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Variante mit Abstand d",
+        "latex": "s_{n} = \\frac{n}{2} \\cdot (2a_{1} + (n-1) d)",
+        "hinweis": "Wenn das letzte Glied nicht gegeben ist."
+      },
+      {
+        "ziel": "Kleiner Gauß",
+        "latex": "1 + 2 + \\dots + n = \\frac{n(n+1)}{2}",
+        "hinweis": "Sonderfall a₁ = 1, d = 1; der Klassiker."
+      },
+      {
+        "ziel": "Letztes Glied",
+        "latex": "a_{n} = a_{1} + (n-1) \\cdot d",
+        "hinweis": "Vorab nötig, wenn nur a₁, d und n bekannt sind."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Die Anzahl der Glieder n falsch bestimmen.",
+        "korrektur": "Von a bis b mit Schritt d sind es n = (b − a)/d + 1 Glieder, nicht (b − a)/d."
+      },
+      {
+        "fehler": "Formel auf nicht-arithmetische Summen anwenden.",
+        "korrektur": "Nur bei konstanter Differenz; 1 + 2 + 4 + 8 ist geometrisch."
+      },
+      {
+        "fehler": "n(n+1)/2 mit n²/2 abkürzen.",
+        "korrektur": "Das +1 gehört dazu: 100·101/2 = 5050, nicht 5000."
+      }
+    ]
+  },
+  {
+    "slug": "rotationsvolumen",
+    "name": "Rotationsvolumen",
+    "latex": "V = \\pi \\int_{a}^{b} f(x)^{2} \\, dx",
+    "symbol": "V = π·∫ f(x)² dx",
+    "kategorie": "mathematik",
+    "unterkategorie": "Analysis / Integralrechnung",
+    "beschreibung": "Rotiert der Graph von f um die x-Achse, entsteht ein Rotationskörper; sein Volumen summiert Kreisscheiben mit Radius f(x).",
+    "einheiten": "V in Volumeneinheiten (VE) · x in LE · f(x) in LE",
+    "variablen": [
+      {
+        "symbol": "V",
+        "bedeutung": "Volumen des Rotationskörpers",
+        "einheit": "VE"
+      },
+      {
+        "symbol": "f(x)",
+        "bedeutung": "Randfunktion (Radius der Kreisscheibe an der Stelle x)",
+        "einheit": "LE"
+      },
+      {
+        "symbol": "a, b",
+        "bedeutung": "Grenzen des Rotationsbereichs auf der x-Achse",
+        "einheit": "LE"
+      }
+    ],
+    "hintergrund": "Idee: Der Körper wird in dünne Scheiben der Dicke dx zerlegt; jede ist näherungsweise ein Zylinder mit Kreisfläche π·f(x)², das Integral summiert alle Scheiben auf. Kepler nutzte solche Zerlegungen 1615 zur Volumenbestimmung von Weinfässern. Kugel und Kegel folgen als Spezialfälle: f(x) = √(r² − x²) über [−r; r] liefert 4/3·πr³. Entscheidend: Erst f quadrieren, dann integrieren.",
+    "beispiel": "f(x) = √x über [0; 4]: V = π·∫₀⁴ x dx = π·[x²/2]₀⁴ = 8π ≈ 25,1 VE. Kegelprobe: f(x) = x über [0; 3]: V = π·[x³/3]₀³ = 9π, identisch mit ⅓·π·3²·3 ✓.",
+    "anwendung": "Abituraufgaben zu Rotationskörpern (Vasen, Gläser, Fässer), Volumen gedrehter Bauteile in der Technik, Herleitung von Kugel- und Kegelvolumen",
+    "quellen": [
+      "Kepler, J. (1615). Nova stereometria doliorum vinariorum. Linz."
+    ],
+    "verwandte": [
+      "bestimmtes-integral-flaeche",
+      "hauptsatz-integralrechnung",
+      "kugel-volumen-oberflaeche"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Rotationsk%C3%B6rper"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "V=pi*Integral f(x)^2 dx",
+      "Rotationsvolumen Formel",
+      "Rotationskörper Volumen",
+      "Volumen Rotation um x-Achse",
+      "solid of revolution volume",
+      "Rotationsintegral",
+      "Volumenintegral Rotationskörper",
+      "Rotation um y-Achse Volumen"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/rotationsvolumen",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Rotation um die x-Achse, wenn f auf [a; b] stetig ist; f darf das Vorzeichen wechseln, weil f² gerechnet wird. Für Rotation um die y-Achse oder Hohlkörper gelten angepasste Formeln.",
+      "schritte": [
+        "An der Stelle x hat die Scheibe den Radius f(x), also die Kreisfläche π·f(x)² und das Volumen π·f(x)²·dx.",
+        "Das Integral von a bis b summiert alle Scheiben: V = π·∫f(x)² dx."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Rotation um die y-Achse",
+        "latex": "V = \\pi \\int_{c}^{d} g(y)^{2} \\, dy",
+        "hinweis": "Mit der Umkehrfunktion g = f⁻¹ und y-Grenzen."
+      },
+      {
+        "ziel": "Hohlkörper (zwei Graphen)",
+        "latex": "V = \\pi \\int_{a}^{b} \\left( f(x)^{2} - g(x)^{2} \\right) dx",
+        "hinweis": "Außenradius f, Innenradius g; Differenz der Quadrate, nicht Quadrat der Differenz."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Erst integrieren, dann quadrieren: (π∫f dx)².",
+        "korrektur": "Der Integrand ist f(x)²; quadriert wird vor dem Integrieren."
+      },
+      {
+        "fehler": "π vergessen.",
+        "korrektur": "Jede Scheibe ist ein Kreis mit Fläche π·r²; das π gehört vor das Integral."
+      },
+      {
+        "fehler": "Beim Hohlkörper (f − g)² statt f² − g² rechnen.",
+        "korrektur": "Außen- minus Innenscheibe: π(f² − g²); die binomische Formel zeigt den Unterschied."
+      }
+    ]
+  },
+  {
+    "slug": "dreiecksflaeche-sinus",
+    "name": "Dreiecksfläche mit Sinus",
+    "latex": "A = \\frac{1}{2} \\cdot a \\cdot b \\cdot \\sin\\gamma",
+    "symbol": "A = ½·a·b·sin γ",
+    "kategorie": "mathematik",
+    "unterkategorie": "Trigonometrie",
+    "beschreibung": "Die trigonometrische Flächenformel: Zwei Seiten und der von ihnen eingeschlossene Winkel legen die Dreiecksfläche fest.",
+    "einheiten": "a und b in cm oder m · γ in Grad oder Bogenmaß · A in cm² oder m²",
+    "variablen": [
+      {
+        "symbol": "A",
+        "bedeutung": "Flächeninhalt des Dreiecks",
+        "einheit": "cm², m²"
+      },
+      {
+        "symbol": "a, b",
+        "bedeutung": "Zwei Seiten des Dreiecks",
+        "einheit": "cm, m"
+      },
+      {
+        "symbol": "γ",
+        "bedeutung": "Von a und b eingeschlossener Winkel",
+        "einheit": "° oder rad"
+      }
+    ],
+    "hintergrund": "Herleitung aus A = ½·g·h: Die Höhe auf a ist h = b·sin γ, eingesetzt folgt die Formel. Für γ = 90° wird sin γ = 1 und es bleibt A = ½ab, das rechtwinklige Dreieck. Sind alle drei Seiten gegeben, hilft die Heronsche Formel A = √(s(s−a)(s−b)(s−c)) mit s = (a+b+c)/2 (Heron von Alexandria, Metrica). Vektoriell gilt A = ½·|AB⃗ × AC⃗|; das Parallelogramm hat die doppelte Fläche ab·sin γ.",
+    "beispiel": "a = 5 cm, b = 7 cm, γ = 60°: A = ½·5·7·sin 60° = 17,5·0,866 ≈ 15,16 cm². Heron für die Seiten 5, 6, 7: s = 9, A = √(9·4·3·2) = √216 ≈ 14,70 cm².",
+    "anwendung": "Dreiecksberechnung im SWS-Fall, Flächen von Grundstücken und Vielecken (Zerlegung in Dreiecke), Herleitung des Sinussatzes, Parallelogrammflächen",
+    "quellen": [
+      "Heron von Alexandria (ca. 60 n. Chr.). Metrica."
+    ],
+    "verwandte": [
+      "sinussatz",
+      "kosinussatz",
+      "kreuzprodukt"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Dreieck"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "A=1/2*a*b*sin(gamma)",
+      "Dreiecksfläche Sinus",
+      "Flächeninhalt Dreieck Winkel",
+      "trigonometrische Flächenformel",
+      "Heronsche Formel",
+      "triangle area sine",
+      "Fläche Dreieck zwei Seiten Winkel",
+      "ein halb a b sinus gamma"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/dreiecksflaeche-sinus",
+    "herleitung": {
+      "gueltigkeit": "Gilt in jedem Dreieck, auch im stumpfwinkligen; γ muss der von a und b eingeschlossene Winkel sein. Für γ = 90° reduziert sich die Formel auf A = ½ab.",
+      "schritte": [
+        "Wähle a als Grundseite; die Höhe darauf ist h = b·sin γ (rechtwinkliges Teildreieck).",
+        "Einsetzen in A = ½·a·h liefert A = ½·a·b·sin γ."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Winkel aus der Fläche",
+        "latex": "\\sin\\gamma = \\frac{2A}{a \\cdot b}",
+        "hinweis": "Achtung: γ und 180° − γ haben denselben Sinus."
+      },
+      {
+        "ziel": "Heronsche Formel (drei Seiten)",
+        "latex": "A = \\sqrt{s(s-a)(s-b)(s-c)}, \\quad s = \\frac{a+b+c}{2}",
+        "hinweis": "Wenn kein Winkel, aber alle Seiten bekannt sind."
+      },
+      {
+        "ziel": "Parallelogramm",
+        "latex": "A_{P} = a \\cdot b \\cdot \\sin\\gamma",
+        "hinweis": "Doppelte Dreiecksfläche; vektoriell |a⃗ × b⃗|."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Einen nicht eingeschlossenen Winkel einsetzen.",
+        "korrektur": "γ muss zwischen a und b liegen; sonst zuerst Winkel umrechnen (Winkelsumme)."
+      },
+      {
+        "fehler": "Den Faktor ½ vergessen.",
+        "korrektur": "ab·sin γ ist die Parallelogrammfläche; das Dreieck ist die Hälfte."
+      },
+      {
+        "fehler": "Taschenrechner im falschen Winkelmodus.",
+        "korrektur": "DEG/RAD prüfen: sin 30° = 0,5, aber sin(30 rad) ≈ −0,99."
+      }
+    ]
+  },
+  {
+    "slug": "poisson-verteilung",
+    "name": "Poisson-Verteilung",
+    "latex": "P(X = k) = \\frac{\\lambda^{k}}{k!} \\cdot e^{-\\lambda}",
+    "symbol": "P(X=k) = λᵏ·e^(−λ)/k!",
+    "kategorie": "mathematik",
+    "unterkategorie": "Stochastik",
+    "beschreibung": "Die Poisson-Verteilung modelliert die Anzahl seltener, unabhängiger Ereignisse in einem festen Intervall bei bekannter mittlerer Rate λ.",
+    "einheiten": "Wahrscheinlichkeiten dimensionslos, zwischen 0 und 1 · λ dimensionslos (mittlere Anzahl pro Intervall)",
+    "variablen": [
+      {
+        "symbol": "k",
+        "bedeutung": "Anzahl der Ereignisse (0, 1, 2, ...)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "λ",
+        "bedeutung": "Mittlere Ereignisanzahl pro Intervall (Erwartungswert)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "e",
+        "bedeutung": "Eulersche Zahl (≈ 2,71828)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "P(X=k)",
+        "bedeutung": "Wahrscheinlichkeit für genau k Ereignisse",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Siméon Denis Poisson leitete die Verteilung 1837 her. Sie ist der Grenzfall der Binomialverteilung für großes n und kleines p mit λ = n·p (Faustregel: n ≥ 50 und p ≤ 0,1). Besonderheit: Erwartungswert und Varianz sind beide gleich λ. Berühmtes Beispiel: Bortkiewicz zeigte 1898, dass die jährlichen Todesfälle durch Hufschlag in preußischen Kavalleriekorps Poisson-verteilt sind.",
+    "beispiel": "In einer Hotline gehen im Mittel λ = 2 Anrufe pro Minute ein. Genau 3 Anrufe in einer Minute: P(X=3) = 2³·e⁻²/3! = 8·0,1353/6 ≈ 0,180, also rund 18 %.",
+    "anwendung": "Warteschlangen (Anrufe, Kunden pro Minute), radioaktive Zerfälle pro Sekunde, Druckfehler pro Seite, Schadensmodelle in Versicherungen",
+    "quellen": [
+      "Poisson, S.D. (1837). Recherches sur la probabilité des jugements. Paris."
+    ],
+    "verwandte": [
+      "binomialverteilung",
+      "normalverteilung",
+      "erwartungswert"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Poisson-Verteilung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "P(X=k)=lambda^k*e^(-lambda)/k!",
+      "Poisson Verteilung Formel",
+      "Poissonverteilung",
+      "lambda Verteilung seltene Ereignisse",
+      "Poisson distribution",
+      "Poisson Näherung Binomial",
+      "Erwartungswert Poisson",
+      "poisson lambda"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/poisson-verteilung",
+    "herleitung": {
+      "gueltigkeit": "Modelliert Zählungen seltener, unabhängiger Ereignisse mit konstanter mittlerer Rate; als Näherung der Binomialverteilung geeignet für großes n und kleines p (λ = n·p, Faustregel n ≥ 50, p ≤ 0,1).",
+      "schritte": [
+        "In P(X=k) = (n über k)·pᵏ·(1−p)ⁿ⁻ᵏ wird p = λ/n gesetzt.",
+        "Für n → ∞ streben (n über k)·(λ/n)ᵏ → λᵏ/k! und (1 − λ/n)ⁿ → e^(−λ); zusammen folgt λᵏ·e^(−λ)/k!."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Kein Ereignis",
+        "latex": "P(X = 0) = e^{-\\lambda}",
+        "hinweis": "Häufigster Spezialfall, Basis für Gegenereignisse."
+      },
+      {
+        "ziel": "Mindestens ein Ereignis",
+        "latex": "P(X \\geq 1) = 1 - e^{-\\lambda}",
+        "hinweis": "Über das Gegenereignis statt unendlicher Summe."
+      },
+      {
+        "ziel": "Rate skalieren",
+        "latex": "\\lambda_{t} = \\lambda \\cdot t",
+        "hinweis": "Doppeltes Intervall, doppeltes λ: λ gilt pro Bezugseinheit."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "λ nicht an das Intervall anpassen.",
+        "korrektur": "λ gilt pro Bezugseinheit: 2 pro Minute heißt 10 pro 5 Minuten."
+      },
+      {
+        "fehler": "Poisson trotz großem p verwenden.",
+        "korrektur": "Die Näherung braucht seltene Ereignisse; bei p > 0,1 Binomialverteilung rechnen."
+      },
+      {
+        "fehler": "k! im Nenner vergessen.",
+        "korrektur": "P(X=k) = λᵏ·e^(−λ)/k!; ohne k! summieren die Wahrscheinlichkeiten nicht zu 1."
+      },
+      {
+        "fehler": "Varianz getrennt suchen.",
+        "korrektur": "Bei Poisson gilt E(X) = Var(X) = λ; σ = √λ."
+      }
+    ]
+  },
+  {
+    "slug": "sigma-regeln-umgebung",
+    "name": "Sigma-Regeln (Sigma-Umgebungen)",
+    "latex": "P(\\mu - 2\\sigma \\leq X \\leq \\mu + 2\\sigma) \\approx 95{,}4\\,\\%",
+    "symbol": "μ±σ: 68,3 %, μ±2σ: 95,4 %, μ±3σ: 99,7 %",
+    "kategorie": "mathematik",
+    "unterkategorie": "Stochastik",
+    "beschreibung": "Die Sigma-Regeln geben an, mit welcher Wahrscheinlichkeit eine normalverteilte Größe in den Umgebungen μ ± σ, μ ± 2σ und μ ± 3σ liegt.",
+    "einheiten": "Wahrscheinlichkeiten dimensionslos · μ und σ in der Einheit der Zufallsgröße",
+    "variablen": [
+      {
+        "symbol": "μ",
+        "bedeutung": "Erwartungswert (Zentrum der Umgebung)",
+        "einheit": "wie X"
+      },
+      {
+        "symbol": "σ",
+        "bedeutung": "Standardabweichung (halbe Breite der 1σ-Umgebung)",
+        "einheit": "wie X"
+      },
+      {
+        "symbol": "k",
+        "bedeutung": "Umgebungsfaktor (1, 2, 3 oder 1,64 / 1,96 / 2,58)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "P",
+        "bedeutung": "Wahrscheinlichkeit der k·σ-Umgebung",
+        "einheit": "dimensionslos"
+      }
+    ],
+    "hintergrund": "Die Regeln folgen aus der Normalverteilung: 68,3 % der Werte liegen in μ ± σ, 95,4 % in μ ± 2σ und 99,7 % in μ ± 3σ. Für glatte Niveaus nutzt man die umgekehrten Faktoren μ ± 1,64σ (90 %), μ ± 1,96σ (95 %) und μ ± 2,58σ (99 %). Auf Binomialverteilungen sind die Regeln anwendbar, wenn die Laplace-Bedingung σ = √(n·p·(1−p)) > 3 erfüllt ist; dann gilt μ = n·p.",
+    "beispiel": "Binomial mit n = 200, p = 0,5: μ = 100 und σ = √(200·0,5·0,5) = √50 ≈ 7,07 > 3. Die 2σ-Umgebung 100 ± 14,1 bedeutet: Rund 95,4 % aller Trefferzahlen liegen in [86; 114].",
+    "anwendung": "Prognoseintervalle im Abitur, Hypothesentests (Annahme- und Ablehnungsbereich), Qualitätskontrolle (Six Sigma), Interpretation von IQ- und Messwerten",
+    "quellen": [
+      "Henze, N. (2018). Stochastik für Einsteiger. Springer."
+    ],
+    "verwandte": [
+      "normalverteilung",
+      "standardabweichung",
+      "binomialverteilung"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Normalverteilung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "68-95-99.7 Regel",
+      "Sigma Regeln Stochastik",
+      "sigma Umgebung berechnen",
+      "1,96 sigma 95 Prozent",
+      "Prognoseintervall Binomialverteilung",
+      "empirical rule",
+      "Laplace Bedingung sigma größer 3",
+      "2 sigma Umgebung"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/sigma-regeln-umgebung",
+    "herleitung": {
+      "gueltigkeit": "Exakt für die Normalverteilung; für Binomialverteilungen als Näherung zulässig, wenn die Laplace-Bedingung σ = √(np(1−p)) > 3 erfüllt ist. Bei ganzzahligen Trefferzahlen Intervallgrenzen runden.",
+      "schritte": [
+        "Standardisieren: z = (X − μ)/σ macht aus jeder Normalverteilung die Standardnormalverteilung.",
+        "Die Tabelle liefert Φ(1) − Φ(−1) ≈ 0,683, Φ(2) − Φ(−2) ≈ 0,954, Φ(3) − Φ(−3) ≈ 0,997."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Umgekehrte Sigma-Regeln",
+        "latex": "\\mu \\pm 1{,}64\\sigma \\; (90\\,\\%), \\quad \\mu \\pm 1{,}96\\sigma \\; (95\\,\\%), \\quad \\mu \\pm 2{,}58\\sigma \\; (99\\,\\%)",
+        "hinweis": "Für vorgegebene glatte Sicherheitsniveaus."
+      },
+      {
+        "ziel": "Umgebungsradius",
+        "latex": "r = k \\cdot \\sigma",
+        "hinweis": "Prognoseintervall [μ − kσ; μ + kσ]; k nach Niveau wählen."
+      },
+      {
+        "ziel": "Binomial-Kennwerte",
+        "latex": "\\mu = n p, \\quad \\sigma = \\sqrt{n p (1-p)}",
+        "hinweis": "Vorab berechnen und Laplace-Bedingung σ > 3 prüfen."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "2σ-Regel (95,4 %) mit dem 95-%-Faktor 1,96 verwechseln.",
+        "korrektur": "k = 2 liefert 95,4 %; exakt 95 % gehört zu k = 1,96."
+      },
+      {
+        "fehler": "Sigma-Regeln ohne Laplace-Bedingung auf Binomialverteilungen anwenden.",
+        "korrektur": "Erst σ = √(np(1−p)) > 3 prüfen, sonst ist die Näherung zu grob."
+      },
+      {
+        "fehler": "Einseitige und symmetrische Fragen mischen.",
+        "korrektur": "Außerhalb von μ ± 2σ liegen 4,6 %, oberhalb allein nur 2,3 %."
+      }
+    ]
   }
 ]
