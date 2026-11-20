@@ -1,45 +1,44 @@
 {
   "name": "quanta-mathe-formeln",
-  "version": "2.0.0",
-  "description": "49 wissenschaftlich aufbereitete Mathematik-Formeln für Abitur, Studium und Universität — Analysis, Algebra, Stochastik, Geometrie, Trigonometrie, Analytische Geometrie, Folgen und Reihen. Mit LaTeX, Variablen, Herleitung, Umstellungen und typischen Fehlern. Von Quanta (quanta-study.de).",
+  "version": "3.0.0",
+  "description": "Compact German mathematik formula reference data with LaTeX, variable metadata, source references and TypeScript helpers.",
+  "private": false,
+  "type": "commonjs",
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
+    "formeln.json",
     "index.js",
     "index.d.ts",
-    "formeln.json"
+    "schema.json",
+    "README.md",
+    "CITATION.cff",
+    "LICENSE",
+    "LICENSE-SCOPE.md",
+    "CHANGELOG.md",
+    "manifest.json",
+    "test"
   ],
   "scripts": {
-    "test": "node -e \"const f = require('.'); console.log('✅', f.formeln.length, 'Mathe-Formeln geladen');\""
+    "test": "node --test test/contract.test.cjs"
   },
   "keywords": [
-    "mathematik",
-    "mathe-formeln",
-    "mathematics",
-    "analysis",
-    "lineare-algebra",
-    "stochastik",
-    "statistik",
-    "fourier",
-    "bayes",
-    "euler",
-    "normalverteilung",
+    "dataset",
+    "formula",
     "latex",
-    "mint",
-    "studium",
-    "university",
-    "fsrs",
-    "spaced-repetition",
-    "quanta",
-    "education",
-    "germany"
+    "mathematik",
+    "typescript",
+    "quanta-study"
   ],
-  "author": "Quanta <ammm.creativetech@gmail.com> (https://quanta-study.de)",
+  "author": {
+    "name": "Quanta Study / AM Creative Tech UG (haftungsbeschränkt)",
+    "url": "https://quanta-study.de/"
+  },
   "license": "CC-BY-4.0",
-  "homepage": "https://quanta-study.de/mathematik-lernen",
+  "homepage": "https://quanta-study.de/tafelwerk",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ammmcreativetech-dot/quanta-mathe-formeln.git"
+    "url": "git+https://github.com/ammmcreativetech-dot/quanta-mathe-formeln.git"
   },
   "bugs": {
     "url": "https://github.com/ammmcreativetech-dot/quanta-mathe-formeln/issues"
